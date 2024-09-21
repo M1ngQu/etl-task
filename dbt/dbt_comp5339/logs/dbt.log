@@ -1,0 +1,2520 @@
+[0m11:30:33.277329 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 11:30:33.282894 | ff46896a-90e7-41e4-af27-715a71236f86 ==============================
+[0m11:30:33.282894 [info ] [MainThread]: Running with dbt=1.8.2
+[0m11:30:33.283502 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/usr/local/airflow/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': '/usr/local/airflow/dbt/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt deps --add-package /usr/local/airflow/dbt-utils-main --source local', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:30:33.353896 [info ] [MainThread]: Found duplicate package in packages.yml, removing: {'local': '/usr/local/airflow/dbt-utils-main'}
+[0m11:30:33.357999 [info ] [MainThread]: Added new package /usr/local/airflow/dbt-utils-main@ to /usr/local/airflow/dbt/packages.yml
+[0m11:30:33.362247 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-8tr6zxbq'
+[0m11:30:33.362779 [info ] [MainThread]: Installing /usr/local/airflow/dbt-utils-main
+[0m11:30:33.363645 [debug] [MainThread]: Creating symlink to local dependency.
+[0m11:30:33.364178 [info ] [MainThread]: Installed from <local @ /usr/local/airflow/dbt-utils-main>
+[0m11:30:33.364967 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.14023179, "process_user_time": 0.761764, "process_kernel_time": 0.051185, "process_mem_max_rss": "105768", "process_in_blocks": "8", "process_out_blocks": "8"}
+[0m11:30:33.365635 [debug] [MainThread]: Command `dbt deps` succeeded at 11:30:33.365536 after 0.14 seconds
+[0m11:30:33.366099 [debug] [MainThread]: Flushing usage events
+[0m11:30:35.348002 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 11:30:35.352220 | 7b8fcfc5-9e7b-43c3-9573-76ab0f2a1fa5 ==============================
+[0m11:30:35.352220 [info ] [MainThread]: Running with dbt=1.8.2
+[0m11:30:35.352824 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/usr/local/airflow/.dbt', 'log_path': '/usr/local/airflow/dbt/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt seed', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:30:35.492322 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m11:30:35.538562 [debug] [MainThread]: checksum: f0a141b9de567cb7f131613ba2682f40b3a1c6a157f81c6e5435862eff68f109, vars: {}, profile: , target: , version: 1.8.2
+[0m11:30:35.540949 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m11:30:36.822619 [info ] [MainThread]: Found 21 models, 1 test, 1 seed, 7 sources, 531 macros
+[0m11:30:36.824178 [info ] [MainThread]: 
+[0m11:30:36.824788 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m11:30:36.825535 [debug] [ThreadPool]: Acquiring new postgres connection 'list_sales_dw'
+[0m11:30:36.844695 [debug] [ThreadPool]: Using postgres connection "list_sales_dw"
+[0m11:30:36.847638 [debug] [ThreadPool]: On list_sales_dw: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "list_sales_dw"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m11:30:36.849892 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:30:36.856198 [debug] [ThreadPool]: SQL status: SELECT 8 in 0.006 seconds
+[0m11:30:36.857723 [debug] [ThreadPool]: On list_sales_dw: Close
+[0m11:30:36.858415 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_sales_dw, now create_sales_dw_dev_raw)
+[0m11:30:36.858914 [debug] [ThreadPool]: Creating schema "database: "sales_dw"
+schema: "dev_raw"
+"
+[0m11:30:36.862590 [debug] [ThreadPool]: Using postgres connection "create_sales_dw_dev_raw"
+[0m11:30:36.863061 [debug] [ThreadPool]: On create_sales_dw_dev_raw: BEGIN
+[0m11:30:36.863358 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:30:36.867091 [debug] [ThreadPool]: SQL status: BEGIN in 0.004 seconds
+[0m11:30:36.867582 [debug] [ThreadPool]: Using postgres connection "create_sales_dw_dev_raw"
+[0m11:30:36.868014 [debug] [ThreadPool]: On create_sales_dw_dev_raw: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "create_sales_dw_dev_raw"} */
+create schema if not exists "dev_raw"
+[0m11:30:36.868714 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.000 seconds
+[0m11:30:36.869613 [debug] [ThreadPool]: On create_sales_dw_dev_raw: COMMIT
+[0m11:30:36.869994 [debug] [ThreadPool]: Using postgres connection "create_sales_dw_dev_raw"
+[0m11:30:36.870423 [debug] [ThreadPool]: On create_sales_dw_dev_raw: COMMIT
+[0m11:30:36.871307 [debug] [ThreadPool]: SQL status: COMMIT in 0.000 seconds
+[0m11:30:36.871693 [debug] [ThreadPool]: On create_sales_dw_dev_raw: Close
+[0m11:30:36.875261 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_sales_dw_dev_raw, now list_sales_dw_dev)
+[0m11:30:36.875728 [debug] [ThreadPool]: Acquiring new postgres connection 'list_sales_dw_dev_raw'
+[0m11:30:36.879625 [debug] [ThreadPool]: Using postgres connection "list_sales_dw_dev"
+[0m11:30:36.881268 [debug] [ThreadPool]: Using postgres connection "list_sales_dw_dev_raw"
+[0m11:30:36.881698 [debug] [ThreadPool]: On list_sales_dw_dev: BEGIN
+[0m11:30:36.882183 [debug] [ThreadPool]: On list_sales_dw_dev_raw: BEGIN
+[0m11:30:36.882553 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:30:36.882915 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:30:36.886717 [debug] [ThreadPool]: SQL status: BEGIN in 0.004 seconds
+[0m11:30:36.887233 [debug] [ThreadPool]: Using postgres connection "list_sales_dw_dev"
+[0m11:30:36.887633 [debug] [ThreadPool]: On list_sales_dw_dev: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "list_sales_dw_dev"} */
+select
+      'sales_dw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dev'
+    union all
+    select
+      'sales_dw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dev'
+    union all
+    select
+      'sales_dw' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dev'
+  
+[0m11:30:36.889583 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.001 seconds
+[0m11:30:36.890546 [debug] [ThreadPool]: On list_sales_dw_dev: ROLLBACK
+[0m11:30:36.890991 [debug] [ThreadPool]: On list_sales_dw_dev: Close
+[0m11:30:41.892305 [debug] [ThreadPool]: SQL status: BEGIN in 5.009 seconds
+[0m11:30:41.898062 [debug] [ThreadPool]: Using postgres connection "list_sales_dw_dev_raw"
+[0m11:30:41.903997 [debug] [ThreadPool]: On list_sales_dw_dev_raw: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "list_sales_dw_dev_raw"} */
+select
+      'sales_dw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dev_raw'
+    union all
+    select
+      'sales_dw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dev_raw'
+    union all
+    select
+      'sales_dw' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dev_raw'
+  
+[0m11:30:41.911507 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.002 seconds
+[0m11:30:41.912431 [debug] [ThreadPool]: On list_sales_dw_dev_raw: ROLLBACK
+[0m11:30:41.912854 [debug] [ThreadPool]: On list_sales_dw_dev_raw: Close
+[0m11:30:41.923438 [debug] [MainThread]: Using postgres connection "master"
+[0m11:30:41.925692 [debug] [MainThread]: On master: BEGIN
+[0m11:30:41.930148 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:30:46.936114 [debug] [MainThread]: SQL status: BEGIN in 5.006 seconds
+[0m11:30:46.939143 [debug] [MainThread]: Using postgres connection "master"
+[0m11:30:46.940897 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m11:30:46.944686 [debug] [MainThread]: SQL status: SELECT 0 in 0.003 seconds
+[0m11:30:46.947664 [debug] [MainThread]: On master: ROLLBACK
+[0m11:30:46.948243 [debug] [MainThread]: Using postgres connection "master"
+[0m11:30:46.949912 [debug] [MainThread]: On master: BEGIN
+[0m11:30:46.951456 [debug] [MainThread]: SQL status: BEGIN in 0.000 seconds
+[0m11:30:46.952256 [debug] [MainThread]: On master: COMMIT
+[0m11:30:46.952763 [debug] [MainThread]: Using postgres connection "master"
+[0m11:30:46.953162 [debug] [MainThread]: On master: COMMIT
+[0m11:30:46.953583 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m11:30:46.953939 [debug] [MainThread]: On master: Close
+[0m11:30:46.954377 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:30:46.954755 [info ] [MainThread]: 
+[0m11:30:46.960604 [debug] [Thread-1 (]: Began running node seed.dbtcomp.geography
+[0m11:30:46.964424 [info ] [Thread-1 (]: 1 of 1 START seed file dev_raw.geography ....................................... [RUN]
+[0m11:30:46.965095 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_sales_dw_dev_raw, now seed.dbtcomp.geography)
+[0m11:30:46.965572 [debug] [Thread-1 (]: Began compiling node seed.dbtcomp.geography
+[0m11:30:46.966070 [debug] [Thread-1 (]: Began executing node seed.dbtcomp.geography
+[0m11:30:46.985859 [debug] [Thread-1 (]: Using postgres connection "seed.dbtcomp.geography"
+[0m11:30:46.986394 [debug] [Thread-1 (]: On seed.dbtcomp.geography: BEGIN
+[0m11:30:46.986707 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:30:46.992078 [debug] [Thread-1 (]: SQL status: BEGIN in 0.005 seconds
+[0m11:30:46.996202 [debug] [Thread-1 (]: Using postgres connection "seed.dbtcomp.geography"
+[0m11:30:46.998155 [debug] [Thread-1 (]: On seed.dbtcomp.geography: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "node_id": "seed.dbtcomp.geography"} */
+
+    create table "sales_dw"."dev_raw"."geography" ("id" integer,"cityname" text,"countryname" text,"regionname" text)
+  
+[0m11:30:47.009999 [debug] [Thread-1 (]: SQL status: CREATE TABLE in 0.008 seconds
+[0m11:30:47.065583 [debug] [Thread-1 (]: Using postgres connection "seed.dbtcomp.geography"
+[0m11:30:47.067159 [debug] [Thread-1 (]: On seed.dbtcomp.geography: 
+          insert into "sales_dw"."dev_raw"."geography" ("id", "cityname", "countryname", "regionname") values
+          (%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s)...
+[0m11:30:47.070576 [debug] [Thread-1 (]: SQL status: INSERT 0 100 in 0.002 seconds
+[0m11:30:47.077558 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.dbtcomp.geography"
+[0m11:30:47.090223 [debug] [Thread-1 (]: On seed.dbtcomp.geography: COMMIT
+[0m11:30:47.090983 [debug] [Thread-1 (]: Using postgres connection "seed.dbtcomp.geography"
+[0m11:30:47.091449 [debug] [Thread-1 (]: On seed.dbtcomp.geography: COMMIT
+[0m11:30:47.093865 [debug] [Thread-1 (]: SQL status: COMMIT in 0.001 seconds
+[0m11:30:47.095351 [debug] [Thread-1 (]: On seed.dbtcomp.geography: Close
+[0m11:30:47.096944 [info ] [Thread-1 (]: 1 of 1 OK loaded seed file dev_raw.geography ................................... [[32mINSERT 100[0m in 0.13s]
+[0m11:30:47.097813 [debug] [Thread-1 (]: Finished running node seed.dbtcomp.geography
+[0m11:30:47.102251 [debug] [MainThread]: Using postgres connection "master"
+[0m11:30:47.102959 [debug] [MainThread]: On master: BEGIN
+[0m11:30:47.104528 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:30:47.111711 [debug] [MainThread]: SQL status: BEGIN in 0.007 seconds
+[0m11:30:47.115390 [debug] [MainThread]: On master: COMMIT
+[0m11:30:47.116908 [debug] [MainThread]: Using postgres connection "master"
+[0m11:30:47.118707 [debug] [MainThread]: On master: COMMIT
+[0m11:30:47.122094 [debug] [MainThread]: SQL status: COMMIT in 0.002 seconds
+[0m11:30:47.123039 [debug] [MainThread]: On master: Close
+[0m11:30:47.124565 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:30:47.125998 [debug] [MainThread]: Connection 'list_sales_dw_dev' was properly closed.
+[0m11:30:47.126890 [debug] [MainThread]: Connection 'seed.dbtcomp.geography' was properly closed.
+[0m11:30:47.128874 [info ] [MainThread]: 
+[0m11:30:47.129253 [info ] [MainThread]: Finished running 1 seed in 0 hours 0 minutes and 10.30 seconds (10.30s).
+[0m11:30:47.130493 [debug] [MainThread]: Command end result
+[0m11:30:47.182779 [info ] [MainThread]: 
+[0m11:30:47.183282 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:30:47.183605 [info ] [MainThread]: 
+[0m11:30:47.183917 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m11:30:47.184581 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": true, "command_wall_clock_time": 11.876331, "process_user_time": 2.139609, "process_kernel_time": 0.08768, "process_mem_max_rss": "117128", "process_in_blocks": "8", "process_out_blocks": "0"}
+[0m11:30:47.185072 [debug] [MainThread]: Command `dbt seed` succeeded at 11:30:47.185009 after 11.88 seconds
+[0m11:30:47.186634 [debug] [MainThread]: Flushing usage events
+[0m11:31:40.026295 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 11:31:40.032972 | f0951bba-464e-4328-97dc-f2828e63bee1 ==============================
+[0m11:31:40.032972 [info ] [MainThread]: Running with dbt=1.8.2
+[0m11:31:40.034396 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'False', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/usr/local/airflow/dbt/logs', 'fail_fast': 'False', 'profiles_dir': '/usr/local/airflow/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt --no-write-json run --target dev --models src_resellers', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:31:40.093432 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 11:31:40.100498 | ed7810cf-4060-40a1-a339-2251b0e392f4 ==============================
+[0m11:31:40.100498 [info ] [MainThread]: Running with dbt=1.8.2
+[0m11:31:40.102385 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'False', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/usr/local/airflow/.dbt', 'log_path': '/usr/local/airflow/dbt/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt --no-write-json run --target dev --models src_transactions', 'send_anonymous_usage_stats': 'True'}
+[0m11:31:40.111988 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 11:31:40.116922 | e102d77b-b87f-465f-aa91-38002f9af20a ==============================
+[0m11:31:40.116922 [info ] [MainThread]: Running with dbt=1.8.2
+[0m11:31:40.118581 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'False', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/usr/local/airflow/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/usr/local/airflow/dbt/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt --no-write-json run --target dev --models dim_geography', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m11:31:40.123880 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 11:31:40.129525 | a15664bc-6314-47ae-9aa8-5741b49dd3ed ==============================
+[0m11:31:40.129525 [info ] [MainThread]: Running with dbt=1.8.2
+[0m11:31:40.130979 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'False', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/usr/local/airflow/dbt/logs', 'profiles_dir': '/usr/local/airflow/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt --no-write-json run --target dev --models src_channels', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m11:31:40.126851 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 11:31:40.138455 | 0729a019-55a7-4b00-9989-8aff777b2f00 ==============================
+[0m11:31:40.138455 [info ] [MainThread]: Running with dbt=1.8.2
+[0m11:31:40.139213 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'False', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/usr/local/airflow/.dbt', 'log_path': '/usr/local/airflow/dbt/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt --no-write-json run --target dev --models src_customers', 'send_anonymous_usage_stats': 'True'}
+[0m11:31:40.143125 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 11:31:40.149081 | 308cce6a-4607-41f2-b673-5052aaa2970e ==============================
+[0m11:31:40.149081 [info ] [MainThread]: Running with dbt=1.8.2
+[0m11:31:40.150775 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'False', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/usr/local/airflow/dbt/logs', 'profiles_dir': '/usr/local/airflow/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt --no-write-json run --target dev --models dim_date', 'send_anonymous_usage_stats': 'True'}
+[0m11:31:40.145716 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 11:31:40.154305 | 69d2448f-ed17-4def-8acc-a1a8d47c49ab ==============================
+[0m11:31:40.154305 [info ] [MainThread]: Running with dbt=1.8.2
+[0m11:31:40.157312 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'False', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/usr/local/airflow/dbt/logs', 'profiles_dir': '/usr/local/airflow/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt --no-write-json run --target dev --models src_resellerscsv', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:31:40.186794 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m11:31:40.205981 [debug] [MainThread]: checksum: 653514bb72edc871e4e17aa6d7f8b1b0c7572de7cff8697d014b18656695cc44, vars: {}, profile: , target: dev, version: 1.8.2
+[0m11:31:40.216304 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 11:31:40.223943 | e4454b6b-a232-4b24-b9c2-5d67862d29e1 ==============================
+[0m11:31:40.223943 [info ] [MainThread]: Running with dbt=1.8.2
+[0m11:31:40.224952 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'False', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/usr/local/airflow/dbt/logs', 'profiles_dir': '/usr/local/airflow/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt --no-write-json run --target dev --models src_products', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m11:31:40.244721 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m11:31:40.258325 [debug] [MainThread]: checksum: 653514bb72edc871e4e17aa6d7f8b1b0c7572de7cff8697d014b18656695cc44, vars: {}, profile: , target: dev, version: 1.8.2
+[0m11:31:40.269421 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m11:31:40.289876 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m11:31:40.292977 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m11:31:40.291840 [debug] [MainThread]: previous checksum: 653514bb72edc871e4e17aa6d7f8b1b0c7572de7cff8697d014b18656695cc44, current checksum: f0a141b9de567cb7f131613ba2682f40b3a1c6a157f81c6e5435862eff68f109
+[0m11:31:40.298926 [debug] [MainThread]: checksum: 653514bb72edc871e4e17aa6d7f8b1b0c7572de7cff8697d014b18656695cc44, vars: {}, profile: , target: dev, version: 1.8.2
+[0m11:31:40.336890 [debug] [MainThread]: checksum: 653514bb72edc871e4e17aa6d7f8b1b0c7572de7cff8697d014b18656695cc44, vars: {}, profile: , target: dev, version: 1.8.2
+[0m11:31:40.349851 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m11:31:40.353329 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m11:31:40.361354 [debug] [MainThread]: previous checksum: 653514bb72edc871e4e17aa6d7f8b1b0c7572de7cff8697d014b18656695cc44, current checksum: f0a141b9de567cb7f131613ba2682f40b3a1c6a157f81c6e5435862eff68f109
+[0m11:31:40.365465 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m11:31:40.379759 [debug] [MainThread]: checksum: 653514bb72edc871e4e17aa6d7f8b1b0c7572de7cff8697d014b18656695cc44, vars: {}, profile: , target: dev, version: 1.8.2
+[0m11:31:40.400297 [debug] [MainThread]: checksum: 653514bb72edc871e4e17aa6d7f8b1b0c7572de7cff8697d014b18656695cc44, vars: {}, profile: , target: dev, version: 1.8.2
+[0m11:31:40.420080 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m11:31:40.446827 [debug] [MainThread]: checksum: 653514bb72edc871e4e17aa6d7f8b1b0c7572de7cff8697d014b18656695cc44, vars: {}, profile: , target: dev, version: 1.8.2
+[0m11:31:40.447493 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m11:31:40.448605 [debug] [MainThread]: previous checksum: 653514bb72edc871e4e17aa6d7f8b1b0c7572de7cff8697d014b18656695cc44, current checksum: f0a141b9de567cb7f131613ba2682f40b3a1c6a157f81c6e5435862eff68f109
+[0m11:31:40.463769 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m11:31:40.465166 [debug] [MainThread]: previous checksum: 653514bb72edc871e4e17aa6d7f8b1b0c7572de7cff8697d014b18656695cc44, current checksum: f0a141b9de567cb7f131613ba2682f40b3a1c6a157f81c6e5435862eff68f109
+[0m11:31:40.468497 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m11:31:40.479580 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m11:31:40.480754 [debug] [MainThread]: previous checksum: 653514bb72edc871e4e17aa6d7f8b1b0c7572de7cff8697d014b18656695cc44, current checksum: f0a141b9de567cb7f131613ba2682f40b3a1c6a157f81c6e5435862eff68f109
+[0m11:31:40.484559 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m11:31:40.485406 [debug] [MainThread]: previous checksum: 653514bb72edc871e4e17aa6d7f8b1b0c7572de7cff8697d014b18656695cc44, current checksum: f0a141b9de567cb7f131613ba2682f40b3a1c6a157f81c6e5435862eff68f109
+[0m11:31:40.487188 [debug] [MainThread]: checksum: 653514bb72edc871e4e17aa6d7f8b1b0c7572de7cff8697d014b18656695cc44, vars: {}, profile: , target: dev, version: 1.8.2
+[0m11:31:40.537090 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m11:31:40.540207 [debug] [MainThread]: previous checksum: 653514bb72edc871e4e17aa6d7f8b1b0c7572de7cff8697d014b18656695cc44, current checksum: f0a141b9de567cb7f131613ba2682f40b3a1c6a157f81c6e5435862eff68f109
+[0m11:31:40.566510 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m11:31:40.567403 [debug] [MainThread]: previous checksum: 653514bb72edc871e4e17aa6d7f8b1b0c7572de7cff8697d014b18656695cc44, current checksum: f0a141b9de567cb7f131613ba2682f40b3a1c6a157f81c6e5435862eff68f109
+[0m11:31:41.726348 [info ] [MainThread]: Found 21 models, 1 test, 1 seed, 7 sources, 531 macros
+[0m11:31:41.733727 [info ] [MainThread]: 
+[0m11:31:41.737508 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m11:31:41.736734 [info ] [MainThread]: Found 21 models, 1 test, 1 seed, 7 sources, 531 macros
+[0m11:31:41.740466 [debug] [ThreadPool]: Acquiring new postgres connection 'list_sales_dw'
+[0m11:31:41.741829 [info ] [MainThread]: 
+[0m11:31:41.748439 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m11:31:41.752358 [debug] [ThreadPool]: Acquiring new postgres connection 'list_sales_dw'
+[0m11:31:41.756184 [info ] [MainThread]: Found 21 models, 1 test, 1 seed, 7 sources, 531 macros
+[0m11:31:41.759845 [info ] [MainThread]: 
+[0m11:31:41.763071 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m11:31:41.765935 [debug] [ThreadPool]: Acquiring new postgres connection 'list_sales_dw'
+[0m11:31:41.767401 [debug] [ThreadPool]: Using postgres connection "list_sales_dw"
+[0m11:31:41.768350 [debug] [ThreadPool]: On list_sales_dw: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "list_sales_dw"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m11:31:41.769329 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:31:41.775307 [debug] [ThreadPool]: Using postgres connection "list_sales_dw"
+[0m11:31:41.776398 [debug] [ThreadPool]: On list_sales_dw: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "list_sales_dw"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m11:31:41.777165 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:31:41.778459 [debug] [ThreadPool]: SQL status: SELECT 9 in 0.009 seconds
+[0m11:31:41.779766 [debug] [ThreadPool]: On list_sales_dw: Close
+[0m11:31:41.780512 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_sales_dw, now create_sales_dw_dev)
+[0m11:31:41.781392 [debug] [ThreadPool]: Creating schema "database: "sales_dw"
+schema: "dev"
+"
+[0m11:31:41.785613 [debug] [ThreadPool]: Using postgres connection "create_sales_dw_dev"
+[0m11:31:41.786229 [debug] [ThreadPool]: On create_sales_dw_dev: BEGIN
+[0m11:31:41.786644 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:31:41.788841 [debug] [ThreadPool]: Using postgres connection "list_sales_dw"
+[0m11:31:41.789709 [debug] [ThreadPool]: On list_sales_dw: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "list_sales_dw"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m11:31:41.790624 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:31:41.796486 [debug] [ThreadPool]: SQL status: SELECT 9 in 0.006 seconds
+[0m11:31:41.797610 [debug] [ThreadPool]: On list_sales_dw: Close
+[0m11:31:41.798216 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_sales_dw, now create_sales_dw_dev)
+[0m11:31:41.799015 [debug] [ThreadPool]: Creating schema "database: "sales_dw"
+schema: "dev"
+"
+[0m11:31:41.803280 [debug] [ThreadPool]: Using postgres connection "create_sales_dw_dev"
+[0m11:31:41.804637 [debug] [ThreadPool]: On create_sales_dw_dev: BEGIN
+[0m11:31:41.805217 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:31:41.821782 [info ] [MainThread]: Found 21 models, 1 test, 1 seed, 7 sources, 531 macros
+[0m11:31:41.822192 [info ] [MainThread]: Found 21 models, 1 test, 1 seed, 7 sources, 531 macros
+[0m11:31:41.823586 [info ] [MainThread]: 
+[0m11:31:41.824519 [info ] [MainThread]: 
+[0m11:31:41.824679 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m11:31:41.827837 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m11:31:41.828195 [debug] [ThreadPool]: Acquiring new postgres connection 'list_sales_dw'
+[0m11:31:41.828828 [debug] [ThreadPool]: Acquiring new postgres connection 'list_sales_dw'
+[0m11:31:41.840291 [info ] [MainThread]: Found 21 models, 1 test, 1 seed, 7 sources, 531 macros
+[0m11:31:41.844792 [info ] [MainThread]: 
+[0m11:31:41.853389 [debug] [ThreadPool]: Using postgres connection "list_sales_dw"
+[0m11:31:41.853438 [debug] [ThreadPool]: Using postgres connection "list_sales_dw"
+[0m11:31:41.854402 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m11:31:41.854638 [debug] [ThreadPool]: On list_sales_dw: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "list_sales_dw"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m11:31:41.855432 [debug] [ThreadPool]: On list_sales_dw: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "list_sales_dw"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m11:31:41.859819 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:31:41.856136 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:31:41.856753 [debug] [ThreadPool]: Acquiring new postgres connection 'list_sales_dw'
+[0m11:31:41.910967 [info ] [MainThread]: Found 21 models, 1 test, 1 seed, 7 sources, 531 macros
+[0m11:31:41.919109 [info ] [MainThread]: 
+[0m11:31:41.918016 [debug] [ThreadPool]: Using postgres connection "list_sales_dw"
+[0m11:31:41.923243 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m11:31:41.926364 [debug] [ThreadPool]: On list_sales_dw: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "list_sales_dw"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m11:31:41.927054 [info ] [MainThread]: Found 21 models, 1 test, 1 seed, 7 sources, 531 macros
+[0m11:31:41.929980 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:31:41.930226 [debug] [ThreadPool]: Acquiring new postgres connection 'list_sales_dw'
+[0m11:31:41.931258 [info ] [MainThread]: 
+[0m11:31:41.932075 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m11:31:41.933073 [debug] [ThreadPool]: Acquiring new postgres connection 'list_sales_dw'
+[0m11:31:41.951901 [debug] [ThreadPool]: Using postgres connection "list_sales_dw"
+[0m11:31:41.952433 [debug] [ThreadPool]: On list_sales_dw: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "list_sales_dw"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m11:31:41.953198 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:31:41.958984 [debug] [ThreadPool]: Using postgres connection "list_sales_dw"
+[0m11:31:41.959592 [debug] [ThreadPool]: On list_sales_dw: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "list_sales_dw"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m11:31:41.959962 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:31:41.965075 [debug] [ThreadPool]: SQL status: SELECT 9 in 0.005 seconds
+[0m11:31:41.966128 [debug] [ThreadPool]: On list_sales_dw: Close
+[0m11:31:41.966927 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_sales_dw, now create_sales_dw_dev)
+[0m11:31:41.967559 [debug] [ThreadPool]: Creating schema "database: "sales_dw"
+schema: "dev"
+"
+[0m11:31:41.971555 [debug] [ThreadPool]: Using postgres connection "create_sales_dw_dev"
+[0m11:31:41.972114 [debug] [ThreadPool]: On create_sales_dw_dev: BEGIN
+[0m11:31:41.972490 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:31:46.792229 [debug] [ThreadPool]: SQL status: SELECT 9 in 5.011 seconds
+[0m11:31:46.794267 [debug] [ThreadPool]: SQL status: BEGIN in 5.003 seconds
+[0m11:31:46.795001 [debug] [ThreadPool]: On list_sales_dw: Close
+[0m11:31:46.795774 [debug] [ThreadPool]: Using postgres connection "create_sales_dw_dev"
+[0m11:31:46.798193 [debug] [ThreadPool]: On create_sales_dw_dev: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "create_sales_dw_dev"} */
+create schema if not exists "dev"
+[0m11:31:46.798592 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_sales_dw, now create_sales_dw_dev)
+[0m11:31:46.798997 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.000 seconds
+[0m11:31:46.799558 [debug] [ThreadPool]: Creating schema "database: "sales_dw"
+schema: "dev"
+"
+[0m11:31:46.800468 [debug] [ThreadPool]: On create_sales_dw_dev: COMMIT
+[0m11:31:46.804482 [debug] [ThreadPool]: Using postgres connection "create_sales_dw_dev"
+[0m11:31:46.804951 [debug] [ThreadPool]: Using postgres connection "create_sales_dw_dev"
+[0m11:31:46.805380 [debug] [ThreadPool]: On create_sales_dw_dev: BEGIN
+[0m11:31:46.805806 [debug] [ThreadPool]: On create_sales_dw_dev: COMMIT
+[0m11:31:46.806166 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:31:46.806983 [debug] [ThreadPool]: SQL status: COMMIT in 0.001 seconds
+[0m11:31:46.807438 [debug] [ThreadPool]: On create_sales_dw_dev: Close
+[0m11:31:46.810676 [debug] [ThreadPool]: SQL status: BEGIN in 0.004 seconds
+[0m11:31:46.811337 [debug] [ThreadPool]: Using postgres connection "create_sales_dw_dev"
+[0m11:31:46.811854 [debug] [ThreadPool]: On create_sales_dw_dev: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "create_sales_dw_dev"} */
+create schema if not exists "dev"
+[0m11:31:46.811911 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_sales_dw_dev, now list_sales_dw_dev)
+[0m11:31:46.812941 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.000 seconds
+[0m11:31:46.815509 [debug] [ThreadPool]: SQL status: BEGIN in 5.006 seconds
+[0m11:31:46.816261 [debug] [ThreadPool]: Using postgres connection "create_sales_dw_dev"
+[0m11:31:46.816636 [debug] [ThreadPool]: On create_sales_dw_dev: COMMIT
+[0m11:31:46.817296 [debug] [ThreadPool]: Using postgres connection "create_sales_dw_dev"
+[0m11:31:46.817618 [debug] [ThreadPool]: On create_sales_dw_dev: COMMIT
+[0m11:31:46.818205 [debug] [ThreadPool]: SQL status: COMMIT in 0.000 seconds
+[0m11:31:46.816953 [debug] [ThreadPool]: On create_sales_dw_dev: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "create_sales_dw_dev"} */
+create schema if not exists "dev"
+[0m11:31:46.818659 [debug] [ThreadPool]: On create_sales_dw_dev: Close
+[0m11:31:46.819424 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.000 seconds
+[0m11:31:46.812445 [debug] [ThreadPool]: Acquiring new postgres connection 'list_sales_dw_dev_raw'
+[0m11:31:46.820798 [debug] [ThreadPool]: On create_sales_dw_dev: COMMIT
+[0m11:31:46.822477 [debug] [ThreadPool]: Using postgres connection "create_sales_dw_dev"
+[0m11:31:46.822891 [debug] [ThreadPool]: On create_sales_dw_dev: COMMIT
+[0m11:31:46.823133 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_sales_dw_dev, now list_sales_dw_dev)
+[0m11:31:46.823366 [debug] [ThreadPool]: SQL status: COMMIT in 0.000 seconds
+[0m11:31:46.824337 [debug] [ThreadPool]: On create_sales_dw_dev: Close
+[0m11:31:46.822135 [debug] [ThreadPool]: Using postgres connection "list_sales_dw_dev"
+[0m11:31:46.825086 [debug] [ThreadPool]: Using postgres connection "list_sales_dw_dev_raw"
+[0m11:31:46.825806 [debug] [ThreadPool]: On list_sales_dw_dev: BEGIN
+[0m11:31:46.827094 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:31:46.826561 [debug] [ThreadPool]: On list_sales_dw_dev_raw: BEGIN
+[0m11:31:46.828287 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:31:46.823661 [debug] [ThreadPool]: Acquiring new postgres connection 'list_sales_dw_dev_raw'
+[0m11:31:46.829254 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_sales_dw_dev, now list_sales_dw_dev_raw)
+[0m11:31:46.828387 [debug] [ThreadPool]: Using postgres connection "list_sales_dw_dev"
+[0m11:31:46.830482 [debug] [ThreadPool]: Using postgres connection "list_sales_dw_dev_raw"
+[0m11:31:46.831115 [debug] [ThreadPool]: On list_sales_dw_dev: BEGIN
+[0m11:31:46.831734 [debug] [ThreadPool]: On list_sales_dw_dev_raw: BEGIN
+[0m11:31:46.832457 [debug] [ThreadPool]: SQL status: BEGIN in 0.005 seconds
+[0m11:31:46.832171 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:31:46.833014 [debug] [ThreadPool]: Using postgres connection "list_sales_dw_dev"
+[0m11:31:46.832802 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:31:46.834124 [debug] [ThreadPool]: On list_sales_dw_dev: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "list_sales_dw_dev"} */
+select
+      'sales_dw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dev'
+    union all
+    select
+      'sales_dw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dev'
+    union all
+    select
+      'sales_dw' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dev'
+  
+[0m11:31:46.829858 [debug] [ThreadPool]: Acquiring new postgres connection 'list_sales_dw_dev'
+[0m11:31:46.833436 [debug] [ThreadPool]: SQL status: BEGIN in 0.005 seconds
+[0m11:31:46.835272 [debug] [ThreadPool]: Using postgres connection "list_sales_dw_dev_raw"
+[0m11:31:46.835829 [debug] [ThreadPool]: On list_sales_dw_dev_raw: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "list_sales_dw_dev_raw"} */
+select
+      'sales_dw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dev_raw'
+    union all
+    select
+      'sales_dw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dev_raw'
+    union all
+    select
+      'sales_dw' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dev_raw'
+  
+[0m11:31:46.836318 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.002 seconds
+[0m11:31:46.834306 [debug] [ThreadPool]: Using postgres connection "list_sales_dw_dev_raw"
+[0m11:31:46.837560 [debug] [ThreadPool]: On list_sales_dw_dev: ROLLBACK
+[0m11:31:46.836425 [debug] [ThreadPool]: Using postgres connection "list_sales_dw_dev"
+[0m11:31:46.838041 [debug] [ThreadPool]: SQL status: BEGIN in 0.006 seconds
+[0m11:31:46.837795 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.002 seconds
+[0m11:31:46.837657 [debug] [ThreadPool]: On list_sales_dw_dev_raw: BEGIN
+[0m11:31:46.839648 [debug] [ThreadPool]: On list_sales_dw_dev_raw: ROLLBACK
+[0m11:31:46.838689 [debug] [ThreadPool]: SQL status: BEGIN in 0.006 seconds
+[0m11:31:46.838439 [debug] [ThreadPool]: On list_sales_dw_dev: Close
+[0m11:31:46.838729 [debug] [ThreadPool]: On list_sales_dw_dev: BEGIN
+[0m11:31:46.838987 [debug] [ThreadPool]: Using postgres connection "list_sales_dw_dev"
+[0m11:31:46.840403 [debug] [ThreadPool]: On list_sales_dw_dev_raw: Close
+[0m11:31:46.840081 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:31:46.840414 [debug] [ThreadPool]: Using postgres connection "list_sales_dw_dev_raw"
+[0m11:31:46.841330 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:31:46.841499 [debug] [ThreadPool]: On list_sales_dw_dev: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "list_sales_dw_dev"} */
+select
+      'sales_dw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dev'
+    union all
+    select
+      'sales_dw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dev'
+    union all
+    select
+      'sales_dw' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dev'
+  
+[0m11:31:46.842426 [debug] [ThreadPool]: On list_sales_dw_dev_raw: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "list_sales_dw_dev_raw"} */
+select
+      'sales_dw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dev_raw'
+    union all
+    select
+      'sales_dw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dev_raw'
+    union all
+    select
+      'sales_dw' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dev_raw'
+  
+[0m11:31:46.845081 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.002 seconds
+[0m11:31:46.846344 [debug] [ThreadPool]: On list_sales_dw_dev_raw: ROLLBACK
+[0m11:31:46.846042 [debug] [ThreadPool]: SQL status: BEGIN in 0.006 seconds
+[0m11:31:46.846940 [debug] [ThreadPool]: Using postgres connection "list_sales_dw_dev_raw"
+[0m11:31:46.846848 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:46.846950 [debug] [ThreadPool]: On list_sales_dw_dev_raw: Close
+[0m11:31:46.847390 [debug] [ThreadPool]: On list_sales_dw_dev_raw: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "list_sales_dw_dev_raw"} */
+select
+      'sales_dw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dev_raw'
+    union all
+    select
+      'sales_dw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dev_raw'
+    union all
+    select
+      'sales_dw' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dev_raw'
+  
+[0m11:31:46.847197 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.004 seconds
+[0m11:31:46.847773 [debug] [MainThread]: On master: BEGIN
+[0m11:31:46.848731 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:31:46.849203 [debug] [ThreadPool]: On list_sales_dw_dev: ROLLBACK
+[0m11:31:46.849647 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.001 seconds
+[0m11:31:46.849912 [debug] [ThreadPool]: On list_sales_dw_dev: Close
+[0m11:31:46.852899 [debug] [MainThread]: SQL status: BEGIN in 0.004 seconds
+[0m11:31:46.853316 [debug] [ThreadPool]: On list_sales_dw_dev_raw: ROLLBACK
+[0m11:31:46.853783 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:46.854228 [debug] [ThreadPool]: On list_sales_dw_dev_raw: Close
+[0m11:31:46.854657 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m11:31:46.856683 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:46.857319 [debug] [MainThread]: On master: BEGIN
+[0m11:31:46.857805 [debug] [MainThread]: SQL status: SELECT 0 in 0.003 seconds
+[0m11:31:46.858160 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:31:46.859360 [debug] [MainThread]: On master: ROLLBACK
+[0m11:31:46.860101 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:46.860567 [debug] [MainThread]: On master: BEGIN
+[0m11:31:46.861210 [debug] [MainThread]: SQL status: BEGIN in 0.000 seconds
+[0m11:31:46.861700 [debug] [MainThread]: On master: COMMIT
+[0m11:31:46.862608 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:46.864712 [debug] [MainThread]: On master: COMMIT
+[0m11:31:46.866272 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m11:31:46.868125 [debug] [MainThread]: On master: Close
+[0m11:31:46.868647 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:31:46.869158 [info ] [MainThread]: 
+[0m11:31:46.870482 [debug] [ThreadPool]: SQL status: SELECT 10 in 5.007 seconds
+[0m11:31:46.874549 [debug] [Thread-1 (]: Began running node model.dbtcomp.src_transactions
+[0m11:31:46.874681 [debug] [ThreadPool]: On list_sales_dw: Close
+[0m11:31:46.875396 [info ] [Thread-1 (]: 1 of 1 START sql view model dev.src_transactions ............................... [RUN]
+[0m11:31:46.876263 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_sales_dw_dev_raw, now model.dbtcomp.src_transactions)
+[0m11:31:46.876931 [debug] [Thread-1 (]: Began compiling node model.dbtcomp.src_transactions
+[0m11:31:46.878053 [debug] [ThreadPool]: SQL status: SELECT 10 in 5.018 seconds
+[0m11:31:46.880101 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_sales_dw, now list_sales_dw_dev)
+[0m11:31:46.883941 [debug] [ThreadPool]: On list_sales_dw: Close
+[0m11:31:46.884274 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbtcomp.src_transactions"
+[0m11:31:46.886762 [debug] [Thread-1 (]: Began executing node model.dbtcomp.src_transactions
+[0m11:31:46.889424 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_sales_dw, now list_sales_dw_dev_raw)
+[0m11:31:46.880544 [debug] [ThreadPool]: Acquiring new postgres connection 'list_sales_dw_dev_raw'
+[0m11:31:46.889538 [debug] [ThreadPool]: Using postgres connection "list_sales_dw_dev"
+[0m11:31:46.889877 [debug] [ThreadPool]: Acquiring new postgres connection 'list_sales_dw_dev'
+[0m11:31:46.895428 [debug] [ThreadPool]: Using postgres connection "list_sales_dw_dev_raw"
+[0m11:31:46.896713 [debug] [ThreadPool]: On list_sales_dw_dev: BEGIN
+[0m11:31:46.897311 [debug] [ThreadPool]: On list_sales_dw_dev_raw: BEGIN
+[0m11:31:46.896415 [debug] [ThreadPool]: Using postgres connection "list_sales_dw_dev_raw"
+[0m11:31:46.897971 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:31:46.898502 [debug] [ThreadPool]: Using postgres connection "list_sales_dw_dev"
+[0m11:31:46.898781 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:31:46.899708 [debug] [ThreadPool]: On list_sales_dw_dev_raw: BEGIN
+[0m11:31:46.900282 [debug] [ThreadPool]: On list_sales_dw_dev: BEGIN
+[0m11:31:46.900811 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:31:46.901480 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:31:46.903837 [debug] [ThreadPool]: SQL status: BEGIN in 0.006 seconds
+[0m11:31:46.905079 [debug] [ThreadPool]: Using postgres connection "list_sales_dw_dev"
+[0m11:31:46.905600 [debug] [ThreadPool]: On list_sales_dw_dev: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "list_sales_dw_dev"} */
+select
+      'sales_dw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dev'
+    union all
+    select
+      'sales_dw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dev'
+    union all
+    select
+      'sales_dw' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dev'
+  
+[0m11:31:46.907655 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.001 seconds
+[0m11:31:46.909454 [debug] [ThreadPool]: On list_sales_dw_dev: ROLLBACK
+[0m11:31:46.910108 [debug] [ThreadPool]: On list_sales_dw_dev: Close
+[0m11:31:46.913013 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbtcomp.src_transactions"
+[0m11:31:46.914613 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.src_transactions"
+[0m11:31:46.914976 [debug] [Thread-1 (]: On model.dbtcomp.src_transactions: BEGIN
+[0m11:31:46.915275 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:31:46.919208 [debug] [Thread-1 (]: SQL status: BEGIN in 0.004 seconds
+[0m11:31:46.923848 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.src_transactions"
+[0m11:31:46.924296 [debug] [Thread-1 (]: On model.dbtcomp.src_transactions: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "node_id": "model.dbtcomp.src_transactions"} */
+
+  create view "sales_dw"."dev"."src_transactions__dbt_tmp"
+    
+    
+  as (
+    WITH raw_transactions AS (
+
+    SELECT * FROM "sales_dw"."import"."transactions"
+)
+
+SELECT customer_id, product_id, amount, qty, channel_id, bought_date, transaction_id, loaded_timestamp
+
+FROM raw_transactions
+  );
+[0m11:31:46.925741 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.001 seconds
+[0m11:31:46.929974 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.src_transactions"
+[0m11:31:46.930532 [debug] [Thread-1 (]: On model.dbtcomp.src_transactions: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "node_id": "model.dbtcomp.src_transactions"} */
+alter table "sales_dw"."dev"."src_transactions__dbt_tmp" rename to "src_transactions"
+[0m11:31:46.931186 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m11:31:46.940014 [debug] [Thread-1 (]: On model.dbtcomp.src_transactions: COMMIT
+[0m11:31:46.940546 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.src_transactions"
+[0m11:31:46.940482 [debug] [ThreadPool]: SQL status: SELECT 10 in 5.006 seconds
+[0m11:31:46.940927 [debug] [Thread-1 (]: On model.dbtcomp.src_transactions: COMMIT
+[0m11:31:46.942109 [debug] [ThreadPool]: On list_sales_dw: Close
+[0m11:31:46.943485 [debug] [Thread-1 (]: SQL status: COMMIT in 0.001 seconds
+[0m11:31:46.946615 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_sales_dw, now list_sales_dw_dev)
+[0m11:31:46.947984 [debug] [Thread-1 (]: Applying DROP to: "sales_dw"."dev"."src_transactions__dbt_backup"
+[0m11:31:46.947072 [debug] [ThreadPool]: Acquiring new postgres connection 'list_sales_dw_dev_raw'
+[0m11:31:46.952439 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.src_transactions"
+[0m11:31:46.952834 [debug] [Thread-1 (]: On model.dbtcomp.src_transactions: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "node_id": "model.dbtcomp.src_transactions"} */
+drop view if exists "sales_dw"."dev"."src_transactions__dbt_backup" cascade
+[0m11:31:46.953323 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.000 seconds
+[0m11:31:46.952222 [debug] [ThreadPool]: Using postgres connection "list_sales_dw_dev"
+[0m11:31:46.954931 [debug] [Thread-1 (]: On model.dbtcomp.src_transactions: Close
+[0m11:31:46.954153 [debug] [ThreadPool]: Using postgres connection "list_sales_dw_dev_raw"
+[0m11:31:46.956535 [info ] [Thread-1 (]: 1 of 1 OK created sql view model dev.src_transactions .......................... [[32mCREATE VIEW[0m in 0.08s]
+[0m11:31:46.957252 [debug] [Thread-1 (]: Finished running node model.dbtcomp.src_transactions
+[0m11:31:46.955304 [debug] [ThreadPool]: On list_sales_dw_dev: BEGIN
+[0m11:31:46.956992 [debug] [ThreadPool]: On list_sales_dw_dev_raw: BEGIN
+[0m11:31:46.957765 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:31:46.958462 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:46.958337 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:31:46.959208 [debug] [MainThread]: On master: BEGIN
+[0m11:31:46.959973 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:31:46.962257 [debug] [ThreadPool]: SQL status: SELECT 10 in 5.005 seconds
+[0m11:31:46.964731 [debug] [ThreadPool]: SQL status: BEGIN in 0.006 seconds
+[0m11:31:46.963665 [debug] [ThreadPool]: On list_sales_dw: Close
+[0m11:31:46.966399 [debug] [ThreadPool]: Using postgres connection "list_sales_dw_dev_raw"
+[0m11:31:46.967295 [debug] [ThreadPool]: On list_sales_dw_dev_raw: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "list_sales_dw_dev_raw"} */
+select
+      'sales_dw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dev_raw'
+    union all
+    select
+      'sales_dw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dev_raw'
+    union all
+    select
+      'sales_dw' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dev_raw'
+  
+[0m11:31:46.969441 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.002 seconds
+[0m11:31:46.970647 [debug] [ThreadPool]: On list_sales_dw_dev_raw: ROLLBACK
+[0m11:31:46.970765 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_sales_dw, now list_sales_dw_dev)
+[0m11:31:46.971172 [debug] [ThreadPool]: On list_sales_dw_dev_raw: Close
+[0m11:31:46.971368 [debug] [ThreadPool]: Acquiring new postgres connection 'list_sales_dw_dev_raw'
+[0m11:31:46.976229 [debug] [ThreadPool]: Using postgres connection "list_sales_dw_dev"
+[0m11:31:46.978293 [debug] [ThreadPool]: Using postgres connection "list_sales_dw_dev_raw"
+[0m11:31:46.981352 [debug] [ThreadPool]: On list_sales_dw_dev: BEGIN
+[0m11:31:46.981893 [debug] [ThreadPool]: On list_sales_dw_dev_raw: BEGIN
+[0m11:31:46.982296 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:31:46.982731 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:31:46.985718 [debug] [ThreadPool]: SQL status: BEGIN in 5.009 seconds
+[0m11:31:46.986416 [debug] [ThreadPool]: Using postgres connection "create_sales_dw_dev"
+[0m11:31:46.986673 [debug] [ThreadPool]: SQL status: BEGIN in 0.004 seconds
+[0m11:31:46.986989 [debug] [ThreadPool]: On create_sales_dw_dev: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "create_sales_dw_dev"} */
+create schema if not exists "dev"
+[0m11:31:46.987163 [debug] [ThreadPool]: Using postgres connection "list_sales_dw_dev_raw"
+[0m11:31:46.987551 [debug] [ThreadPool]: On list_sales_dw_dev_raw: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "list_sales_dw_dev_raw"} */
+select
+      'sales_dw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dev_raw'
+    union all
+    select
+      'sales_dw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dev_raw'
+    union all
+    select
+      'sales_dw' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dev_raw'
+  
+[0m11:31:46.987600 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.000 seconds
+[0m11:31:46.988618 [debug] [ThreadPool]: On create_sales_dw_dev: COMMIT
+[0m11:31:46.989001 [debug] [ThreadPool]: Using postgres connection "create_sales_dw_dev"
+[0m11:31:46.989334 [debug] [ThreadPool]: On create_sales_dw_dev: COMMIT
+[0m11:31:46.989504 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.002 seconds
+[0m11:31:46.989833 [debug] [ThreadPool]: SQL status: COMMIT in 0.000 seconds
+[0m11:31:46.990211 [debug] [ThreadPool]: On create_sales_dw_dev: Close
+[0m11:31:46.990467 [debug] [ThreadPool]: On list_sales_dw_dev_raw: ROLLBACK
+[0m11:31:46.990993 [debug] [ThreadPool]: On list_sales_dw_dev_raw: Close
+[0m11:31:46.995330 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_sales_dw_dev, now list_sales_dw_dev_raw)
+[0m11:31:46.995942 [debug] [ThreadPool]: Acquiring new postgres connection 'list_sales_dw_dev'
+[0m11:31:47.000488 [debug] [ThreadPool]: Using postgres connection "list_sales_dw_dev_raw"
+[0m11:31:47.002306 [debug] [ThreadPool]: Using postgres connection "list_sales_dw_dev"
+[0m11:31:47.002795 [debug] [ThreadPool]: On list_sales_dw_dev_raw: BEGIN
+[0m11:31:47.003160 [debug] [ThreadPool]: On list_sales_dw_dev: BEGIN
+[0m11:31:47.003713 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:31:47.004276 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:31:51.847562 [debug] [ThreadPool]: SQL status: BEGIN in 5.006 seconds
+[0m11:31:51.848385 [debug] [ThreadPool]: Using postgres connection "list_sales_dw_dev"
+[0m11:31:51.848885 [debug] [ThreadPool]: On list_sales_dw_dev: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "list_sales_dw_dev"} */
+select
+      'sales_dw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dev'
+    union all
+    select
+      'sales_dw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dev'
+    union all
+    select
+      'sales_dw' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dev'
+  
+[0m11:31:51.850988 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.002 seconds
+[0m11:31:51.852200 [debug] [ThreadPool]: On list_sales_dw_dev: ROLLBACK
+[0m11:31:51.852926 [debug] [ThreadPool]: On list_sales_dw_dev: Close
+[0m11:31:51.857208 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:51.857731 [debug] [MainThread]: On master: BEGIN
+[0m11:31:51.858072 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:31:51.862295 [debug] [MainThread]: SQL status: BEGIN in 0.004 seconds
+[0m11:31:51.862969 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:51.863332 [debug] [MainThread]: SQL status: BEGIN in 5.005 seconds
+[0m11:31:51.863803 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m11:31:51.864094 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:51.864638 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m11:31:51.867018 [debug] [MainThread]: SQL status: SELECT 1 in 0.003 seconds
+[0m11:31:51.867598 [debug] [MainThread]: SQL status: SELECT 1 in 0.002 seconds
+[0m11:31:51.868318 [debug] [MainThread]: On master: ROLLBACK
+[0m11:31:51.869070 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:51.868981 [debug] [MainThread]: On master: ROLLBACK
+[0m11:31:51.869503 [debug] [MainThread]: On master: BEGIN
+[0m11:31:51.869863 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:51.870256 [debug] [MainThread]: SQL status: BEGIN in 0.000 seconds
+[0m11:31:51.870384 [debug] [MainThread]: On master: BEGIN
+[0m11:31:51.870819 [debug] [MainThread]: On master: COMMIT
+[0m11:31:51.871147 [debug] [MainThread]: SQL status: BEGIN in 0.000 seconds
+[0m11:31:51.871472 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:51.871708 [debug] [MainThread]: On master: COMMIT
+[0m11:31:51.871960 [debug] [MainThread]: On master: COMMIT
+[0m11:31:51.872070 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:51.872449 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m11:31:51.872451 [debug] [MainThread]: On master: COMMIT
+[0m11:31:51.872904 [debug] [MainThread]: On master: Close
+[0m11:31:51.873208 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m11:31:51.873716 [debug] [MainThread]: On master: Close
+[0m11:31:51.873566 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:31:51.874341 [info ] [MainThread]: 
+[0m11:31:51.874300 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:31:51.875059 [info ] [MainThread]: 
+[0m11:31:51.879763 [debug] [Thread-1 (]: Began running node model.dbtcomp.src_resellers
+[0m11:31:51.880629 [info ] [Thread-1 (]: 1 of 1 START sql view model dev.src_resellers .................................. [RUN]
+[0m11:31:51.880876 [debug] [Thread-1 (]: Began running node model.dbtcomp.src_channels
+[0m11:31:51.881303 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_sales_dw_dev_raw, now model.dbtcomp.src_resellers)
+[0m11:31:51.881510 [info ] [Thread-1 (]: 1 of 1 START sql view model dev.src_channels ................................... [RUN]
+[0m11:31:51.881810 [debug] [Thread-1 (]: Began compiling node model.dbtcomp.src_resellers
+[0m11:31:51.882133 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_sales_dw_dev, now model.dbtcomp.src_channels)
+[0m11:31:51.882710 [debug] [Thread-1 (]: Began compiling node model.dbtcomp.src_channels
+[0m11:31:51.888437 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbtcomp.src_resellers"
+[0m11:31:51.889397 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbtcomp.src_channels"
+[0m11:31:51.890228 [debug] [Thread-1 (]: Began executing node model.dbtcomp.src_resellers
+[0m11:31:51.890961 [debug] [Thread-1 (]: Began executing node model.dbtcomp.src_channels
+[0m11:31:51.905641 [debug] [ThreadPool]: SQL status: BEGIN in 5.007 seconds
+[0m11:31:51.905790 [debug] [ThreadPool]: SQL status: BEGIN in 5.005 seconds
+[0m11:31:51.906745 [debug] [ThreadPool]: Using postgres connection "list_sales_dw_dev_raw"
+[0m11:31:51.906553 [debug] [ThreadPool]: SQL status: BEGIN in 5.005 seconds
+[0m11:31:51.907420 [debug] [ThreadPool]: Using postgres connection "list_sales_dw_dev_raw"
+[0m11:31:51.907832 [debug] [ThreadPool]: On list_sales_dw_dev_raw: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "list_sales_dw_dev_raw"} */
+select
+      'sales_dw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dev_raw'
+    union all
+    select
+      'sales_dw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dev_raw'
+    union all
+    select
+      'sales_dw' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dev_raw'
+  
+[0m11:31:51.908149 [debug] [ThreadPool]: Using postgres connection "list_sales_dw_dev"
+[0m11:31:51.908679 [debug] [ThreadPool]: On list_sales_dw_dev_raw: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "list_sales_dw_dev_raw"} */
+select
+      'sales_dw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dev_raw'
+    union all
+    select
+      'sales_dw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dev_raw'
+    union all
+    select
+      'sales_dw' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dev_raw'
+  
+[0m11:31:51.910060 [debug] [ThreadPool]: On list_sales_dw_dev: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "list_sales_dw_dev"} */
+select
+      'sales_dw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dev'
+    union all
+    select
+      'sales_dw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dev'
+    union all
+    select
+      'sales_dw' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dev'
+  
+[0m11:31:51.910734 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.002 seconds
+[0m11:31:51.912833 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbtcomp.src_resellers"
+[0m11:31:51.912540 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbtcomp.src_channels"
+[0m11:31:51.912168 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.001 seconds
+[0m11:31:51.913475 [debug] [ThreadPool]: On list_sales_dw_dev_raw: ROLLBACK
+[0m11:31:51.915127 [debug] [ThreadPool]: On list_sales_dw_dev_raw: Close
+[0m11:31:51.912503 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.001 seconds
+[0m11:31:51.915727 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.src_channels"
+[0m11:31:51.915291 [debug] [ThreadPool]: On list_sales_dw_dev_raw: ROLLBACK
+[0m11:31:51.916484 [debug] [Thread-1 (]: On model.dbtcomp.src_channels: BEGIN
+[0m11:31:51.916874 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.src_resellers"
+[0m11:31:51.916635 [debug] [ThreadPool]: On list_sales_dw_dev: ROLLBACK
+[0m11:31:51.917764 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:31:51.918081 [debug] [Thread-1 (]: On model.dbtcomp.src_resellers: BEGIN
+[0m11:31:51.917412 [debug] [ThreadPool]: On list_sales_dw_dev_raw: Close
+[0m11:31:51.918719 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:31:51.918420 [debug] [ThreadPool]: On list_sales_dw_dev: Close
+[0m11:31:51.919956 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:51.921069 [debug] [MainThread]: On master: BEGIN
+[0m11:31:51.921904 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:31:51.926402 [debug] [MainThread]: SQL status: BEGIN in 0.004 seconds
+[0m11:31:51.925257 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:51.923209 [debug] [Thread-1 (]: SQL status: BEGIN in 0.005 seconds
+[0m11:31:51.927043 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:51.927192 [debug] [MainThread]: On master: BEGIN
+[0m11:31:51.927370 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.src_channels"
+[0m11:31:51.927635 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:31:51.927643 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m11:31:51.927866 [debug] [Thread-1 (]: On model.dbtcomp.src_channels: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "node_id": "model.dbtcomp.src_channels"} */
+
+  create view "sales_dw"."dev"."src_channels__dbt_tmp"
+    
+    
+  as (
+    WITH raw_channels AS (
+
+    SELECT * FROM "sales_dw"."import"."channels"
+)
+
+select channel_id, channel_name , loaded_timestamp
+
+from raw_channels
+  );
+[0m11:31:51.930665 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.001 seconds
+[0m11:31:51.931347 [debug] [MainThread]: SQL status: SELECT 1 in 0.003 seconds
+[0m11:31:51.932969 [debug] [MainThread]: On master: ROLLBACK
+[0m11:31:51.933042 [debug] [MainThread]: SQL status: BEGIN in 0.005 seconds
+[0m11:31:51.934455 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:51.934444 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:51.935504 [debug] [MainThread]: On master: BEGIN
+[0m11:31:51.935406 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m11:31:51.936443 [debug] [MainThread]: SQL status: BEGIN in 0.000 seconds
+[0m11:31:51.936733 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.src_channels"
+[0m11:31:51.937328 [debug] [MainThread]: On master: COMMIT
+[0m11:31:51.937520 [debug] [Thread-1 (]: On model.dbtcomp.src_channels: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "node_id": "model.dbtcomp.src_channels"} */
+alter table "sales_dw"."dev"."src_channels__dbt_tmp" rename to "src_channels"
+[0m11:31:51.937924 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:51.938358 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m11:31:51.938439 [debug] [MainThread]: On master: COMMIT
+[0m11:31:51.939129 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m11:31:51.939572 [debug] [MainThread]: On master: Close
+[0m11:31:51.939677 [debug] [MainThread]: SQL status: SELECT 1 in 0.003 seconds
+[0m11:31:51.940307 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:31:51.940994 [info ] [MainThread]: 
+[0m11:31:51.941100 [debug] [MainThread]: On master: ROLLBACK
+[0m11:31:51.942197 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:51.942944 [debug] [MainThread]: On master: BEGIN
+[0m11:31:51.943847 [debug] [MainThread]: SQL status: BEGIN in 0.000 seconds
+[0m11:31:51.944825 [debug] [MainThread]: On master: COMMIT
+[0m11:31:51.945308 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:51.945747 [debug] [MainThread]: On master: COMMIT
+[0m11:31:51.946458 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m11:31:51.946907 [debug] [MainThread]: On master: Close
+[0m11:31:51.947092 [debug] [Thread-1 (]: Began running node model.dbtcomp.src_customers
+[0m11:31:51.947608 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:31:51.947837 [info ] [Thread-1 (]: 1 of 1 START sql view model dev.src_customers .................................. [RUN]
+[0m11:31:51.948273 [info ] [MainThread]: 
+[0m11:31:51.948616 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_sales_dw_dev, now model.dbtcomp.src_customers)
+[0m11:31:51.948931 [debug] [Thread-1 (]: On model.dbtcomp.src_channels: COMMIT
+[0m11:31:51.949240 [debug] [Thread-1 (]: Began compiling node model.dbtcomp.src_customers
+[0m11:31:51.949470 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.src_channels"
+[0m11:31:51.949921 [debug] [Thread-1 (]: On model.dbtcomp.src_channels: COMMIT
+[0m11:31:51.950804 [debug] [Thread-1 (]: SQL status: COMMIT in 0.000 seconds
+[0m11:31:51.953719 [debug] [Thread-1 (]: Began running node model.dbtcomp.src_resellerscsv
+[0m11:31:51.954363 [info ] [Thread-1 (]: 1 of 1 START sql view model dev.src_resellerscsv ............................... [RUN]
+[0m11:31:51.955030 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_sales_dw_dev, now model.dbtcomp.src_resellerscsv)
+[0m11:31:51.955162 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbtcomp.src_customers"
+[0m11:31:51.955527 [debug] [Thread-1 (]: Applying DROP to: "sales_dw"."dev"."src_channels__dbt_backup"
+[0m11:31:51.955485 [debug] [Thread-1 (]: Began compiling node model.dbtcomp.src_resellerscsv
+[0m11:31:51.956518 [debug] [Thread-1 (]: Began executing node model.dbtcomp.src_customers
+[0m11:31:51.958955 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.src_channels"
+[0m11:31:51.959779 [debug] [Thread-1 (]: On model.dbtcomp.src_channels: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "node_id": "model.dbtcomp.src_channels"} */
+drop view if exists "sales_dw"."dev"."src_channels__dbt_backup" cascade
+[0m11:31:51.960845 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.000 seconds
+[0m11:31:51.961547 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbtcomp.src_resellerscsv"
+[0m11:31:51.962963 [debug] [Thread-1 (]: Began executing node model.dbtcomp.src_resellerscsv
+[0m11:31:51.963044 [debug] [Thread-1 (]: On model.dbtcomp.src_channels: Close
+[0m11:31:51.964682 [info ] [Thread-1 (]: 1 of 1 OK created sql view model dev.src_channels .............................. [[32mCREATE VIEW[0m in 0.08s]
+[0m11:31:51.963759 [debug] [ThreadPool]: SQL status: BEGIN in 5.006 seconds
+[0m11:31:51.965787 [debug] [Thread-1 (]: Finished running node model.dbtcomp.src_channels
+[0m11:31:51.965781 [debug] [ThreadPool]: Using postgres connection "list_sales_dw_dev"
+[0m11:31:51.968337 [debug] [ThreadPool]: On list_sales_dw_dev: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "list_sales_dw_dev"} */
+select
+      'sales_dw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dev'
+    union all
+    select
+      'sales_dw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dev'
+    union all
+    select
+      'sales_dw' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dev'
+  
+[0m11:31:51.968866 [debug] [MainThread]: SQL status: BEGIN in 5.009 seconds
+[0m11:31:51.970093 [debug] [MainThread]: On master: COMMIT
+[0m11:31:51.970066 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:51.970843 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:51.970762 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.002 seconds
+[0m11:31:51.971275 [debug] [MainThread]: On master: BEGIN
+[0m11:31:51.971381 [debug] [MainThread]: On master: COMMIT
+[0m11:31:51.972373 [debug] [ThreadPool]: On list_sales_dw_dev: ROLLBACK
+[0m11:31:51.972801 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:31:51.973130 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m11:31:51.973913 [debug] [MainThread]: On master: Close
+[0m11:31:51.973570 [debug] [ThreadPool]: On list_sales_dw_dev: Close
+[0m11:31:51.974765 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:31:51.976969 [debug] [MainThread]: Connection 'list_sales_dw_dev' was properly closed.
+[0m11:31:51.977781 [debug] [MainThread]: Connection 'model.dbtcomp.src_transactions' was properly closed.
+[0m11:31:51.978222 [debug] [MainThread]: SQL status: BEGIN in 0.005 seconds
+[0m11:31:51.978437 [info ] [MainThread]: 
+[0m11:31:51.979325 [debug] [MainThread]: On master: COMMIT
+[0m11:31:51.979748 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 10.24 seconds (10.24s).
+[0m11:31:51.980009 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:51.981129 [debug] [MainThread]: Command end result
+[0m11:31:51.980400 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:51.981534 [debug] [MainThread]: On master: BEGIN
+[0m11:31:51.981613 [info ] [MainThread]: 
+[0m11:31:51.982330 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:31:51.982317 [debug] [MainThread]: On master: COMMIT
+[0m11:31:51.982806 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:31:51.982798 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbtcomp.src_customers"
+[0m11:31:51.983663 [info ] [MainThread]: 
+[0m11:31:51.983613 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m11:31:51.984493 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m11:31:51.984501 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.src_customers"
+[0m11:31:51.984993 [debug] [MainThread]: On master: Close
+[0m11:31:51.985793 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 11.928732, "process_user_time": 2.267281, "process_kernel_time": 0.101595, "process_mem_max_rss": "115412", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m11:31:51.986235 [debug] [Thread-1 (]: On model.dbtcomp.src_customers: BEGIN
+[0m11:31:51.986873 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbtcomp.src_resellerscsv"
+[0m11:31:51.986431 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:31:51.987022 [debug] [MainThread]: Command `dbt run` succeeded at 11:31:51.986935 after 11.93 seconds
+[0m11:31:51.987369 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:31:51.988424 [debug] [MainThread]: Flushing usage events
+[0m11:31:51.987821 [debug] [MainThread]: Connection 'model.dbtcomp.src_channels' was properly closed.
+[0m11:31:51.989240 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.src_resellerscsv"
+[0m11:31:51.991934 [debug] [ThreadPool]: SQL status: BEGIN in 5.010 seconds
+[0m11:31:51.992799 [debug] [MainThread]: Connection 'list_sales_dw_dev_raw' was properly closed.
+[0m11:31:51.993390 [debug] [Thread-1 (]: On model.dbtcomp.src_resellerscsv: BEGIN
+[0m11:31:51.993808 [debug] [ThreadPool]: Using postgres connection "list_sales_dw_dev"
+[0m11:31:51.994663 [info ] [MainThread]: 
+[0m11:31:51.995706 [debug] [ThreadPool]: On list_sales_dw_dev: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "list_sales_dw_dev"} */
+select
+      'sales_dw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dev'
+    union all
+    select
+      'sales_dw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dev'
+    union all
+    select
+      'sales_dw' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dev'
+  
+[0m11:31:51.996080 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 10.25 seconds (10.25s).
+[0m11:31:51.995596 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:31:51.996885 [debug] [MainThread]: Command end result
+[0m11:31:51.997260 [info ] [MainThread]: 
+[0m11:31:51.997842 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:31:51.998080 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.002 seconds
+[0m11:31:51.998415 [info ] [MainThread]: 
+[0m11:31:51.998941 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m11:31:51.999692 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 11.910818, "process_user_time": 2.315676, "process_kernel_time": 0.111707, "process_mem_max_rss": "114900", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m11:31:52.000214 [debug] [MainThread]: Command `dbt run` succeeded at 11:31:52.000146 after 11.91 seconds
+[0m11:31:52.000656 [debug] [MainThread]: Flushing usage events
+[0m11:31:52.001600 [debug] [ThreadPool]: On list_sales_dw_dev: ROLLBACK
+[0m11:31:52.002285 [debug] [ThreadPool]: On list_sales_dw_dev: Close
+[0m11:31:52.005140 [debug] [Thread-1 (]: SQL status: BEGIN in 0.010 seconds
+[0m11:31:52.007797 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:52.009752 [debug] [ThreadPool]: SQL status: BEGIN in 5.006 seconds
+[0m11:31:52.010790 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.src_resellerscsv"
+[0m11:31:52.011797 [debug] [MainThread]: On master: BEGIN
+[0m11:31:52.012470 [debug] [ThreadPool]: Using postgres connection "list_sales_dw_dev_raw"
+[0m11:31:52.014085 [debug] [ThreadPool]: On list_sales_dw_dev_raw: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "list_sales_dw_dev_raw"} */
+select
+      'sales_dw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dev_raw'
+    union all
+    select
+      'sales_dw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dev_raw'
+    union all
+    select
+      'sales_dw' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dev_raw'
+  
+[0m11:31:52.014027 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:31:52.013721 [debug] [Thread-1 (]: On model.dbtcomp.src_resellerscsv: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "node_id": "model.dbtcomp.src_resellerscsv"} */
+
+  create view "sales_dw"."dev"."src_resellerscsv__dbt_tmp"
+    
+    
+  as (
+    WITH raw_resellercsv AS (
+
+    SELECT * FROM "sales_dw"."import"."resellercsv"
+)
+
+SELECT transaction_id, product_name, number_of_purchased_postcards, total_amount, sales_channel, customer_first_name, customer_last_name, customer_email, office_location, created_date, imported_file, loaded_timestamp
+FROM raw_resellercsv
+  );
+[0m11:31:52.014746 [debug] [ThreadPool]: SQL status: BEGIN in 5.010 seconds
+[0m11:31:52.017220 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.002 seconds
+[0m11:31:52.016577 [debug] [ThreadPool]: Using postgres connection "list_sales_dw_dev"
+[0m11:31:52.017690 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.003 seconds
+[0m11:31:52.018505 [debug] [ThreadPool]: On list_sales_dw_dev: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "list_sales_dw_dev"} */
+select
+      'sales_dw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dev'
+    union all
+    select
+      'sales_dw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dev'
+    union all
+    select
+      'sales_dw' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dev'
+  
+[0m11:31:52.019972 [debug] [ThreadPool]: On list_sales_dw_dev_raw: ROLLBACK
+[0m11:31:52.021296 [debug] [ThreadPool]: On list_sales_dw_dev_raw: Close
+[0m11:31:52.022899 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.002 seconds
+[0m11:31:52.022303 [debug] [MainThread]: SQL status: BEGIN in 0.008 seconds
+[0m11:31:52.024041 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:52.024816 [debug] [ThreadPool]: On list_sales_dw_dev: ROLLBACK
+[0m11:31:52.026095 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m11:31:52.027170 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.src_resellerscsv"
+[0m11:31:52.027783 [debug] [ThreadPool]: On list_sales_dw_dev: Close
+[0m11:31:52.028247 [debug] [Thread-1 (]: On model.dbtcomp.src_resellerscsv: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "node_id": "model.dbtcomp.src_resellerscsv"} */
+alter table "sales_dw"."dev"."src_resellerscsv__dbt_tmp" rename to "src_resellerscsv"
+[0m11:31:52.029469 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m11:31:52.035071 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:52.030836 [debug] [MainThread]: SQL status: SELECT 2 in 0.003 seconds
+[0m11:31:52.035668 [debug] [MainThread]: On master: BEGIN
+[0m11:31:52.036082 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:31:52.036645 [debug] [MainThread]: On master: ROLLBACK
+[0m11:31:52.037681 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:52.038317 [debug] [MainThread]: On master: BEGIN
+[0m11:31:52.039069 [debug] [MainThread]: SQL status: BEGIN in 0.000 seconds
+[0m11:31:52.039854 [debug] [MainThread]: On master: COMMIT
+[0m11:31:52.040471 [debug] [Thread-1 (]: On model.dbtcomp.src_resellerscsv: COMMIT
+[0m11:31:52.042005 [debug] [MainThread]: SQL status: BEGIN in 0.006 seconds
+[0m11:31:52.042179 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:52.042927 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.src_resellerscsv"
+[0m11:31:52.043184 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:52.043779 [debug] [MainThread]: On master: COMMIT
+[0m11:31:52.044438 [debug] [Thread-1 (]: On model.dbtcomp.src_resellerscsv: COMMIT
+[0m11:31:52.044940 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m11:31:52.045157 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m11:31:52.045933 [debug] [MainThread]: On master: Close
+[0m11:31:52.046389 [debug] [Thread-1 (]: SQL status: COMMIT in 0.001 seconds
+[0m11:31:52.046910 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:31:52.049002 [debug] [MainThread]: SQL status: SELECT 3 in 0.003 seconds
+[0m11:31:52.052422 [debug] [Thread-1 (]: Applying DROP to: "sales_dw"."dev"."src_resellerscsv__dbt_backup"
+[0m11:31:52.052873 [info ] [MainThread]: 
+[0m11:31:52.056799 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.src_resellerscsv"
+[0m11:31:52.054097 [debug] [MainThread]: On master: ROLLBACK
+[0m11:31:52.062083 [debug] [Thread-1 (]: On model.dbtcomp.src_resellerscsv: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "node_id": "model.dbtcomp.src_resellerscsv"} */
+drop view if exists "sales_dw"."dev"."src_resellerscsv__dbt_backup" cascade
+[0m11:31:52.062434 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:52.063081 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.000 seconds
+[0m11:31:52.063047 [debug] [MainThread]: On master: BEGIN
+[0m11:31:52.064050 [debug] [MainThread]: SQL status: BEGIN in 0.000 seconds
+[0m11:31:52.064982 [debug] [MainThread]: On master: COMMIT
+[0m11:31:52.065135 [debug] [Thread-1 (]: Began running node model.dbtcomp.src_products
+[0m11:31:52.065643 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:52.065903 [debug] [Thread-1 (]: On model.dbtcomp.src_resellerscsv: Close
+[0m11:31:52.066255 [info ] [Thread-1 (]: 1 of 1 START sql view model dev.src_products ................................... [RUN]
+[0m11:31:52.066665 [debug] [MainThread]: On master: COMMIT
+[0m11:31:52.068720 [info ] [Thread-1 (]: 1 of 1 OK created sql view model dev.src_resellerscsv .......................... [[32mCREATE VIEW[0m in 0.11s]
+[0m11:31:52.069949 [debug] [Thread-1 (]: Finished running node model.dbtcomp.src_resellerscsv
+[0m11:31:52.069671 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m11:31:52.069432 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_sales_dw_dev, now model.dbtcomp.src_products)
+[0m11:31:52.070732 [debug] [MainThread]: On master: Close
+[0m11:31:52.071043 [debug] [Thread-1 (]: Began compiling node model.dbtcomp.src_products
+[0m11:31:52.071226 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:52.071436 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:31:52.078228 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbtcomp.src_products"
+[0m11:31:52.078783 [debug] [MainThread]: On master: BEGIN
+[0m11:31:52.079015 [info ] [MainThread]: 
+[0m11:31:52.079660 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:31:52.084146 [debug] [Thread-1 (]: Began executing node model.dbtcomp.src_products
+[0m11:31:52.087796 [debug] [Thread-1 (]: Began running node model.dbtcomp.dim_date
+[0m11:31:52.088809 [info ] [Thread-1 (]: 1 of 1 START sql table model dev.dim_date ...................................... [RUN]
+[0m11:31:52.089903 [debug] [MainThread]: SQL status: BEGIN in 0.010 seconds
+[0m11:31:52.089910 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_sales_dw_dev, now model.dbtcomp.dim_date)
+[0m11:31:52.090812 [debug] [MainThread]: On master: COMMIT
+[0m11:31:52.091432 [debug] [Thread-1 (]: Began compiling node model.dbtcomp.dim_date
+[0m11:31:52.092035 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:52.093338 [debug] [MainThread]: On master: COMMIT
+[0m11:31:52.093954 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m11:31:52.094706 [debug] [MainThread]: On master: Close
+[0m11:31:52.095726 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:31:52.096373 [debug] [MainThread]: Connection 'list_sales_dw_dev_raw' was properly closed.
+[0m11:31:52.097260 [debug] [MainThread]: Connection 'model.dbtcomp.src_resellerscsv' was properly closed.
+[0m11:31:52.097725 [info ] [MainThread]: 
+[0m11:31:52.098398 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 10.27 seconds (10.27s).
+[0m11:31:52.099237 [debug] [MainThread]: Command end result
+[0m11:31:52.099835 [info ] [MainThread]: 
+[0m11:31:52.100640 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:31:52.101408 [info ] [MainThread]: 
+[0m11:31:52.101327 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbtcomp.dim_date"
+[0m11:31:52.102084 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m11:31:52.103319 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 11.991249, "process_user_time": 2.354407, "process_kernel_time": 0.111143, "process_mem_max_rss": "117392", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m11:31:52.104225 [debug] [MainThread]: Command `dbt run` succeeded at 11:31:52.104123 after 11.99 seconds
+[0m11:31:52.104933 [debug] [MainThread]: Flushing usage events
+[0m11:31:52.105658 [debug] [Thread-1 (]: Began executing node model.dbtcomp.dim_date
+[0m11:31:52.109523 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbtcomp.src_products"
+[0m11:31:52.114366 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.src_products"
+[0m11:31:52.117184 [debug] [Thread-1 (]: On model.dbtcomp.src_products: BEGIN
+[0m11:31:52.118203 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:31:52.123432 [debug] [Thread-1 (]: SQL status: BEGIN in 0.005 seconds
+[0m11:31:52.124689 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.src_products"
+[0m11:31:52.125622 [debug] [Thread-1 (]: On model.dbtcomp.src_products: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "node_id": "model.dbtcomp.src_products"} */
+
+  create view "sales_dw"."dev"."src_products__dbt_tmp"
+    
+    
+  as (
+    WITH raw_products AS (
+
+    SELECT * FROM "sales_dw"."import"."products"
+)
+
+SELECT product_id, name AS product_name, price AS product_price, city AS product_city, loaded_timestamp
+
+FROM raw_products
+  );
+[0m11:31:52.127565 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.001 seconds
+[0m11:31:52.133022 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.src_products"
+[0m11:31:52.133653 [debug] [Thread-1 (]: On model.dbtcomp.src_products: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "node_id": "model.dbtcomp.src_products"} */
+alter table "sales_dw"."dev"."src_products__dbt_tmp" rename to "src_products"
+[0m11:31:52.134811 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m11:31:52.134719 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbtcomp.dim_date"
+[0m11:31:52.144300 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.dim_date"
+[0m11:31:52.148794 [debug] [Thread-1 (]: On model.dbtcomp.src_products: COMMIT
+[0m11:31:52.147727 [debug] [Thread-1 (]: On model.dbtcomp.dim_date: BEGIN
+[0m11:31:52.150754 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.src_products"
+[0m11:31:52.153342 [debug] [Thread-1 (]: On model.dbtcomp.src_products: COMMIT
+[0m11:31:52.152860 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:31:52.154157 [debug] [Thread-1 (]: SQL status: COMMIT in 0.000 seconds
+[0m11:31:52.159555 [debug] [Thread-1 (]: SQL status: BEGIN in 0.007 seconds
+[0m11:31:52.160818 [debug] [Thread-1 (]: Applying DROP to: "sales_dw"."dev"."src_products__dbt_backup"
+[0m11:31:52.162978 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.dim_date"
+[0m11:31:52.165308 [debug] [Thread-1 (]: On model.dbtcomp.dim_date: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "node_id": "model.dbtcomp.dim_date"} */
+
+  
+    
+
+  create  table "sales_dw"."dev"."dim_date__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+SELECT TO_CHAR(datum, 'yyyymmdd')::INT AS date_key,
+       datum AS date_actual,
+       EXTRACT(EPOCH FROM datum) AS epoch,
+       TO_CHAR(datum, 'fmDDth') AS day_suffix,
+       TO_CHAR(datum, 'Day') AS day_name,
+       EXTRACT(ISODOW FROM datum) AS day_of_week,
+       EXTRACT(DAY FROM datum) AS day_of_month,
+       datum - DATE_TRUNC('quarter', datum)::DATE + 1 AS day_of_quarter,
+       EXTRACT(DOY FROM datum) AS day_of_year,
+       TO_CHAR(datum, 'W')::INT AS week_of_month,
+       EXTRACT(WEEK FROM datum) AS week_of_year,
+       EXTRACT(ISOYEAR FROM datum) || TO_CHAR(datum, '"-W"IW-') || EXTRACT(ISODOW FROM datum) AS week_of_year_iso,
+       EXTRACT(MONTH FROM datum) AS month_actual,
+       TO_CHAR(datum, 'Month') AS month_name,
+       TO_CHAR(datum, 'Mon') AS month_name_abbreviated,
+       EXTRACT(QUARTER FROM datum) AS quarter_actual,
+       CASE
+           WHEN EXTRACT(QUARTER FROM datum) = 1 THEN 'First'
+           WHEN EXTRACT(QUARTER FROM datum) = 2 THEN 'Second'
+           WHEN EXTRACT(QUARTER FROM datum) = 3 THEN 'Third'
+           WHEN EXTRACT(QUARTER FROM datum) = 4 THEN 'Fourth'
+           END AS quarter_name,
+       EXTRACT(ISOYEAR FROM datum) AS year_actual,
+       datum + (1 - EXTRACT(ISODOW FROM datum))::INT AS first_day_of_week,
+       datum + (7 - EXTRACT(ISODOW FROM datum))::INT AS last_day_of_week,
+       datum + (1 - EXTRACT(DAY FROM datum))::INT AS first_day_of_month,
+       (DATE_TRUNC('MONTH', datum) + INTERVAL '1 MONTH - 1 day')::DATE AS last_day_of_month,
+       DATE_TRUNC('quarter', datum)::DATE AS first_day_of_quarter,
+       (DATE_TRUNC('quarter', datum) + INTERVAL '3 MONTH - 1 day')::DATE AS last_day_of_quarter,
+       TO_DATE(EXTRACT(YEAR FROM datum) || '-01-01', 'YYYY-MM-DD') AS first_day_of_year,
+       TO_DATE(EXTRACT(YEAR FROM datum) || '-12-31', 'YYYY-MM-DD') AS last_day_of_year,
+       TO_CHAR(datum, 'mmyyyy') AS mmyyyy,
+       TO_CHAR(datum, 'mmddyyyy') AS mmddyyyy,
+       CASE
+           WHEN EXTRACT(ISODOW FROM datum) IN (6, 7) THEN TRUE
+           ELSE FALSE
+           END AS weekend_indr
+FROM (SELECT '1970-01-01'::DATE + SEQUENCE.DAY AS datum
+      FROM GENERATE_SERIES(0, 29219) AS SEQUENCE (DAY)
+      GROUP BY SEQUENCE.DAY) DQ
+ORDER BY 1
+  );
+  
+[0m11:31:52.167934 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.src_products"
+[0m11:31:52.168483 [debug] [Thread-1 (]: On model.dbtcomp.src_products: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "node_id": "model.dbtcomp.src_products"} */
+drop view if exists "sales_dw"."dev"."src_products__dbt_backup" cascade
+[0m11:31:52.169138 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.000 seconds
+[0m11:31:52.171082 [debug] [Thread-1 (]: On model.dbtcomp.src_products: Close
+[0m11:31:52.172510 [info ] [Thread-1 (]: 1 of 1 OK created sql view model dev.src_products .............................. [[32mCREATE VIEW[0m in 0.10s]
+[0m11:31:52.188947 [debug] [Thread-1 (]: Finished running node model.dbtcomp.src_products
+[0m11:31:52.213081 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:52.220171 [debug] [MainThread]: On master: BEGIN
+[0m11:31:52.226982 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:31:52.234980 [debug] [MainThread]: SQL status: BEGIN in 0.008 seconds
+[0m11:31:52.241457 [debug] [MainThread]: On master: COMMIT
+[0m11:31:52.251665 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:52.255961 [debug] [MainThread]: On master: COMMIT
+[0m11:31:52.256471 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m11:31:52.257822 [debug] [MainThread]: On master: Close
+[0m11:31:52.261913 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:31:52.263392 [debug] [MainThread]: Connection 'model.dbtcomp.src_products' was properly closed.
+[0m11:31:52.265017 [debug] [MainThread]: Connection 'list_sales_dw_dev_raw' was properly closed.
+[0m11:31:52.265632 [info ] [MainThread]: 
+[0m11:31:52.266287 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 10.34 seconds (10.34s).
+[0m11:31:52.267125 [debug] [MainThread]: Command end result
+[0m11:31:52.267691 [info ] [MainThread]: 
+[0m11:31:52.268786 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:31:52.269357 [info ] [MainThread]: 
+[0m11:31:52.269887 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m11:31:52.271946 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 12.092044, "process_user_time": 2.377563, "process_kernel_time": 0.125672, "process_mem_max_rss": "114896", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m11:31:52.272498 [debug] [MainThread]: Command `dbt run` succeeded at 11:31:52.272432 after 12.09 seconds
+[0m11:31:52.272847 [debug] [MainThread]: Flushing usage events
+[0m11:31:52.386314 [debug] [Thread-1 (]: SQL status: SELECT 29220 in 0.220 seconds
+[0m11:31:52.395022 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.dim_date"
+[0m11:31:52.395910 [debug] [Thread-1 (]: On model.dbtcomp.dim_date: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "node_id": "model.dbtcomp.dim_date"} */
+alter table "sales_dw"."dev"."dim_date__dbt_tmp" rename to "dim_date"
+[0m11:31:52.397949 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m11:31:52.410067 [debug] [Thread-1 (]: On model.dbtcomp.dim_date: COMMIT
+[0m11:31:52.410882 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.dim_date"
+[0m11:31:52.412795 [debug] [Thread-1 (]: On model.dbtcomp.dim_date: COMMIT
+[0m11:31:52.420315 [debug] [Thread-1 (]: SQL status: COMMIT in 0.003 seconds
+[0m11:31:52.424971 [debug] [Thread-1 (]: Applying DROP to: "sales_dw"."dev"."dim_date__dbt_backup"
+[0m11:31:52.428971 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.dim_date"
+[0m11:31:52.429531 [debug] [Thread-1 (]: On model.dbtcomp.dim_date: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "node_id": "model.dbtcomp.dim_date"} */
+drop table if exists "sales_dw"."dev"."dim_date__dbt_backup" cascade
+[0m11:31:52.430824 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.001 seconds
+[0m11:31:52.434063 [debug] [Thread-1 (]: On model.dbtcomp.dim_date: Close
+[0m11:31:52.435988 [info ] [Thread-1 (]: 1 of 1 OK created sql table model dev.dim_date ................................. [[32mSELECT 29220[0m in 0.35s]
+[0m11:31:52.439199 [debug] [Thread-1 (]: Finished running node model.dbtcomp.dim_date
+[0m11:31:52.440702 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:52.441302 [debug] [MainThread]: On master: BEGIN
+[0m11:31:52.441772 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:31:52.446151 [debug] [MainThread]: SQL status: BEGIN in 0.004 seconds
+[0m11:31:52.446659 [debug] [MainThread]: On master: COMMIT
+[0m11:31:52.447103 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:52.447486 [debug] [MainThread]: On master: COMMIT
+[0m11:31:52.448034 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m11:31:52.450656 [debug] [MainThread]: On master: Close
+[0m11:31:52.451672 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:31:52.452712 [debug] [MainThread]: Connection 'list_sales_dw_dev_raw' was properly closed.
+[0m11:31:52.455908 [debug] [MainThread]: Connection 'model.dbtcomp.dim_date' was properly closed.
+[0m11:31:52.456476 [info ] [MainThread]: 
+[0m11:31:52.456972 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 10.52 seconds (10.52s).
+[0m11:31:52.457708 [debug] [MainThread]: Command end result
+[0m11:31:52.458187 [info ] [MainThread]: 
+[0m11:31:52.458852 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:31:52.459415 [info ] [MainThread]: 
+[0m11:31:52.459943 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m11:31:52.460881 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 12.348895, "process_user_time": 2.401738, "process_kernel_time": 0.143554, "process_mem_max_rss": "117256", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m11:31:52.461440 [debug] [MainThread]: Command `dbt run` succeeded at 11:31:52.461377 after 12.35 seconds
+[0m11:31:52.461806 [debug] [MainThread]: Flushing usage events
+[0m11:31:54.061095 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 11:31:54.070851 | 5d8d4811-b6c1-4aac-b7e8-34af6472a2f5 ==============================
+[0m11:31:54.070851 [info ] [MainThread]: Running with dbt=1.8.2
+[0m11:31:54.071905 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/usr/local/airflow/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/usr/local/airflow/dbt/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt --no-write-json test --target dev --models src_resellerscsv', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m11:31:54.072999 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 11:31:54.082025 | 5a249283-0eb2-44cb-9d51-e7c9b5dfaac1 ==============================
+[0m11:31:54.082025 [info ] [MainThread]: Running with dbt=1.8.2
+[0m11:31:54.083553 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/usr/local/airflow/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/usr/local/airflow/dbt/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt --no-write-json run --target dev --models staging_channels', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:31:54.086296 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 11:31:54.095796 | 04953368-d68c-4fac-a767-5738e2be6fcb ==============================
+[0m11:31:54.095796 [info ] [MainThread]: Running with dbt=1.8.2
+[0m11:31:54.097556 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'False', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/usr/local/airflow/.dbt', 'log_path': '/usr/local/airflow/dbt/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt --no-write-json test --target dev --models src_channels', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:31:54.099566 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 11:31:54.117046 | b49823c1-2aca-449c-b2e0-24893e4d662c ==============================
+[0m11:31:54.117046 [info ] [MainThread]: Running with dbt=1.8.2
+[0m11:31:54.118226 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/usr/local/airflow/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/usr/local/airflow/dbt/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt --no-write-json test --target dev --models src_transactions', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:31:54.128262 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 11:31:54.144524 | a77e13e3-e1bf-4dc5-8b9d-c9168cbb6141 ==============================
+[0m11:31:54.144524 [info ] [MainThread]: Running with dbt=1.8.2
+[0m11:31:54.147622 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'False', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/usr/local/airflow/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': '/usr/local/airflow/dbt/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt --no-write-json test --target dev --models src_products', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m11:31:54.145871 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 11:31:54.153360 | 672de3e8-2987-4934-8f35-59652a24dccd ==============================
+[0m11:31:54.153360 [info ] [MainThread]: Running with dbt=1.8.2
+[0m11:31:54.157350 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'False', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/usr/local/airflow/.dbt', 'log_path': '/usr/local/airflow/dbt/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt --no-write-json test --target dev --models dim_date', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:31:54.160679 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 11:31:54.165202 | 529a30bc-8200-4dcb-a6fb-2d0e1dae16b9 ==============================
+[0m11:31:54.165202 [info ] [MainThread]: Running with dbt=1.8.2
+[0m11:31:54.166494 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'False', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/usr/local/airflow/.dbt', 'log_path': '/usr/local/airflow/dbt/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt --no-write-json run --target dev --models staging_product', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:31:54.226160 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m11:31:54.227444 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m11:31:54.244568 [debug] [MainThread]: checksum: 653514bb72edc871e4e17aa6d7f8b1b0c7572de7cff8697d014b18656695cc44, vars: {}, profile: , target: dev, version: 1.8.2
+[0m11:31:54.248547 [debug] [MainThread]: checksum: 653514bb72edc871e4e17aa6d7f8b1b0c7572de7cff8697d014b18656695cc44, vars: {}, profile: , target: dev, version: 1.8.2
+[0m11:31:54.260175 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m11:31:54.268706 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m11:31:54.277535 [debug] [MainThread]: checksum: 653514bb72edc871e4e17aa6d7f8b1b0c7572de7cff8697d014b18656695cc44, vars: {}, profile: , target: dev, version: 1.8.2
+[0m11:31:54.294547 [debug] [MainThread]: checksum: 653514bb72edc871e4e17aa6d7f8b1b0c7572de7cff8697d014b18656695cc44, vars: {}, profile: , target: dev, version: 1.8.2
+[0m11:31:54.300493 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m11:31:54.303553 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m11:31:54.317869 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m11:31:54.320609 [debug] [MainThread]: checksum: 653514bb72edc871e4e17aa6d7f8b1b0c7572de7cff8697d014b18656695cc44, vars: {}, profile: , target: dev, version: 1.8.2
+[0m11:31:54.321274 [debug] [MainThread]: checksum: 653514bb72edc871e4e17aa6d7f8b1b0c7572de7cff8697d014b18656695cc44, vars: {}, profile: , target: dev, version: 1.8.2
+[0m11:31:54.342898 [debug] [MainThread]: checksum: 653514bb72edc871e4e17aa6d7f8b1b0c7572de7cff8697d014b18656695cc44, vars: {}, profile: , target: dev, version: 1.8.2
+[0m11:31:54.447703 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m11:31:54.452347 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m11:31:54.504437 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m11:31:54.508209 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m11:31:54.546922 [info ] [MainThread]: Found 21 models, 1 test, 1 seed, 7 sources, 531 macros
+[0m11:31:54.548568 [info ] [MainThread]: 
+[0m11:31:54.549253 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m11:31:54.550219 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m11:31:54.550625 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m11:31:54.554694 [debug] [ThreadPool]: Acquiring new postgres connection 'list_sales_dw'
+[0m11:31:54.577004 [info ] [MainThread]: Found 21 models, 1 test, 1 seed, 7 sources, 531 macros
+[0m11:31:54.578704 [info ] [MainThread]: 
+[0m11:31:54.580095 [debug] [ThreadPool]: Using postgres connection "list_sales_dw"
+[0m11:31:54.580092 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m11:31:54.580708 [debug] [ThreadPool]: On list_sales_dw: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "list_sales_dw"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m11:31:54.581198 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:31:54.581910 [debug] [MainThread]: Command end result
+[0m11:31:54.582814 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 0.5699502, "process_user_time": 1.015738, "process_kernel_time": 0.055698, "process_mem_max_rss": "97600", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m11:31:54.583856 [debug] [MainThread]: Command `dbt test` succeeded at 11:31:54.583783 after 0.57 seconds
+[0m11:31:54.584389 [debug] [MainThread]: Flushing usage events
+[0m11:31:54.585370 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m11:31:54.585967 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m11:31:54.586097 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m11:31:54.586728 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m11:31:54.602831 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m11:31:54.604966 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m11:31:54.610874 [info ] [MainThread]: Found 21 models, 1 test, 1 seed, 7 sources, 531 macros
+[0m11:31:54.612492 [info ] [MainThread]: 
+[0m11:31:54.613153 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m11:31:54.614892 [debug] [MainThread]: Command end result
+[0m11:31:54.613908 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m11:31:54.615747 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 0.5666688, "process_user_time": 1.025636, "process_kernel_time": 0.059501, "process_mem_max_rss": "97556", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m11:31:54.616418 [debug] [MainThread]: Command `dbt test` succeeded at 11:31:54.616352 after 0.57 seconds
+[0m11:31:54.616103 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m11:31:54.616890 [debug] [MainThread]: Flushing usage events
+[0m11:31:54.646092 [info ] [MainThread]: Found 21 models, 1 test, 1 seed, 7 sources, 531 macros
+[0m11:31:54.646343 [info ] [MainThread]: Found 21 models, 1 test, 1 seed, 7 sources, 531 macros
+[0m11:31:54.648194 [info ] [MainThread]: 
+[0m11:31:54.647824 [info ] [MainThread]: 
+[0m11:31:54.649470 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m11:31:54.650144 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m11:31:54.651447 [debug] [MainThread]: Command end result
+[0m11:31:54.652410 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 0.5629478, "process_user_time": 1.04132, "process_kernel_time": 0.064892, "process_mem_max_rss": "97376", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m11:31:54.653034 [debug] [MainThread]: Command `dbt test` succeeded at 11:31:54.652969 after 0.56 seconds
+[0m11:31:54.653436 [debug] [MainThread]: Flushing usage events
+[0m11:31:54.654144 [debug] [MainThread]: Command end result
+[0m11:31:54.655552 [info ] [MainThread]: Found 21 models, 1 test, 1 seed, 7 sources, 531 macros
+[0m11:31:54.656349 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 0.60772693, "process_user_time": 1.050989, "process_kernel_time": 0.076071, "process_mem_max_rss": "97524", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m11:31:54.657148 [debug] [MainThread]: Command `dbt test` succeeded at 11:31:54.657020 after 0.61 seconds
+[0m11:31:54.657244 [info ] [MainThread]: 
+[0m11:31:54.657897 [debug] [MainThread]: Flushing usage events
+[0m11:31:54.658560 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m11:31:54.660864 [debug] [ThreadPool]: Acquiring new postgres connection 'list_sales_dw'
+[0m11:31:54.677126 [info ] [MainThread]: Found 21 models, 1 test, 1 seed, 7 sources, 531 macros
+[0m11:31:54.679259 [info ] [MainThread]: 
+[0m11:31:54.680122 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m11:31:54.683670 [debug] [MainThread]: Command end result
+[0m11:31:54.688394 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 0.6002307, "process_user_time": 1.033233, "process_kernel_time": 0.064893, "process_mem_max_rss": "97592", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m11:31:54.692016 [debug] [MainThread]: Command `dbt test` succeeded at 11:31:54.691855 after 0.60 seconds
+[0m11:31:54.692649 [debug] [MainThread]: Flushing usage events
+[0m11:31:54.700182 [debug] [ThreadPool]: Using postgres connection "list_sales_dw"
+[0m11:31:54.703847 [debug] [ThreadPool]: On list_sales_dw: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "list_sales_dw"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m11:31:54.704347 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:31:54.711120 [debug] [ThreadPool]: SQL status: SELECT 10 in 0.007 seconds
+[0m11:31:54.715720 [debug] [ThreadPool]: On list_sales_dw: Close
+[0m11:31:54.720405 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_sales_dw, now list_sales_dw_dev)
+[0m11:31:54.721467 [debug] [ThreadPool]: Acquiring new postgres connection 'list_sales_dw_dev_raw'
+[0m11:31:54.734170 [debug] [ThreadPool]: Using postgres connection "list_sales_dw_dev_raw"
+[0m11:31:54.734867 [debug] [ThreadPool]: On list_sales_dw_dev_raw: BEGIN
+[0m11:31:54.735450 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:31:54.732002 [debug] [ThreadPool]: Using postgres connection "list_sales_dw_dev"
+[0m11:31:54.736315 [debug] [ThreadPool]: On list_sales_dw_dev: BEGIN
+[0m11:31:54.738629 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:31:54.743214 [debug] [ThreadPool]: SQL status: BEGIN in 0.008 seconds
+[0m11:31:54.745596 [debug] [ThreadPool]: Using postgres connection "list_sales_dw_dev_raw"
+[0m11:31:54.747143 [debug] [ThreadPool]: SQL status: BEGIN in 0.009 seconds
+[0m11:31:54.751855 [debug] [ThreadPool]: Using postgres connection "list_sales_dw_dev"
+[0m11:31:54.748203 [debug] [ThreadPool]: On list_sales_dw_dev_raw: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "list_sales_dw_dev_raw"} */
+select
+      'sales_dw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dev_raw'
+    union all
+    select
+      'sales_dw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dev_raw'
+    union all
+    select
+      'sales_dw' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dev_raw'
+  
+[0m11:31:54.752700 [debug] [ThreadPool]: On list_sales_dw_dev: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "list_sales_dw_dev"} */
+select
+      'sales_dw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dev'
+    union all
+    select
+      'sales_dw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dev'
+    union all
+    select
+      'sales_dw' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dev'
+  
+[0m11:31:54.755351 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.002 seconds
+[0m11:31:54.756505 [debug] [ThreadPool]: On list_sales_dw_dev_raw: ROLLBACK
+[0m11:31:54.757193 [debug] [ThreadPool]: On list_sales_dw_dev_raw: Close
+[0m11:31:54.759724 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.005 seconds
+[0m11:31:54.761687 [debug] [ThreadPool]: On list_sales_dw_dev: ROLLBACK
+[0m11:31:54.762460 [debug] [ThreadPool]: On list_sales_dw_dev: Close
+[0m11:31:54.767496 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:54.771811 [debug] [MainThread]: On master: BEGIN
+[0m11:31:54.772886 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:31:54.780175 [debug] [MainThread]: SQL status: BEGIN in 0.007 seconds
+[0m11:31:54.780895 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:54.781420 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m11:31:54.786175 [debug] [MainThread]: SQL status: SELECT 4 in 0.004 seconds
+[0m11:31:54.787651 [debug] [MainThread]: On master: ROLLBACK
+[0m11:31:54.788290 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:54.788630 [debug] [MainThread]: On master: BEGIN
+[0m11:31:54.789183 [debug] [MainThread]: SQL status: BEGIN in 0.000 seconds
+[0m11:31:54.789984 [debug] [MainThread]: On master: COMMIT
+[0m11:31:54.791054 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:54.792070 [debug] [MainThread]: On master: COMMIT
+[0m11:31:54.793510 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m11:31:54.794361 [debug] [MainThread]: On master: Close
+[0m11:31:54.796059 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:31:54.796868 [info ] [MainThread]: 
+[0m11:31:54.804747 [debug] [Thread-1 (]: Began running node model.dbtcomp.staging_product
+[0m11:31:54.806187 [info ] [Thread-1 (]: 1 of 1 START sql view model dev.staging_product ................................ [RUN]
+[0m11:31:54.809503 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_sales_dw_dev, now model.dbtcomp.staging_product)
+[0m11:31:54.811711 [debug] [Thread-1 (]: Began compiling node model.dbtcomp.staging_product
+[0m11:31:54.818270 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbtcomp.staging_product"
+[0m11:31:54.819822 [debug] [Thread-1 (]: Began executing node model.dbtcomp.staging_product
+[0m11:31:54.849966 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbtcomp.staging_product"
+[0m11:31:54.851760 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.staging_product"
+[0m11:31:54.852252 [debug] [Thread-1 (]: On model.dbtcomp.staging_product: BEGIN
+[0m11:31:54.852680 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:31:56.929115 [debug] [Thread-1 (]: SQL status: BEGIN in 5.010 seconds
+[0m11:31:56.935808 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.src_resellers"
+[0m11:31:56.939379 [debug] [Thread-1 (]: On model.dbtcomp.src_resellers: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "node_id": "model.dbtcomp.src_resellers"} */
+
+  create view "sales_dw"."dev"."src_resellers__dbt_tmp"
+    
+    
+  as (
+    WITH raw_resellers AS (
+
+    SELECT * FROM "sales_dw"."import"."resellers"
+)
+
+SELECT reseller_id, reseller_name, commission_pct , loaded_timestamp
+
+FROM raw_resellers
+  );
+[0m11:31:56.949507 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.001 seconds
+[0m11:31:56.953876 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.src_resellers"
+[0m11:31:56.954429 [debug] [Thread-1 (]: On model.dbtcomp.src_resellers: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "node_id": "model.dbtcomp.src_resellers"} */
+alter table "sales_dw"."dev"."src_resellers__dbt_tmp" rename to "src_resellers"
+[0m11:31:56.955186 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m11:31:56.963185 [debug] [Thread-1 (]: On model.dbtcomp.src_resellers: COMMIT
+[0m11:31:56.963664 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.src_resellers"
+[0m11:31:56.963941 [debug] [Thread-1 (]: On model.dbtcomp.src_resellers: COMMIT
+[0m11:31:56.965215 [debug] [Thread-1 (]: SQL status: COMMIT in 0.001 seconds
+[0m11:31:56.969839 [debug] [Thread-1 (]: Applying DROP to: "sales_dw"."dev"."src_resellers__dbt_backup"
+[0m11:31:56.972791 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.src_resellers"
+[0m11:31:56.973261 [debug] [Thread-1 (]: On model.dbtcomp.src_resellers: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "node_id": "model.dbtcomp.src_resellers"} */
+drop view if exists "sales_dw"."dev"."src_resellers__dbt_backup" cascade
+[0m11:31:56.973859 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.000 seconds
+[0m11:31:56.975482 [debug] [Thread-1 (]: On model.dbtcomp.src_resellers: Close
+[0m11:31:56.977060 [info ] [Thread-1 (]: 1 of 1 OK created sql view model dev.src_resellers ............................. [[32mCREATE VIEW[0m in 5.09s]
+[0m11:31:56.977750 [debug] [Thread-1 (]: Finished running node model.dbtcomp.src_resellers
+[0m11:31:56.978811 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:56.979191 [debug] [MainThread]: On master: BEGIN
+[0m11:31:56.979484 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:31:56.992715 [debug] [MainThread]: SQL status: BEGIN in 5.010 seconds
+[0m11:31:56.993282 [debug] [Thread-1 (]: SQL status: BEGIN in 5.006 seconds
+[0m11:31:56.995624 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:56.996158 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.src_customers"
+[0m11:31:56.996680 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m11:31:56.997197 [debug] [Thread-1 (]: On model.dbtcomp.src_customers: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "node_id": "model.dbtcomp.src_customers"} */
+
+  create view "sales_dw"."dev"."src_customers__dbt_tmp"
+    
+    
+  as (
+    with raw_customers as (
+
+    SELECT * from "sales_dw"."import"."customers"
+)
+
+select customer_id, first_name , last_name , email
+
+from raw_customers
+  );
+[0m11:31:56.998692 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.001 seconds
+[0m11:31:57.000810 [debug] [MainThread]: SQL status: SELECT 5 in 0.003 seconds
+[0m11:31:57.003109 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.src_customers"
+[0m11:31:57.004152 [debug] [MainThread]: On master: ROLLBACK
+[0m11:31:57.004512 [debug] [Thread-1 (]: On model.dbtcomp.src_customers: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "node_id": "model.dbtcomp.src_customers"} */
+alter table "sales_dw"."dev"."src_customers__dbt_tmp" rename to "src_customers"
+[0m11:31:57.004947 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:57.005407 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m11:31:57.005794 [debug] [MainThread]: On master: BEGIN
+[0m11:31:57.013566 [debug] [MainThread]: SQL status: BEGIN in 0.000 seconds
+[0m11:31:57.014404 [debug] [MainThread]: On master: COMMIT
+[0m11:31:57.017755 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:57.018185 [debug] [MainThread]: On master: COMMIT
+[0m11:31:57.018665 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m11:31:57.019055 [debug] [MainThread]: On master: Close
+[0m11:31:57.019505 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:31:57.019849 [info ] [MainThread]: 
+[0m11:31:57.025064 [debug] [Thread-1 (]: On model.dbtcomp.src_customers: COMMIT
+[0m11:31:57.026032 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.src_customers"
+[0m11:31:57.026659 [debug] [Thread-1 (]: On model.dbtcomp.src_customers: COMMIT
+[0m11:31:57.026917 [debug] [Thread-1 (]: Began running node model.dbtcomp.dim_geography
+[0m11:31:57.027548 [info ] [Thread-1 (]: 1 of 1 START sql table model dev.dim_geography ................................. [RUN]
+[0m11:31:57.028394 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_sales_dw_dev, now model.dbtcomp.dim_geography)
+[0m11:31:57.027992 [debug] [Thread-1 (]: SQL status: COMMIT in 0.001 seconds
+[0m11:31:57.028858 [debug] [Thread-1 (]: Began compiling node model.dbtcomp.dim_geography
+[0m11:31:57.033203 [debug] [Thread-1 (]: Applying DROP to: "sales_dw"."dev"."src_customers__dbt_backup"
+[0m11:31:57.036483 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.src_customers"
+[0m11:31:57.037956 [debug] [Thread-1 (]: On model.dbtcomp.src_customers: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "node_id": "model.dbtcomp.src_customers"} */
+drop view if exists "sales_dw"."dev"."src_customers__dbt_backup" cascade
+[0m11:31:57.038970 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbtcomp.dim_geography"
+[0m11:31:57.039509 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.000 seconds
+[0m11:31:57.041663 [debug] [Thread-1 (]: On model.dbtcomp.src_customers: Close
+[0m11:31:57.042387 [debug] [Thread-1 (]: Began executing node model.dbtcomp.dim_geography
+[0m11:31:57.043810 [info ] [Thread-1 (]: 1 of 1 OK created sql view model dev.src_customers ............................. [[32mCREATE VIEW[0m in 5.09s]
+[0m11:31:57.046108 [debug] [Thread-1 (]: Finished running node model.dbtcomp.src_customers
+[0m11:31:57.047928 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:57.051728 [debug] [MainThread]: On master: BEGIN
+[0m11:31:57.052122 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:31:57.056223 [debug] [MainThread]: SQL status: BEGIN in 0.004 seconds
+[0m11:31:57.056829 [debug] [MainThread]: On master: COMMIT
+[0m11:31:57.057236 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:57.058785 [debug] [MainThread]: On master: COMMIT
+[0m11:31:57.059388 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m11:31:57.059951 [debug] [MainThread]: On master: Close
+[0m11:31:57.063969 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:31:57.064357 [debug] [MainThread]: Connection 'model.dbtcomp.src_customers' was properly closed.
+[0m11:31:57.064668 [debug] [MainThread]: Connection 'list_sales_dw_dev_raw' was properly closed.
+[0m11:31:57.064989 [info ] [MainThread]: 
+[0m11:31:57.065284 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 15.24 seconds (15.24s).
+[0m11:31:57.065783 [debug] [MainThread]: Command end result
+[0m11:31:57.066046 [info ] [MainThread]: 
+[0m11:31:57.066383 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:31:57.066699 [info ] [MainThread]: 
+[0m11:31:57.067076 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m11:31:57.067754 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 16.97049, "process_user_time": 2.361928, "process_kernel_time": 0.123354, "process_mem_max_rss": "114764", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m11:31:57.068237 [debug] [MainThread]: Command `dbt run` succeeded at 11:31:57.068171 after 16.97 seconds
+[0m11:31:57.070329 [debug] [MainThread]: Flushing usage events
+[0m11:31:57.082804 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbtcomp.dim_geography"
+[0m11:31:57.084790 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.dim_geography"
+[0m11:31:57.085887 [debug] [Thread-1 (]: On model.dbtcomp.dim_geography: BEGIN
+[0m11:31:57.086407 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:31:57.096232 [debug] [Thread-1 (]: SQL status: BEGIN in 0.010 seconds
+[0m11:31:57.097135 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.dim_geography"
+[0m11:31:57.097981 [debug] [Thread-1 (]: On model.dbtcomp.dim_geography: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "node_id": "model.dbtcomp.dim_geography"} */
+
+  
+    
+
+  create  table "sales_dw"."dev"."dim_geography__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+SELECT
+      id AS geography_key,
+      cityname as city_name,
+      countryname as country_name,
+      regionname as region_name
+FROM
+      "sales_dw"."dev_raw"."geography"
+  );
+  
+[0m11:31:57.102560 [debug] [Thread-1 (]: SQL status: SELECT 100 in 0.003 seconds
+[0m11:31:57.107406 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.dim_geography"
+[0m11:31:57.108336 [debug] [Thread-1 (]: On model.dbtcomp.dim_geography: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "node_id": "model.dbtcomp.dim_geography"} */
+alter table "sales_dw"."dev"."dim_geography__dbt_tmp" rename to "dim_geography"
+[0m11:31:57.119115 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m11:31:57.130518 [debug] [Thread-1 (]: On model.dbtcomp.dim_geography: COMMIT
+[0m11:31:57.131503 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.dim_geography"
+[0m11:31:57.132273 [debug] [Thread-1 (]: On model.dbtcomp.dim_geography: COMMIT
+[0m11:31:57.134139 [debug] [Thread-1 (]: SQL status: COMMIT in 0.001 seconds
+[0m11:31:57.138574 [debug] [Thread-1 (]: Applying DROP to: "sales_dw"."dev"."dim_geography__dbt_backup"
+[0m11:31:57.144495 [debug] [Thread-1 (]: Using postgres connection "model.dbtcomp.dim_geography"
+[0m11:31:57.145045 [debug] [Thread-1 (]: On model.dbtcomp.dim_geography: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbtcomp", "target_name": "dev", "node_id": "model.dbtcomp.dim_geography"} */
+drop table if exists "sales_dw"."dev"."dim_geography__dbt_backup" cascade
+[0m11:31:57.145629 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.000 seconds
+[0m11:31:57.147204 [debug] [Thread-1 (]: On model.dbtcomp.dim_geography: Close
+[0m11:31:57.148409 [info ] [Thread-1 (]: 1 of 1 OK created sql table model dev.dim_geography ............................ [[32mSELECT 100[0m in 0.12s]
+[0m11:31:57.149071 [debug] [Thread-1 (]: Finished running node model.dbtcomp.dim_geography
+[0m11:31:57.150193 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:57.151724 [debug] [MainThread]: On master: BEGIN
+[0m11:31:57.154895 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:31:57.163296 [debug] [MainThread]: SQL status: BEGIN in 0.008 seconds
+[0m11:31:57.164019 [debug] [MainThread]: On master: COMMIT
+[0m11:31:57.164412 [debug] [MainThread]: Using postgres connection "master"
+[0m11:31:57.164685 [debug] [MainThread]: On master: COMMIT
+[0m11:31:57.165262 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m11:31:57.165732 [debug] [MainThread]: On master: Close
+[0m11:31:57.166358 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:31:57.167476 [debug] [MainThread]: Connection 'model.dbtcomp.dim_geography' was properly closed.
+[0m11:31:57.169712 [debug] [MainThread]: Connection 'list_sales_dw_dev_raw' was properly closed.
+[0m11:31:57.170509 [info ] [MainThread]: 
+[0m11:31:57.171446 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 15.32 seconds (15.32s).
+[0m11:31:57.173932 [debug] [MainThread]: Command end result
+[0m11:31:57.175330 [info ] [MainThread]: 
+[0m11:31:57.176817 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:31:57.179439 [info ] [MainThread]: 
+[0m11:31:57.181716 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m11:31:57.183152 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 17.112926, "process_user_time": 2.324304, "process_kernel_time": 0.136904, "process_mem_max_rss": "113972", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m11:31:57.183726 [debug] [MainThread]: Command `dbt run` succeeded at 11:31:57.183644 after 17.11 seconds
+[0m11:31:57.184552 [debug] [MainThread]: Flushing usage events
