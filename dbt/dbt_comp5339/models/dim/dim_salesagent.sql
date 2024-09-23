@@ -5,12 +5,15 @@ unique_key = 'sales_agent_key'
 )
 }}
 
+SELECT 
+    reseller_id AS sales_agent_key,
+    reseller_id AS original_reseller_id,
+    reseller_name,
+    commission_pct
+FROM {{ ref('staging_resellers') }}
 
-SELECT
-     -- fill code here 
-FROM
-    {{ ref('staging_resellers') }}
 UNION ALL
+
 SELECT
     0 AS sales_agent_key,
     NULL AS original_reseller_id,

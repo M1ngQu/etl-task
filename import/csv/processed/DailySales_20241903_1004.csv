@@ -1,360 +1,314 @@
 Transaction ID,Product name,Product ID,Quantity,Total amount,Sales Channel,Customer First Name,Customer Last Name,Customer Email,Series City,Created Date,Imported_File
-TC5822,6x11 Product A Yangon,PA1711,2,5.4,CHmobile app,Damon,Shepherd,Damon.Shepherd@example.com,Yangon,2024-03-19,DailySales_20241903_1004.csv
-TC5823,4x6 Product A Jakarta,PA42,1,2.9,CHmobile app,Horace,Walker,Horace.Walker@example.com,Jakarta,2024-03-19,DailySales_20241903_1004.csv
-TC5824,5.5x8.5 Product C Tianjin,PA1159,6,11.4,CHmobile app,Janet,Wright,Janet.Wright@example.com,Tianjin,2024-03-19,DailySales_20241903_1004.csv
-TC5825,4.25x6 Product A Perth,PA353,4,15.2,CHweb,Luis,Davis,Luis.Davis@example.com,Perth,2024-03-19,DailySales_20241903_1004.csv
-TC5826,6x11 Product D Taipei,PA1887,4,9.6,CHmobile app,Rogelio,Mills,Rogelio.Mills@example.com,Taipei,2024-03-19,DailySales_20241903_1004.csv
-TC5827,6x9 Product A Jakarta,PA1362,3,9.6,CHweb,Mae,Campbell,Mae.Campbell@example.com,Jakarta,2024-03-19,DailySales_20241903_1004.csv
-TC5828,5x7 Product A Fukuoka,PA665,5,10.5,CHin-store,Lydia,Hollins,Lydia.Hollins@example.com,Fukuoka,2024-03-19,DailySales_20241903_1004.csv
-TC5829,4x6 Product B Kaohsiung,PA106,3,8.7,CHmobile app,Jeffrey,Bethea,Jeffrey.Bethea@example.com,Kaohsiung,2024-03-19,DailySales_20241903_1004.csv
-TC5830,6x9 Product C Kobe,PA1458,3,9.6,CHin-store,Kelly,Oconnell,Kelly.Oconnell@example.com,Kobe,2024-03-19,DailySales_20241903_1004.csv
-TC5831,6x11 Product D Brisbane,PA1866,1,1.5,CHmobile app,Philip,Cox,Philip.Cox@example.com,Brisbane,2024-03-19,DailySales_20241903_1004.csv
-TC5832,5.5x8.5 Product C Chengdu,PA1156,1,3.5,CHmobile app,Donald,Bryan,Donald.Bryan@example.com,Chengdu,2024-03-19,DailySales_20241903_1004.csv
-TC5833,5x7 Product D Colombo,PA921,5,11.0,CHin-store,Mark,Feucht,Mark.Feucht@example.com,Colombo,2024-03-19,DailySales_20241903_1004.csv
-TC5834,6x11 Product C Tianjin,PA1819,3,4.800000000000001,CHin-store,Matthew,Brooks,Matthew.Brooks@example.com,Tianjin,2024-03-19,DailySales_20241903_1004.csv
-TC5835,5.5x8.5 Product B Okayama,PA1071,4,6.4,CHweb,Stephen,Haig,Stephen.Haig@example.com,Okayama,2024-03-19,DailySales_20241903_1004.csv
-TC5836,5x7 Product D Busan,PA884,3,10.2,CHweb,Riley,Vanhamlin,Riley.Vanhamlin@example.com,Busan,2024-03-19,DailySales_20241903_1004.csv
-TC5837,5.5x8.5 Product C Ulaanbaatar,PA1188,2,3.6,CHmobile app,Gilbert,Gomez,Gilbert.Gomez@example.com,Ulaanbaatar,2024-03-19,DailySales_20241903_1004.csv
-TC5838,4x6 Product A Hobart,PA21,5,18.5,CHweb,Joseph,Reveal,Joseph.Reveal@example.com,Hobart,2024-03-19,DailySales_20241903_1004.csv
-TC5839,6x9 Product C Perth,PA1475,3,11.4,CHmobile app,Andrew,Potts,Andrew.Potts@example.com,Perth,2024-03-19,DailySales_20241903_1004.csv
-TC5840,6x11 Product E Surat,PA1970,3,12.6,CHmobile app,Douglas,Shook,Douglas.Shook@example.com,Surat,2024-03-19,DailySales_20241903_1004.csv
-TC5841,5x7 Product A Bangkok,PA701,2,6.4,CHmobile app,William,Hanson,William.Hanson@example.com,Bangkok,2024-03-19,DailySales_20241903_1004.csv
-TC5842,6x9 Product D Pune,PA1573,6,15.0,CHin-store,Joseph,Byrd,Joseph.Byrd@example.com,Pune,2024-03-19,DailySales_20241903_1004.csv
-TC5843,6x11 Product A Osaka,PA1652,6,19.8,CHmobile app,Shirley,Huckins,Shirley.Huckins@example.com,Osaka,2024-03-19,DailySales_20241903_1004.csv
-TC5844,4.25x6 Product D Hobart,PA549,5,11.5,CHweb,David,Anderson,David.Anderson@example.com,Hobart,2024-03-19,DailySales_20241903_1004.csv
-TC5845,6x9 Product E Dalian,PA1613,1,4.0,CHweb,David,Yun,David.Yun@example.com,Dalian,2024-03-19,DailySales_20241903_1004.csv
-TC5846,4x6 Product C Shenzhen,PA164,4,6.4,CHin-store,Patrick,Forney,Patrick.Forney@example.com,Shenzhen,2024-03-19,DailySales_20241903_1004.csv
-TC5847,4.25x6 Product C Saitama,PA472,1,4.2,CHin-store,Riley,Tillman,Riley.Tillman@example.com,Saitama,2024-03-19,DailySales_20241903_1004.csv
-TC5848,6x9 Product E Naha,PA1600,4,14.4,CHmobile app,Peter,Anderson,Peter.Anderson@example.com,Naha,2024-03-19,DailySales_20241903_1004.csv
-TC5849,6x11 Product C Incheon,PA1809,2,8.0,CHmobile app,Tony,Dillehay,Tony.Dillehay@example.com,Incheon,2024-03-19,DailySales_20241903_1004.csv
-TC5850,4.25x6 Product B Tianjin,PA433,5,21.0,CHmobile app,Marvin,Oswald,Marvin.Oswald@example.com,Tianjin,2024-03-19,DailySales_20241903_1004.csv
-TC5851,6x11 Product D Kawasaki,PA1861,3,5.4,CHmobile app,Donna,Curry,Donna.Curry@example.com,Kawasaki,2024-03-19,DailySales_20241903_1004.csv
-TC5852,6x11 Product A Kyoto,PA1657,5,14.5,CHweb,John,Noguera,John.Noguera@example.com,Kyoto,2024-03-19,DailySales_20241903_1004.csv
-TC5853,4x6 Product C Adelaide,PA149,3,7.800000000000001,CHmobile app,Timothy,Sanders,Timothy.Sanders@example.com,Adelaide,2024-03-19,DailySales_20241903_1004.csv
-TC5854,6x11 Product E Colombo,PA1977,2,8.4,CHweb,Brandon,Retchless,Brandon.Retchless@example.com,Colombo,2024-03-19,DailySales_20241903_1004.csv
-TC5855,4x6 Product B Sapporo,PA70,5,8.5,CHweb,Shelley,Hawk,Shelley.Hawk@example.com,Sapporo,2024-03-19,DailySales_20241903_1004.csv
-TC5856,4.25x6 Product B Kathmandu,PA458,5,13.5,CHmobile app,Randall,Baine,Randall.Baine@example.com,Kathmandu,2024-03-19,DailySales_20241903_1004.csv
-TC5857,5.5x8.5 Product D Sydney,PA1212,3,12.0,CHmobile app,Robert,Saenz,Robert.Saenz@example.com,Sydney,2024-03-19,DailySales_20241903_1004.csv
-TC5858,5.5x8.5 Product C Delhi,PA1171,5,15.5,CHin-store,Irene,Men,Irene.Men@example.com,Delhi,2024-03-19,DailySales_20241903_1004.csv
-TC5859,5.5x8.5 Product C Darwin,PA1142,6,19.8,CHmobile app,Lance,Wilda,Lance.Wilda@example.com,Darwin,2024-03-19,DailySales_20241903_1004.csv
-TC5860,6x11 Product C Karachi,PA1839,6,10.2,CHmobile app,Shirley,Clingerman,Shirley.Clingerman@example.com,Karachi,2024-03-19,DailySales_20241903_1004.csv
-TC5861,5x7 Product D Kobe,PA864,5,7.5,CHweb,Keith,Mccurdy,Keith.Mccurdy@example.com,Kobe,2024-03-19,DailySales_20241903_1004.csv
-TC5862,5x7 Product A Fukuoka,PA665,2,4.2,CHmobile app,Henry,Glenn,Henry.Glenn@example.com,Fukuoka,2024-03-19,DailySales_20241903_1004.csv
-TC5863,4.25x6 Product C Osaka,PA464,6,21.6,CHweb,Freddie,Speidel,Freddie.Speidel@example.com,Osaka,2024-03-19,DailySales_20241903_1004.csv
-TC5864,5.5x8.5 Product A Guangzhou,PA1023,5,7.5,CHmobile app,Alexander,Clark,Alexander.Clark@example.com,Guangzhou,2024-03-19,DailySales_20241903_1004.csv
-TC5865,6x9 Product D Bangalore,PA1568,5,17.0,CHmobile app,Edward,Gomez,Edward.Gomez@example.com,Bangalore,2024-03-19,DailySales_20241903_1004.csv
-TC5866,4x6 Product D Kuala Lumpur,PA241,6,25.8,CHmobile app,Kasandra,Padilla,Kasandra.Padilla@example.com,Kuala Lumpur,2024-03-19,DailySales_20241903_1004.csv
-TC5867,6x9 Product E Hyderabad,PA1635,6,20.4,CHmobile app,Jason,Laymon,Jason.Laymon@example.com,Hyderabad,2024-03-19,DailySales_20241903_1004.csv
-TC5868,5x7 Product A Colombo,PA723,2,3.4,CHweb,Adrian,Lindburg,Adrian.Lindburg@example.com,Colombo,2024-03-19,DailySales_20241903_1004.csv
-TC5869,6x9 Product D Phnom Penh,PA1582,4,16.4,CHmobile app,Kevin,Ginder,Kevin.Ginder@example.com,Phnom Penh,2024-03-19,DailySales_20241903_1004.csv
-TC5870,6x9 Product D Kobe,PA1524,5,12.5,CHweb,Wayne,Peterson,Wayne.Peterson@example.com,Kobe,2024-03-19,DailySales_20241903_1004.csv
-TC5871,4x6 Product D Ahmedabad,PA252,2,3.8,CHweb,Niesha,Zinn,Niesha.Zinn@example.com,Ahmedabad,2024-03-19,DailySales_20241903_1004.csv
-TC5872,5x7 Product C Fukuoka,PA797,1,4.3,CHmobile app,Denise,Benesh,Denise.Benesh@example.com,Fukuoka,2024-03-19,DailySales_20241903_1004.csv
-TC5873,6x9 Product D Karachi,PA1575,4,14.8,CHweb,Katherine,James,Katherine.James@example.com,Karachi,2024-03-19,DailySales_20241903_1004.csv
-TC5874,4.25x6 Product A Adelaide,PA347,1,1.7,CHmobile app,Margaret,Morrone,Margaret.Morrone@example.com,Adelaide,2024-03-19,DailySales_20241903_1004.csv
-TC5875,4.25x6 Product A Naha,PA346,1,4.1,CHweb,Abbey,Smalley,Abbey.Smalley@example.com,Naha,2024-03-19,DailySales_20241903_1004.csv
-TC5876,6x11 Product A Hong Kong,PA1688,5,17.5,CHmobile app,Vincent,Howle,Vincent.Howle@example.com,Hong Kong,2024-03-19,DailySales_20241903_1004.csv
-TC5877,5x7 Product D Jakarta,PA900,1,3.0,CHmobile app,Carmen,Fish,Carmen.Fish@example.com,Jakarta,2024-03-19,DailySales_20241903_1004.csv
-TC5878,6x11 Product B Singapore,PA1763,4,16.8,CHweb,Krista,Filley,Krista.Filley@example.com,Singapore,2024-03-19,DailySales_20241903_1004.csv
-TC5879,6x9 Product A Seoul,PA1345,2,5.2,CHin-store,Tommy,Richardson,Tommy.Richardson@example.com,Seoul,2024-03-19,DailySales_20241903_1004.csv
-TC5880,6x11 Product D Kolkata,PA1900,6,22.8,CHweb,Robert,Loya,Robert.Loya@example.com,Kolkata,2024-03-19,DailySales_20241903_1004.csv
-TC5881,4.25x6 Product A Islamabad,PA389,4,13.2,CHin-store,Sarah,Murtagh,Sarah.Murtagh@example.com,Islamabad,2024-03-19,DailySales_20241903_1004.csv
-TC5882,4x6 Product B Kolkata,PA118,3,12.6,CHin-store,Luz,Bunch,Luz.Bunch@example.com,Kolkata,2024-03-19,DailySales_20241903_1004.csv
-TC5883,6x11 Product D Dalian,PA1877,2,7.8,CHmobile app,Lucas,Westlake,Lucas.Westlake@example.com,Dalian,2024-03-19,DailySales_20241903_1004.csv
-TC5884,5.5x8.5 Product B Darwin,PA1076,4,14.8,CHmobile app,Austin,Erdman,Austin.Erdman@example.com,Darwin,2024-03-19,DailySales_20241903_1004.csv
-TC5885,6x9 Product D Islamabad,PA1577,6,19.200000000000003,CHweb,Martha,Harrison,Martha.Harrison@example.com,Islamabad,2024-03-19,DailySales_20241903_1004.csv
-TC5886,4.25x6 Product B Hiroshima,PA405,4,10.0,CHweb,Carroll,Grossman,Carroll.Grossman@example.com,Hiroshima,2024-03-19,DailySales_20241903_1004.csv
-TC5887,5.5x8.5 Product B Vientiane,PA1121,2,4.2,CHweb,Hobert,Edwards,Hobert.Edwards@example.com,Vientiane,2024-03-19,DailySales_20241903_1004.csv
-TC5888,4.25x6 Product C Singapore,PA509,3,8.399999999999999,CHweb,James,Peterson,James.Peterson@example.com,Singapore,2024-03-19,DailySales_20241903_1004.csv
-TC5889,4x6 Product E Kawasaki,PA277,6,15.6,CHmobile app,Kay,Brown,Kay.Brown@example.com,Kawasaki,2024-03-19,DailySales_20241903_1004.csv
-TC5890,4x6 Product C Jakarta,PA174,2,8.8,CHmobile app,James,Morrow,James.Morrow@example.com,Jakarta,2024-03-19,DailySales_20241903_1004.csv
-TC5891,5.5x8.5 Product B Guangzhou,PA1089,5,19.0,CHin-store,Diane,Maxie,Diane.Maxie@example.com,Guangzhou,2024-03-19,DailySales_20241903_1004.csv
-TC5892,5x7 Product C Nagoya,PA795,1,3.0,CHweb,John,Barnett,John.Barnett@example.com,Nagoya,2024-03-19,DailySales_20241903_1004.csv
-TC5893,5.5x8.5 Product E Chiba,PA1265,4,10.0,CHweb,James,Marion,James.Marion@example.com,Chiba,2024-03-19,DailySales_20241903_1004.csv
-TC5894,4x6 Product D Busan,PA224,1,3.0,CHweb,Betty,Martin,Betty.Martin@example.com,Busan,2024-03-19,DailySales_20241903_1004.csv
-TC5895,6x11 Product D Surat,PA1904,6,20.4,CHin-store,Laura,Davenport,Laura.Davenport@example.com,Surat,2024-03-19,DailySales_20241903_1004.csv
-TC5896,5x7 Product D Sagamihara,PA872,2,6.6,CHmobile app,Austin,Lynch,Austin.Lynch@example.com,Sagamihara,2024-03-19,DailySales_20241903_1004.csv
-TC5897,6x9 Product B Manila,PA1430,5,20.0,CHweb,Ida,Briggs,Ida.Briggs@example.com,Manila,2024-03-19,DailySales_20241903_1004.csv
-TC5898,4x6 Product E Chiba,PA275,6,9.6,CHmobile app,Chad,Harris,Chad.Harris@example.com,Chiba,2024-03-19,DailySales_20241903_1004.csv
-TC5899,6x9 Product E Adelaide,PA1601,1,3.0,CHmobile app,Joyce,Laughlin,Joyce.Laughlin@example.com,Adelaide,2024-03-19,DailySales_20241903_1004.csv
-TC5900,5x7 Product E Saitama,PA934,2,4.8,CHmobile app,Jason,King,Jason.King@example.com,Saitama,2024-03-19,DailySales_20241903_1004.csv
-TC5901,4.25x6 Product C Delhi,PA511,3,6.6000000000000005,CHmobile app,Donna,Denson,Donna.Denson@example.com,Delhi,2024-03-19,DailySales_20241903_1004.csv
-TC5902,6x9 Product B Tokyo,PA1387,2,4.4,CHweb,Frances,Lawary,Frances.Lawary@example.com,Tokyo,2024-03-19,DailySales_20241903_1004.csv
-TC5903,5.5x8.5 Product A Mumbai,PA1038,3,9.3,CHweb,Susan,Jansen,Susan.Jansen@example.com,Mumbai,2024-03-19,DailySales_20241903_1004.csv
-TC5904,6x9 Product A Hobart,PA1341,5,7.5,CHweb,Michael,Rasberry,Michael.Rasberry@example.com,Hobart,2024-03-19,DailySales_20241903_1004.csv
-TC5905,5.5x8.5 Product B Chongqing,PA1092,1,3.2,CHin-store,Mary,Noguera,Mary.Noguera@example.com,Chongqing,2024-03-19,DailySales_20241903_1004.csv
-TC5906,4.25x6 Product A Daegu,PA358,4,15.2,CHmobile app,Rochelle,Simpson,Rochelle.Simpson@example.com,Daegu,2024-03-19,DailySales_20241903_1004.csv
-TC5907,6x11 Product B Kobe,PA1722,5,13.5,CHweb,Rosa,Joseph,Rosa.Joseph@example.com,Kobe,2024-03-19,DailySales_20241903_1004.csv
-TC5908,5.5x8.5 Product D Surat,PA1244,3,9.3,CHmobile app,Lynn,Botelho,Lynn.Botelho@example.com,Surat,2024-03-19,DailySales_20241903_1004.csv
-TC5909,4x6 Product B Ulaanbaatar,PA132,5,8.0,CHweb,Ronald,Hasan,Ronald.Hasan@example.com,Ulaanbaatar,2024-03-19,DailySales_20241903_1004.csv
-TC5910,6x11 Product D Karachi,PA1905,2,6.2,CHmobile app,Mildred,Daniels,Mildred.Daniels@example.com,Karachi,2024-03-19,DailySales_20241903_1004.csv
-TC5911,4.25x6 Product D Sendai,PA536,3,12.9,CHmobile app,Carolyn,Blake,Carolyn.Blake@example.com,Sendai,2024-03-19,DailySales_20241903_1004.csv
-TC5912,4.25x6 Product B Singapore,PA443,3,12.9,CHmobile app,Wade,Delaney,Wade.Delaney@example.com,Singapore,2024-03-19,DailySales_20241903_1004.csv
-TC5913,5x7 Product D Dhaka,PA918,3,11.1,CHmobile app,Beverly,Laughlin,Beverly.Laughlin@example.com,Dhaka,2024-03-19,DailySales_20241903_1004.csv
-TC5914,4.25x6 Product C Wuhan,PA497,3,12.0,CHweb,Casandra,Andrews,Casandra.Andrews@example.com,Wuhan,2024-03-19,DailySales_20241903_1004.csv
-TC5915,5.5x8.5 Product E Yangon,PA1315,5,16.5,CHmobile app,Stacey,Johnson,Stacey.Johnson@example.com,Yangon,2024-03-19,DailySales_20241903_1004.csv
-TC5916,6x9 Product D Tianjin,PA1555,5,22.0,CHmobile app,Alex,Mark,Alex.Mark@example.com,Tianjin,2024-03-19,DailySales_20241903_1004.csv
-TC5917,4x6 Product E Naha,PA280,4,16.4,CHweb,Paul,Sanchez,Paul.Sanchez@example.com,Naha,2024-03-19,DailySales_20241903_1004.csv
-TC5918,4.25x6 Product D Tokyo,PA529,4,14.4,CHmobile app,Niesha,Ader,Niesha.Ader@example.com,Tokyo,2024-03-19,DailySales_20241903_1004.csv
-TC5919,4.25x6 Product B Okayama,PA411,3,9.3,CHmobile app,Thomas,Long,Thomas.Long@example.com,Okayama,2024-03-19,DailySales_20241903_1004.csv
-TC5920,6x11 Product B Surat,PA1772,2,3.4,CHmobile app,Norman,Avalos,Norman.Avalos@example.com,Surat,2024-03-19,DailySales_20241903_1004.csv
-TC5921,6x11 Product C Kaohsiung,PA1822,4,17.2,CHmobile app,Francis,Wallen,Francis.Wallen@example.com,Kaohsiung,2024-03-19,DailySales_20241903_1004.csv
-TC5922,5x7 Product C Okayama,PA807,2,8.8,CHmobile app,Alvin,Stokes,Alvin.Stokes@example.com,Okayama,2024-03-19,DailySales_20241903_1004.csv
-TC5923,6x11 Product E Mumbai,PA1962,6,12.6,CHmobile app,Sarah,Simmons,Sarah.Simmons@example.com,Mumbai,2024-03-19,DailySales_20241903_1004.csv
-TC5924,5x7 Product C Canberra,PA811,4,16.0,CHin-store,Gregory,Wilson,Gregory.Wilson@example.com,Canberra,2024-03-19,DailySales_20241903_1004.csv
-TC5925,6x9 Product C Kuala Lumpur,PA1495,5,13.5,CHweb,Michael,Meyer,Michael.Meyer@example.com,Kuala Lumpur,2024-03-19,DailySales_20241903_1004.csv
-TC5926,6x11 Product D Vientiane,PA1913,1,3.0,CHin-store,Stephen,Garcia,Stephen.Garcia@example.com,Vientiane,2024-03-19,DailySales_20241903_1004.csv
-TC5927,6x9 Product D Osaka,PA1520,5,18.0,CHweb,Ernest,Steward,Ernest.Steward@example.com,Osaka,2024-03-19,DailySales_20241903_1004.csv
-TC5928,4x6 Product C Kyoto,PA139,6,22.8,CHweb,Louis,Men,Louis.Men@example.com,Kyoto,2024-03-19,DailySales_20241903_1004.csv
-TC5929,4x6 Product C Chennai,PA185,1,4.3,CHweb,Jose,Grimes,Jose.Grimes@example.com,Chennai,2024-03-19,DailySales_20241903_1004.csv
-TC5930,5.5x8.5 Product A Incheon,PA1017,1,1.6,CHweb,Jeffrey,Morrone,Jeffrey.Morrone@example.com,Incheon,2024-03-19,DailySales_20241903_1004.csv
-TC5931,5.5x8.5 Product A Taipei,PA1029,4,6.4,CHmobile app,Marvin,Henderson,Marvin.Henderson@example.com,Taipei,2024-03-19,DailySales_20241903_1004.csv
-TC5932,6x9 Product C Hiroshima,PA1461,1,2.5,CHin-store,Linda,Morris,Linda.Morris@example.com,Hiroshima,2024-03-19,DailySales_20241903_1004.csv
-TC5933,4x6 Product B Manila,PA110,3,9.0,CHmobile app,Casandra,Harris,Casandra.Harris@example.com,Manila,2024-03-19,DailySales_20241903_1004.csv
-TC5934,4x6 Product E Seoul,PA289,5,18.5,CHmobile app,Viola,Newsome,Viola.Newsome@example.com,Seoul,2024-03-19,DailySales_20241903_1004.csv
-TC5935,6x9 Product A Shenzhen,PA1352,4,8.0,CHin-store,Margaret,Lumley,Margaret.Lumley@example.com,Shenzhen,2024-03-19,DailySales_20241903_1004.csv
-TC5936,6x9 Product C Kolkata,PA1504,4,15.6,CHmobile app,Stacey,Grossman,Stacey.Grossman@example.com,Kolkata,2024-03-19,DailySales_20241903_1004.csv
-TC5937,4x6 Product C Naha,PA148,1,2.6,CHweb,Jason,Crilly,Jason.Crilly@example.com,Naha,2024-03-19,DailySales_20241903_1004.csv
-TC5938,4.25x6 Product B Pune,PA451,6,16.200000000000003,CHmobile app,Tammy,Baker,Tammy.Baker@example.com,Pune,2024-03-19,DailySales_20241903_1004.csv
-TC5939,5x7 Product C Chennai,PA845,5,21.0,CHweb,Brett,Guy,Brett.Guy@example.com,Chennai,2024-03-19,DailySales_20241903_1004.csv
-TC5940,4.25x6 Product E Guangzhou,PA627,6,15.6,CHweb,Brant,Dryden,Brant.Dryden@example.com,Guangzhou,2024-03-19,DailySales_20241903_1004.csv
-TC5941,5.5x8.5 Product A Dhaka,PA1050,5,17.0,CHmobile app,Louella,Jackson,Louella.Jackson@example.com,Dhaka,2024-03-19,DailySales_20241903_1004.csv
-TC5942,5.5x8.5 Product B Busan,PA1082,1,2.2,CHweb,Daniel,Knox,Daniel.Knox@example.com,Busan,2024-03-19,DailySales_20241903_1004.csv
-TC5943,4x6 Product D Incheon,PA225,2,5.4,CHweb,Lance,Potts,Lance.Potts@example.com,Incheon,2024-03-19,DailySales_20241903_1004.csv
-TC5944,5.5x8.5 Product E Sydney,PA1278,5,15.5,CHweb,James,Truocchio,James.Truocchio@example.com,Sydney,2024-03-19,DailySales_20241903_1004.csv
-TC5945,4.25x6 Product E Mumbai,PA642,1,4.0,CHin-store,Donald,Wanty,Donald.Wanty@example.com,Mumbai,2024-03-19,DailySales_20241903_1004.csv
-TC5946,4x6 Product A Shanghai,PA31,1,2.3,CHweb,Scott,Friend,Scott.Friend@example.com,Shanghai,2024-03-19,DailySales_20241903_1004.csv
-TC5947,5.5x8.5 Product D Shenzhen,PA1220,5,9.5,CHweb,Ryan,Nostrand,Ryan.Nostrand@example.com,Shenzhen,2024-03-19,DailySales_20241903_1004.csv
-TC5948,6x11 Product C Colombo,PA1845,2,4.2,CHmobile app,Randell,Hayes,Randell.Hayes@example.com,Colombo,2024-03-19,DailySales_20241903_1004.csv
-TC5949,6x9 Product C Seoul,PA1477,4,13.2,CHmobile app,Brant,Waring,Brant.Waring@example.com,Seoul,2024-03-19,DailySales_20241903_1004.csv
-TC5950,6x9 Product B Busan,PA1412,6,22.8,CHweb,Susan,Cuppernell,Susan.Cuppernell@example.com,Busan,2024-03-19,DailySales_20241903_1004.csv
-TC5951,5.5x8.5 Product B Chengdu,PA1090,1,2.9,CHmobile app,Derek,Morgan,Derek.Morgan@example.com,Chengdu,2024-03-19,DailySales_20241903_1004.csv
-TC5952,4x6 Product A Manila,PA44,2,3.6,CHmobile app,Laurel,Perry,Laurel.Perry@example.com,Manila,2024-03-19,DailySales_20241903_1004.csv
-TC5953,4x6 Product E Hobart,PA285,3,6.9,CHweb,Norma,Hoover,Norma.Hoover@example.com,Hobart,2024-03-19,DailySales_20241903_1004.csv
-TC5954,5x7 Product D Brisbane,PA876,6,17.4,CHmobile app,Patricia,Brown,Patricia.Brown@example.com,Brisbane,2024-03-19,DailySales_20241903_1004.csv
-TC5955,4.25x6 Product C Shenzhen,PA494,1,2.1,CHmobile app,Hung,Douglas,Hung.Douglas@example.com,Shenzhen,2024-03-19,DailySales_20241903_1004.csv
-TC5956,6x9 Product E Ulaanbaatar,PA1650,3,9.0,CHweb,Alice,Ruda,Alice.Ruda@example.com,Ulaanbaatar,2024-03-19,DailySales_20241903_1004.csv
-TC5957,4.25x6 Product C Islamabad,PA521,6,24.6,CHmobile app,Tommy,Cottman,Tommy.Cottman@example.com,Islamabad,2024-03-19,DailySales_20241903_1004.csv
-TC5958,4.25x6 Product B Surat,PA452,2,5.2,CHmobile app,Gladys,Walker,Gladys.Walker@example.com,Surat,2024-03-19,DailySales_20241903_1004.csv
-TC5959,6x11 Product B Busan,PA1742,5,14.5,CHmobile app,George,Barnes,George.Barnes@example.com,Busan,2024-03-19,DailySales_20241903_1004.csv
-TC5960,4x6 Product D Shenzhen,PA230,6,21.6,CHweb,Edwina,Beasley,Edwina.Beasley@example.com,Shenzhen,2024-03-19,DailySales_20241903_1004.csv
-TC5961,5.5x8.5 Product A Hanoi,PA1035,4,14.0,CHmobile app,Kenneth,Voyer,Kenneth.Voyer@example.com,Hanoi,2024-03-19,DailySales_20241903_1004.csv
-TC5962,4.25x6 Product E Ulaanbaatar,PA660,6,15.6,CHweb,Mabel,Perrodin,Mabel.Perrodin@example.com,Ulaanbaatar,2024-03-19,DailySales_20241903_1004.csv
-TC5963,4x6 Product A Saitama,PA10,5,13.0,CHin-store,Denise,Schulz,Denise.Schulz@example.com,Saitama,2024-03-19,DailySales_20241903_1004.csv
-TC5964,4.25x6 Product C Osaka,PA464,6,21.6,CHmobile app,Kathryn,Huffman,Kathryn.Huffman@example.com,Osaka,2024-03-19,DailySales_20241903_1004.csv
-TC5965,5x7 Product A Singapore,PA707,4,16.4,CHweb,Jesus,Watts,Jesus.Watts@example.com,Singapore,2024-03-19,DailySales_20241903_1004.csv
-TC5966,4.25x6 Product D Bangalore,PA578,2,3.8,CHmobile app,Thomas,Yingling,Thomas.Yingling@example.com,Bangalore,2024-03-19,DailySales_20241903_1004.csv
-TC5967,6x9 Product E Bangalore,PA1634,2,4.6,CHweb,Timothy,Olmos,Timothy.Olmos@example.com,Bangalore,2024-03-19,DailySales_20241903_1004.csv
-TC5968,5.5x8.5 Product B Phnom Penh,PA1120,6,9.0,CHweb,Micheal,Mills,Micheal.Mills@example.com,Phnom Penh,2024-03-19,DailySales_20241903_1004.csv
-TC5969,6x9 Product B Manila,PA1430,6,24.0,CHmobile app,Christopher,Campbell,Christopher.Campbell@example.com,Manila,2024-03-19,DailySales_20241903_1004.csv
-TC5970,4.25x6 Product B Naha,PA412,4,16.4,CHweb,Bobby,Oakley,Bobby.Oakley@example.com,Naha,2024-03-19,DailySales_20241903_1004.csv
-TC5971,4x6 Product C Fukuoka,PA137,2,4.2,CHin-store,Beth,Dunn,Beth.Dunn@example.com,Fukuoka,2024-03-19,DailySales_20241903_1004.csv
-TC5972,5x7 Product D Chiba,PA869,1,4.2,CHmobile app,Jason,Jimenez,Jason.Jimenez@example.com,Chiba,2024-03-19,DailySales_20241903_1004.csv
-TC5973,4.25x6 Product C Sydney,PA486,5,11.5,CHweb,Kerry,Shook,Kerry.Shook@example.com,Sydney,2024-03-19,DailySales_20241903_1004.csv
-TC5974,4.25x6 Product C Taipei,PA501,4,10.0,CHmobile app,Kay,Boldosser,Kay.Boldosser@example.com,Taipei,2024-03-19,DailySales_20241903_1004.csv
-TC5975,6x11 Product D Hyderabad,PA1899,2,7.8,CHmobile app,Charles,Murrell,Charles.Murrell@example.com,Hyderabad,2024-03-19,DailySales_20241903_1004.csv
-TC5976,5x7 Product C Sendai,PA800,1,2.6,CHweb,Jill,Cooper,Jill.Cooper@example.com,Sendai,2024-03-19,DailySales_20241903_1004.csv
-TC5977,6x11 Product C Sydney,PA1806,1,3.2,CHmobile app,Elenore,Wicker,Elenore.Wicker@example.com,Sydney,2024-03-19,DailySales_20241903_1004.csv
-TC5978,6x9 Product E Busan,PA1610,3,11.4,CHmobile app,Charles,Ochs,Charles.Ochs@example.com,Busan,2024-03-19,DailySales_20241903_1004.csv
-TC5979,6x11 Product A Chongqing,PA1686,3,9.3,CHin-store,Martina,Morgan,Martina.Morgan@example.com,Chongqing,2024-03-19,DailySales_20241903_1004.csv
-TC5980,4.25x6 Product E Beijing,PA624,6,10.2,CHweb,Marguerite,Mark,Marguerite.Mark@example.com,Beijing,2024-03-19,DailySales_20241903_1004.csv
-TC5981,6x11 Product D Shanghai,PA1879,2,4.8,CHweb,Jeff,Bunch,Jeff.Bunch@example.com,Shanghai,2024-03-19,DailySales_20241903_1004.csv
-TC5982,6x11 Product E Fukuoka,PA1919,2,3.2,CHweb,Gabriel,Serisky,Gabriel.Serisky@example.com,Fukuoka,2024-03-19,DailySales_20241903_1004.csv
-TC5983,4x6 Product D Tianjin,PA235,6,25.8,CHweb,Eldora,Barb,Eldora.Barb@example.com,Tianjin,2024-03-19,DailySales_20241903_1004.csv
-TC5984,5x7 Product A Colombo,PA723,5,8.5,CHmobile app,Ronnie,Woodward,Ronnie.Woodward@example.com,Colombo,2024-03-19,DailySales_20241903_1004.csv
-TC5985,6x11 Product E Chennai,PA1967,3,4.5,CHweb,Karen,Baird,Karen.Baird@example.com,Chennai,2024-03-19,DailySales_20241903_1004.csv
-TC5986,4x6 Product B Adelaide,PA83,6,25.8,CHin-store,George,Whitlow,George.Whitlow@example.com,Adelaide,2024-03-19,DailySales_20241903_1004.csv
-TC5987,4x6 Product C Hyderabad,PA183,5,19.0,CHin-store,Luz,Delcolle,Luz.Delcolle@example.com,Hyderabad,2024-03-19,DailySales_20241903_1004.csv
-TC5988,5x7 Product D Bangalore,PA908,5,21.0,CHmobile app,Bonnie,Westrom,Bonnie.Westrom@example.com,Bangalore,2024-03-19,DailySales_20241903_1004.csv
-TC5989,6x11 Product B Fukuoka,PA1721,3,6.9,CHweb,Luz,Moreno,Luz.Moreno@example.com,Fukuoka,2024-03-19,DailySales_20241903_1004.csv
-TC5990,5.5x8.5 Product D Dhaka,PA1248,3,6.0,CHmobile app,Theodore,Abbott,Theodore.Abbott@example.com,Dhaka,2024-03-19,DailySales_20241903_1004.csv
-TC5991,4x6 Product B Naha,PA82,3,11.4,CHweb,Francis,Taylor,Francis.Taylor@example.com,Naha,2024-03-19,DailySales_20241903_1004.csv
-TC5992,4x6 Product C Shanghai,PA163,4,7.6,CHmobile app,Linda,Gast,Linda.Gast@example.com,Shanghai,2024-03-19,DailySales_20241903_1004.csv
-TC5993,5x7 Product D Taipei,PA897,6,18.0,CHin-store,Walter,Vogan,Walter.Vogan@example.com,Taipei,2024-03-19,DailySales_20241903_1004.csv
-TC5994,6x11 Product C Fukuoka,PA1787,2,5.2,CHmobile app,Amanda,Boone,Amanda.Boone@example.com,Fukuoka,2024-03-19,DailySales_20241903_1004.csv
-TC5995,4x6 Product E Surat,PA320,4,16.8,CHin-store,James,Clement,James.Clement@example.com,Surat,2024-03-19,DailySales_20241903_1004.csv
-TC5996,5x7 Product B Ulaanbaatar,PA792,3,11.1,CHin-store,Damon,Yashinski,Damon.Yashinski@example.com,Ulaanbaatar,2024-03-19,DailySales_20241903_1004.csv
-TC5997,5x7 Product C Incheon,PA819,4,15.2,CHmobile app,Charles,Carson,Charles.Carson@example.com,Incheon,2024-03-19,DailySales_20241903_1004.csv
-TC5998,5x7 Product C Chiba,PA803,2,6.0,CHweb,Gordon,Harris,Gordon.Harris@example.com,Chiba,2024-03-19,DailySales_20241903_1004.csv
-TC5999,4.25x6 Product B Pune,PA451,3,8.100000000000001,CHmobile app,Rigoberto,Phaneuf,Rigoberto.Phaneuf@example.com,Pune,2024-03-19,DailySales_20241903_1004.csv
-TC6000,5.5x8.5 Product E Delhi,PA1303,1,2.3,CHweb,Madeline,Kohler,Madeline.Kohler@example.com,Delhi,2024-03-19,DailySales_20241903_1004.csv
-TC6001,6x9 Product B Lahore,PA1444,3,7.5,CHmobile app,Betty,Cooper,Betty.Cooper@example.com,Lahore,2024-03-19,DailySales_20241903_1004.csv
-TC6002,4.25x6 Product D Osaka,PA530,4,13.2,CHweb,Joanne,Brown,Joanne.Brown@example.com,Osaka,2024-03-19,DailySales_20241903_1004.csv
-TC6003,4.25x6 Product B Islamabad,PA455,4,8.4,CHin-store,Sidney,Schimke,Sidney.Schimke@example.com,Islamabad,2024-03-19,DailySales_20241903_1004.csv
-TC6004,5.5x8.5 Product E Manila,PA1298,1,4.1,CHmobile app,Esther,Merritt,Esther.Merritt@example.com,Manila,2024-03-19,DailySales_20241903_1004.csv
-TC6005,4.25x6 Product A Wuhan,PA365,2,5.4,CHmobile app,Christopher,Rasberry,Christopher.Rasberry@example.com,Wuhan,2024-03-19,DailySales_20241903_1004.csv
-TC6006,6x9 Product B Melbourne,PA1408,3,8.399999999999999,CHmobile app,Guy,Rogers,Guy.Rogers@example.com,Melbourne,2024-03-19,DailySales_20241903_1004.csv
-TC6007,5.5x8.5 Product E Kaohsiung,PA1294,2,6.4,CHweb,Lisa,German,Lisa.German@example.com,Kaohsiung,2024-03-19,DailySales_20241903_1004.csv
-TC6008,5x7 Product D Kobe,PA864,3,4.5,CHweb,Joshua,Douglas,Joshua.Douglas@example.com,Kobe,2024-03-19,DailySales_20241903_1004.csv
-TC6009,4.25x6 Product E Yangon,PA655,3,9.6,CHweb,Imogene,Mosley,Imogene.Mosley@example.com,Yangon,2024-03-19,DailySales_20241903_1004.csv
-TC6010,6x9 Product E Delhi,PA1633,2,7.6,CHin-store,Troy,Gast,Troy.Gast@example.com,Delhi,2024-03-19,DailySales_20241903_1004.csv
-TC6011,6x11 Product A Naha,PA1666,4,7.2,CHmobile app,Patrick,Langham,Patrick.Langham@example.com,Naha,2024-03-19,DailySales_20241903_1004.csv
-TC6012,4.25x6 Product B Phnom Penh,PA460,1,2.2,CHmobile app,Megan,Milligan,Megan.Milligan@example.com,Phnom Penh,2024-03-19,DailySales_20241903_1004.csv
-TC6013,6x11 Product A Adelaide,PA1667,1,3.4,CHmobile app,Larry,Luciano,Larry.Luciano@example.com,Adelaide,2024-03-19,DailySales_20241903_1004.csv
-TC6014,6x11 Product E Kitakyushu,PA1926,5,8.0,CHmobile app,Melissa,Baumgartner,Melissa.Baumgartner@example.com,Kitakyushu,2024-03-19,DailySales_20241903_1004.csv
-TC6015,4.25x6 Product A Perth,PA353,2,7.6,CHmobile app,Jennifer,Kincaid,Jennifer.Kincaid@example.com,Perth,2024-03-19,DailySales_20241903_1004.csv
-TC6016,6x9 Product E Ahmedabad,PA1638,4,13.2,CHmobile app,Elizabeth,Champagne,Elizabeth.Champagne@example.com,Ahmedabad,2024-03-19,DailySales_20241903_1004.csv
-TC6017,5x7 Product B Incheon,PA753,5,18.5,CHin-store,Sandra,Jones,Sandra.Jones@example.com,Incheon,2024-03-19,DailySales_20241903_1004.csv
-TC6018,6x9 Product C Brisbane,PA1470,4,13.2,CHin-store,Mary,Fountain,Mary.Fountain@example.com,Brisbane,2024-03-19,DailySales_20241903_1004.csv
-TC6019,5.5x8.5 Product C Mumbai,PA1170,3,7.199999999999999,CHmobile app,Siu,Faley,Siu.Faley@example.com,Mumbai,2024-03-19,DailySales_20241903_1004.csv
-TC6020,4.25x6 Product A Hanoi,PA375,1,4.2,CHweb,Randell,Shell,Randell.Shell@example.com,Hanoi,2024-03-19,DailySales_20241903_1004.csv
-TC6021,6x11 Product D Daegu,PA1876,2,5.4,CHmobile app,Sheri,Webb,Sheri.Webb@example.com,Daegu,2024-03-19,DailySales_20241903_1004.csv
-TC6022,5.5x8.5 Product E Tokyo,PA1255,2,6.8,CHweb,Shannon,Cooper,Shannon.Cooper@example.com,Tokyo,2024-03-19,DailySales_20241903_1004.csv
-TC6023,5.5x8.5 Product B Bangkok,PA1097,5,20.0,CHmobile app,Alice,Noble,Alice.Noble@example.com,Bangkok,2024-03-19,DailySales_20241903_1004.csv
-TC6024,4x6 Product B Chengdu,PA100,4,6.8,CHmobile app,Brian,Heffner,Brian.Heffner@example.com,Chengdu,2024-03-19,DailySales_20241903_1004.csv
-TC6025,6x11 Product B Daegu,PA1744,3,5.1,CHweb,Roger,Walshe,Roger.Walshe@example.com,Daegu,2024-03-19,DailySales_20241903_1004.csv
-TC6026,6x11 Product E Hobart,PA1935,3,11.4,CHweb,Susan,Honeywell,Susan.Honeywell@example.com,Hobart,2024-03-19,DailySales_20241903_1004.csv
-TC6027,4.25x6 Product B Guangzhou,PA429,2,3.6,CHmobile app,Lynn,Anderson,Lynn.Anderson@example.com,Guangzhou,2024-03-19,DailySales_20241903_1004.csv
-TC6028,5.5x8.5 Product A Surat,PA1046,3,7.199999999999999,CHmobile app,Mattie,Orizabal,Mattie.Orizabal@example.com,Surat,2024-03-19,DailySales_20241903_1004.csv
-TC6029,5.5x8.5 Product A Perth,PA1013,3,7.800000000000001,CHin-store,Rachel,Morgan,Rachel.Morgan@example.com,Perth,2024-03-19,DailySales_20241903_1004.csv
-TC6030,4x6 Product D Hyderabad,PA249,5,16.0,CHweb,Robert,Leblanc,Robert.Leblanc@example.com,Hyderabad,2024-03-19,DailySales_20241903_1004.csv
-TC6031,4x6 Product B Kitakyushu,PA78,2,7.8,CHmobile app,Margaret,Darnell,Margaret.Darnell@example.com,Kitakyushu,2024-03-19,DailySales_20241903_1004.csv
-TC6032,6x9 Product A Ho Chi Minh City,PA1366,5,9.5,CHmobile app,Peter,Mcvey,Peter.Mcvey@example.com,Ho Chi Minh City,2024-03-19,DailySales_20241903_1004.csv
-TC6033,4x6 Product D Chennai,PA251,2,8.0,CHmobile app,Walter,Hirota,Walter.Hirota@example.com,Chennai,2024-03-19,DailySales_20241903_1004.csv
-TC6034,4x6 Product A Shanghai,PA31,3,6.9,CHweb,Jeremy,Garvin,Jeremy.Garvin@example.com,Shanghai,2024-03-19,DailySales_20241903_1004.csv
-TC6035,6x9 Product B Brisbane,PA1404,5,12.0,CHweb,Leroy,Metzger,Leroy.Metzger@example.com,Brisbane,2024-03-19,DailySales_20241903_1004.csv
-TC6036,5.5x8.5 Product D Shanghai,PA1219,1,2.4,CHweb,Justin,Grant,Justin.Grant@example.com,Shanghai,2024-03-19,DailySales_20241903_1004.csv
-TC6037,6x11 Product B Sendai,PA1724,3,7.800000000000001,CHmobile app,Donald,Harris,Donald.Harris@example.com,Sendai,2024-03-19,DailySales_20241903_1004.csv
-TC6038,5x7 Product E Canberra,PA943,1,4.1,CHmobile app,Elaine,Painter,Elaine.Painter@example.com,Canberra,2024-03-19,DailySales_20241903_1004.csv
-TC6039,4x6 Product C Mumbai,PA180,5,8.5,CHin-store,Willie,Peterson,Willie.Peterson@example.com,Mumbai,2024-03-19,DailySales_20241903_1004.csv
-TC6040,4.25x6 Product A Nagoya,PA333,4,16.4,CHmobile app,Theodore,Smith,Theodore.Smith@example.com,Nagoya,2024-03-19,DailySales_20241903_1004.csv
-TC6041,5.5x8.5 Product A Lahore,PA1048,4,8.4,CHmobile app,James,Demars,James.Demars@example.com,Lahore,2024-03-19,DailySales_20241903_1004.csv
-TC6042,6x9 Product A Kyoto,PA1327,2,3.0,CHweb,Carolyn,Bashore,Carolyn.Bashore@example.com,Kyoto,2024-03-19,DailySales_20241903_1004.csv
-TC6043,5x7 Product C Kitakyushu,PA804,4,15.6,CHmobile app,Jerome,Jensen,Jerome.Jensen@example.com,Kitakyushu,2024-03-19,DailySales_20241903_1004.csv
-TC6044,4x6 Product C Perth,PA155,4,6.4,CHin-store,Aileen,Filley,Aileen.Filley@example.com,Perth,2024-03-19,DailySales_20241903_1004.csv
-TC6045,5.5x8.5 Product D Beijing,PA1218,2,8.0,CHin-store,Jason,Olivarez,Jason.Olivarez@example.com,Beijing,2024-03-19,DailySales_20241903_1004.csv
-TC6046,4.25x6 Product A Kobe,PA336,3,12.9,CHmobile app,Jennifer,Sours,Jennifer.Sours@example.com,Kobe,2024-03-19,DailySales_20241903_1004.csv
-TC6047,6x9 Product E Kobe,PA1590,1,3.1,CHmobile app,Betty,Curry,Betty.Curry@example.com,Kobe,2024-03-19,DailySales_20241903_1004.csv
-TC6048,4x6 Product B Dalian,PA95,2,8.4,CHweb,Ronald,Marsha,Ronald.Marsha@example.com,Dalian,2024-03-19,DailySales_20241903_1004.csv
-TC6049,5.5x8.5 Product E Chiba,PA1265,1,2.5,CHin-store,Joy,Sumbry,Joy.Sumbry@example.com,Chiba,2024-03-19,DailySales_20241903_1004.csv
-TC6050,5x7 Product C Daegu,PA820,3,9.0,CHweb,Kerry,Perez,Kerry.Perez@example.com,Daegu,2024-03-19,DailySales_20241903_1004.csv
-TC6051,5.5x8.5 Product D Adelaide,PA1205,5,17.5,CHmobile app,James,Botelho,James.Botelho@example.com,Adelaide,2024-03-19,DailySales_20241903_1004.csv
-TC6052,4x6 Product D Dhaka,PA258,5,9.0,CHmobile app,Lois,Bloodworth,Lois.Bloodworth@example.com,Dhaka,2024-03-19,DailySales_20241903_1004.csv
-TC6053,5x7 Product B Naha,PA742,2,8.4,CHmobile app,Nicole,Dorris,Nicole.Dorris@example.com,Naha,2024-03-19,DailySales_20241903_1004.csv
-TC6054,5.5x8.5 Product A Okayama,PA1005,5,10.5,CHweb,Jason,Bornhorst,Jason.Bornhorst@example.com,Okayama,2024-03-19,DailySales_20241903_1004.csv
-TC6055,5.5x8.5 Product E Kolkata,PA1306,6,26.4,CHmobile app,Zachary,Smith,Zachary.Smith@example.com,Kolkata,2024-03-19,DailySales_20241903_1004.csv
-TC6056,5x7 Product B Adelaide,PA743,5,11.5,CHmobile app,Dorothy,Bates,Dorothy.Bates@example.com,Adelaide,2024-03-19,DailySales_20241903_1004.csv
-TC6057,5x7 Product B Saitama,PA736,1,3.3,CHweb,Sarah,Beasley,Sarah.Beasley@example.com,Saitama,2024-03-19,DailySales_20241903_1004.csv
-TC6058,5.5x8.5 Product C Phnom Penh,PA1186,1,3.5,CHweb,Derek,Baker,Derek.Baker@example.com,Phnom Penh,2024-03-19,DailySales_20241903_1004.csv
-TC6059,4.25x6 Product B Beijing,PA426,6,23.4,CHmobile app,Maria,Wright,Maria.Wright@example.com,Beijing,2024-03-19,DailySales_20241903_1004.csv
-TC6060,6x9 Product E Chennai,PA1637,2,6.8,CHweb,Julia,Henderson,Julia.Henderson@example.com,Chennai,2024-03-19,DailySales_20241903_1004.csv
-TC6061,4x6 Product B Darwin,PA86,2,3.8,CHweb,Krista,Palmer,Krista.Palmer@example.com,Darwin,2024-03-19,DailySales_20241903_1004.csv
-TC6062,5x7 Product E Hong Kong,PA962,6,22.8,CHweb,Ronald,Phillips,Ronald.Phillips@example.com,Hong Kong,2024-03-19,DailySales_20241903_1004.csv
-TC6063,5.5x8.5 Product C Guangzhou,PA1155,5,22.0,CHin-store,Ryan,Friend,Ryan.Friend@example.com,Guangzhou,2024-03-19,DailySales_20241903_1004.csv
-TC6064,4x6 Product D Nagoya,PA201,3,6.300000000000001,CHin-store,Barbara,Alvarez,Barbara.Alvarez@example.com,Nagoya,2024-03-19,DailySales_20241903_1004.csv
-TC6065,5x7 Product B Sapporo,PA730,1,2.8,CHweb,Mei,Lewis,Mei.Lewis@example.com,Sapporo,2024-03-19,DailySales_20241903_1004.csv
-TC6066,6x9 Product E Dalian,PA1613,6,24.0,CHweb,Pennie,Mccurdy,Pennie.Mccurdy@example.com,Dalian,2024-03-19,DailySales_20241903_1004.csv
-TC6067,5x7 Product A Hong Kong,PA698,3,9.0,CHmobile app,Joseph,Bruff,Joseph.Bruff@example.com,Hong Kong,2024-03-19,DailySales_20241903_1004.csv
-TC6068,6x9 Product D Kolkata,PA1570,2,6.0,CHweb,Daniel,Garcia,Daniel.Garcia@example.com,Kolkata,2024-03-19,DailySales_20241903_1004.csv
-TC6069,5x7 Product E Kuala Lumpur,PA967,1,2.9,CHweb,Robert,Collins,Robert.Collins@example.com,Kuala Lumpur,2024-03-19,DailySales_20241903_1004.csv
-TC6070,5x7 Product A Hiroshima,PA669,6,21.0,CHmobile app,Melvin,Emmons,Melvin.Emmons@example.com,Hiroshima,2024-03-19,DailySales_20241903_1004.csv
-TC6071,5.5x8.5 Product C Chennai,PA1175,3,8.399999999999999,CHmobile app,Tami,Green,Tami.Green@example.com,Chennai,2024-03-19,DailySales_20241903_1004.csv
-TC6072,5x7 Product B Jakarta,PA768,2,3.6,CHin-store,Luke,Andersson,Luke.Andersson@example.com,Jakarta,2024-03-19,DailySales_20241903_1004.csv
-TC6073,4.25x6 Product D Saitama,PA538,5,21.0,CHin-store,Karen,Carlton,Karen.Carlton@example.com,Saitama,2024-03-19,DailySales_20241903_1004.csv
-TC6074,4x6 Product C Hyderabad,PA183,5,19.0,CHweb,Mary,Fields,Mary.Fields@example.com,Hyderabad,2024-03-19,DailySales_20241903_1004.csv
-TC6075,4x6 Product D Shenzhen,PA230,5,18.0,CHweb,Patrick,Klotz,Patrick.Klotz@example.com,Shenzhen,2024-03-19,DailySales_20241903_1004.csv
-TC6076,4.25x6 Product A Nagoya,PA333,5,20.5,CHweb,Jospeh,Hill,Jospeh.Hill@example.com,Nagoya,2024-03-19,DailySales_20241903_1004.csv
-TC6077,5x7 Product C Singapore,PA839,3,7.5,CHmobile app,William,King,William.King@example.com,Singapore,2024-03-19,DailySales_20241903_1004.csv
-TC6078,6x9 Product A Fukuoka,PA1325,2,7.0,CHweb,Gladys,Mark,Gladys.Mark@example.com,Fukuoka,2024-03-19,DailySales_20241903_1004.csv
-TC6079,5x7 Product B Kolkata,PA778,2,3.4,CHweb,Lonnie,Sumbry,Lonnie.Sumbry@example.com,Kolkata,2024-03-19,DailySales_20241903_1004.csv
-TC6080,4.25x6 Product C Pune,PA517,6,24.0,CHweb,Bryant,Baker,Bryant.Baker@example.com,Pune,2024-03-19,DailySales_20241903_1004.csv
-TC6081,5.5x8.5 Product A Mumbai,PA1038,6,18.6,CHweb,Aaron,Emery,Aaron.Emery@example.com,Mumbai,2024-03-19,DailySales_20241903_1004.csv
-TC6082,4.25x6 Product C Surat,PA518,6,21.6,CHweb,Augusta,Ramirez,Augusta.Ramirez@example.com,Surat,2024-03-19,DailySales_20241903_1004.csv
-TC6083,4x6 Product D Hiroshima,PA207,6,16.200000000000003,CHmobile app,Charlie,Mcnamara,Charlie.Mcnamara@example.com,Hiroshima,2024-03-19,DailySales_20241903_1004.csv
-TC6084,6x11 Product D Manila,PA1892,2,5.8,CHweb,Maggie,Olmos,Maggie.Olmos@example.com,Manila,2024-03-19,DailySales_20241903_1004.csv
-TC6085,5x7 Product C Ahmedabad,PA846,1,3.5,CHweb,William,Hembree,William.Hembree@example.com,Ahmedabad,2024-03-19,DailySales_20241903_1004.csv
-TC6086,6x9 Product E Guangzhou,PA1617,2,5.6,CHmobile app,Patricia,Chauez,Patricia.Chauez@example.com,Guangzhou,2024-03-19,DailySales_20241903_1004.csv
-TC6087,5x7 Product D Darwin,PA878,3,6.6000000000000005,CHweb,Irene,Bell,Irene.Bell@example.com,Darwin,2024-03-19,DailySales_20241903_1004.csv
-TC6088,4x6 Product B Kaohsiung,PA106,3,8.7,CHweb,Ryan,Tanner,Ryan.Tanner@example.com,Kaohsiung,2024-03-19,DailySales_20241903_1004.csv
-TC6089,5x7 Product D Adelaide,PA875,1,1.8,CHin-store,Shawn,Glenn,Shawn.Glenn@example.com,Adelaide,2024-03-19,DailySales_20241903_1004.csv
-TC6090,6x11 Product C Fukuoka,PA1787,3,7.800000000000001,CHmobile app,Sharlene,Curry,Sharlene.Curry@example.com,Fukuoka,2024-03-19,DailySales_20241903_1004.csv
-TC6091,4x6 Product D Brisbane,PA216,6,15.6,CHweb,Crystal,Lagunas,Crystal.Lagunas@example.com,Brisbane,2024-03-19,DailySales_20241903_1004.csv
-TC6092,6x9 Product B Yangon,PA1447,3,11.4,CHweb,Alex,Simon,Alex.Simon@example.com,Yangon,2024-03-19,DailySales_20241903_1004.csv
-TC6093,4x6 Product D Kitakyushu,PA210,3,12.3,CHmobile app,Patricia,Ledford,Patricia.Ledford@example.com,Kitakyushu,2024-03-19,DailySales_20241903_1004.csv
-TC6094,4.25x6 Product A Okayama,PA345,1,2.3,CHweb,Priscilla,Caster,Priscilla.Caster@example.com,Okayama,2024-03-19,DailySales_20241903_1004.csv
-TC6095,5x7 Product B Hobart,PA747,4,16.0,CHmobile app,Tyrone,Bosworth,Tyrone.Bosworth@example.com,Hobart,2024-03-19,DailySales_20241903_1004.csv
-TC6096,4x6 Product B Ulaanbaatar,PA132,4,6.4,CHweb,Mary,Brink,Mary.Brink@example.com,Ulaanbaatar,2024-03-19,DailySales_20241903_1004.csv
-TC6097,5.5x8.5 Product C Sendai,PA1130,5,16.5,CHweb,Dwayne,Cochran,Dwayne.Cochran@example.com,Sendai,2024-03-19,DailySales_20241903_1004.csv
-TC6098,6x9 Product D Seoul,PA1543,4,6.0,CHweb,John,Smith,John.Smith@example.com,Seoul,2024-03-19,DailySales_20241903_1004.csv
-TC6099,6x11 Product E Kolkata,PA1966,6,11.4,CHmobile app,Lucas,Thompson,Lucas.Thompson@example.com,Kolkata,2024-03-19,DailySales_20241903_1004.csv
-TC6100,5x7 Product A Islamabad,PA719,1,3.5,CHweb,Sean,Shary,Sean.Shary@example.com,Islamabad,2024-03-19,DailySales_20241903_1004.csv
-TC6101,6x11 Product A Hobart,PA1671,4,13.6,CHmobile app,Brant,Turney,Brant.Turney@example.com,Hobart,2024-03-19,DailySales_20241903_1004.csv
-TC6102,4.25x6 Product E Guangzhou,PA627,1,2.6,CHmobile app,Karen,Brooks,Karen.Brooks@example.com,Guangzhou,2024-03-19,DailySales_20241903_1004.csv
-TC6103,5x7 Product B Manila,PA770,3,9.0,CHmobile app,Lance,Mccullough,Lance.Mccullough@example.com,Manila,2024-03-19,DailySales_20241903_1004.csv
-TC6104,4x6 Product C Chengdu,PA166,3,12.3,CHmobile app,Louis,Bieker,Louis.Bieker@example.com,Chengdu,2024-03-19,DailySales_20241903_1004.csv
-TC6105,5x7 Product A Saitama,PA670,2,8.0,CHmobile app,Gregory,White,Gregory.White@example.com,Saitama,2024-03-19,DailySales_20241903_1004.csv
-TC6106,4x6 Product D Nagoya,PA201,3,6.300000000000001,CHweb,Alvin,Fontenette,Alvin.Fontenette@example.com,Nagoya,2024-03-19,DailySales_20241903_1004.csv
-TC6107,5.5x8.5 Product D Sendai,PA1196,5,19.0,CHmobile app,Tam,Lederman,Tam.Lederman@example.com,Sendai,2024-03-19,DailySales_20241903_1004.csv
-TC6108,4.25x6 Product C Dalian,PA491,5,9.5,CHweb,Ruben,Pope,Ruben.Pope@example.com,Dalian,2024-03-19,DailySales_20241903_1004.csv
-TC6109,5x7 Product C Wuhan,PA827,1,2.1,CHweb,Kimberly,Reither,Kimberly.Reither@example.com,Wuhan,2024-03-19,DailySales_20241903_1004.csv
-TC6110,4x6 Product E Darwin,PA284,5,17.5,CHweb,Elizebeth,Brooks,Elizebeth.Brooks@example.com,Darwin,2024-03-19,DailySales_20241903_1004.csv
-TC6111,6x9 Product C Melbourne,PA1474,6,19.8,CHweb,Henry,Knox,Henry.Knox@example.com,Melbourne,2024-03-19,DailySales_20241903_1004.csv
-TC6112,5x7 Product B Phnom Penh,PA790,2,7.0,CHweb,Kirk,Hancock,Kirk.Hancock@example.com,Phnom Penh,2024-03-19,DailySales_20241903_1004.csv
-TC6113,4.25x6 Product E Yangon,PA655,4,12.8,CHweb,Ruby,Smith,Ruby.Smith@example.com,Yangon,2024-03-19,DailySales_20241903_1004.csv
-TC6114,6x11 Product C Wuhan,PA1817,2,4.8,CHin-store,John,Wills,John.Wills@example.com,Wuhan,2024-03-19,DailySales_20241903_1004.csv
-TC6115,4.25x6 Product D Hiroshima,PA537,2,8.0,CHweb,Douglas,Carreiro,Douglas.Carreiro@example.com,Hiroshima,2024-03-19,DailySales_20241903_1004.csv
-TC6116,4x6 Product A Vientiane,PA65,3,4.5,CHin-store,Cassie,Brooks,Cassie.Brooks@example.com,Vientiane,2024-03-19,DailySales_20241903_1004.csv
-TC6117,5x7 Product D Karachi,PA915,6,20.4,CHmobile app,Bertha,Taylor,Bertha.Taylor@example.com,Karachi,2024-03-19,DailySales_20241903_1004.csv
-TC6118,4x6 Product B Hanoi,PA111,4,8.8,CHin-store,Lee,Bradley,Lee.Bradley@example.com,Hanoi,2024-03-19,DailySales_20241903_1004.csv
-TC6119,5x7 Product C Chongqing,PA828,6,11.4,CHweb,Mei,Farish,Mei.Farish@example.com,Chongqing,2024-03-19,DailySales_20241903_1004.csv
-TC6120,5.5x8.5 Product D Hobart,PA1209,5,14.5,CHweb,George,Shipley,George.Shipley@example.com,Hobart,2024-03-19,DailySales_20241903_1004.csv
-TC6121,4.25x6 Product A Hiroshima,PA339,2,8.0,CHmobile app,Daniel,Cooke,Daniel.Cooke@example.com,Hiroshima,2024-03-19,DailySales_20241903_1004.csv
-TC6122,4x6 Product A Chiba,PA11,3,10.2,CHweb,Cleo,King,Cleo.King@example.com,Chiba,2024-03-19,DailySales_20241903_1004.csv
-TC6123,6x11 Product E Tokyo,PA1915,1,2.7,CHmobile app,Michael,Johnson,Michael.Johnson@example.com,Tokyo,2024-03-19,DailySales_20241903_1004.csv
-TC6124,6x9 Product D Hanoi,PA1563,1,2.0,CHweb,Dean,Ward,Dean.Ward@example.com,Hanoi,2024-03-19,DailySales_20241903_1004.csv
-TC6125,6x9 Product E Sydney,PA1608,2,4.6,CHweb,Dwayne,Hamilton,Dwayne.Hamilton@example.com,Sydney,2024-03-19,DailySales_20241903_1004.csv
-TC6126,6x9 Product E Karachi,PA1641,4,8.4,CHweb,James,Pratt,James.Pratt@example.com,Karachi,2024-03-19,DailySales_20241903_1004.csv
-TC6127,6x11 Product A Bangalore,PA1700,6,19.200000000000003,CHmobile app,Mark,Jensen,Mark.Jensen@example.com,Bangalore,2024-03-19,DailySales_20241903_1004.csv
-TC6128,5x7 Product A Dhaka,PA720,1,3.5,CHweb,Robert,Crilly,Robert.Crilly@example.com,Dhaka,2024-03-19,DailySales_20241903_1004.csv
-TC6129,6x9 Product E Taipei,PA1623,2,3.4,CHmobile app,Michael,Hanson,Michael.Hanson@example.com,Taipei,2024-03-19,DailySales_20241903_1004.csv
-TC6130,5.5x8.5 Product C Naha,PA1138,3,6.0,CHmobile app,Randell,Yashinski,Randell.Yashinski@example.com,Naha,2024-03-19,DailySales_20241903_1004.csv
-TC6131,6x9 Product C Chiba,PA1463,6,15.0,CHweb,Johnnie,Buffalo,Johnnie.Buffalo@example.com,Chiba,2024-03-19,DailySales_20241903_1004.csv
-TC6132,4x6 Product B Hyderabad,PA117,4,11.2,CHin-store,James,Taylor,James.Taylor@example.com,Hyderabad,2024-03-19,DailySales_20241903_1004.csv
-TC6133,6x9 Product E Hanoi,PA1629,4,9.6,CHweb,Sheldon,Cryer,Sheldon.Cryer@example.com,Hanoi,2024-03-19,DailySales_20241903_1004.csv
-TC6134,5x7 Product B Chongqing,PA762,4,16.4,CHmobile app,Michael,Spradlin,Michael.Spradlin@example.com,Chongqing,2024-03-19,DailySales_20241903_1004.csv
-TC6135,5.5x8.5 Product E Sydney,PA1278,2,6.2,CHweb,Dorothy,Walker,Dorothy.Walker@example.com,Sydney,2024-03-19,DailySales_20241903_1004.csv
-TC6136,6x11 Product A Daegu,PA1678,5,11.5,CHweb,Joseph,Lomax,Joseph.Lomax@example.com,Daegu,2024-03-19,DailySales_20241903_1004.csv
-TC6137,6x11 Product E Ho Chi Minh City,PA1960,6,19.8,CHweb,Tod,Alvarez,Tod.Alvarez@example.com,Ho Chi Minh City,2024-03-19,DailySales_20241903_1004.csv
-TC6138,5x7 Product B Fukuoka,PA731,4,8.4,CHin-store,Johnny,Mink,Johnny.Mink@example.com,Fukuoka,2024-03-19,DailySales_20241903_1004.csv
-TC6139,6x9 Product C Hong Kong,PA1490,5,13.0,CHmobile app,Amanda,Curry,Amanda.Curry@example.com,Hong Kong,2024-03-19,DailySales_20241903_1004.csv
-TC6140,5.5x8.5 Product A Tianjin,PA1027,2,4.8,CHmobile app,Tony,Quinn,Tony.Quinn@example.com,Tianjin,2024-03-19,DailySales_20241903_1004.csv
-TC6141,4.25x6 Product A Tianjin,PA367,4,7.2,CHweb,Bernard,Abbott,Bernard.Abbott@example.com,Tianjin,2024-03-19,DailySales_20241903_1004.csv
-TC6142,6x11 Product B Chiba,PA1727,1,3.1,CHmobile app,Vincent,Smith,Vincent.Smith@example.com,Chiba,2024-03-19,DailySales_20241903_1004.csv
-TC6143,6x11 Product C Manila,PA1826,2,5.6,CHmobile app,James,Flynn,James.Flynn@example.com,Manila,2024-03-19,DailySales_20241903_1004.csv
-TC6144,6x11 Product E Shenzhen,PA1946,3,12.9,CHmobile app,Marta,Davis,Marta.Davis@example.com,Shenzhen,2024-03-19,DailySales_20241903_1004.csv
-TC6145,6x9 Product D Darwin,PA1538,1,1.7,CHweb,David,Nichol,David.Nichol@example.com,Darwin,2024-03-19,DailySales_20241903_1004.csv
-TC6146,4x6 Product C Mumbai,PA180,6,10.2,CHweb,Lacresha,Davidson,Lacresha.Davidson@example.com,Mumbai,2024-03-19,DailySales_20241903_1004.csv
-TC6147,4.25x6 Product B Wuhan,PA431,4,17.2,CHweb,Walter,Jansen,Walter.Jansen@example.com,Wuhan,2024-03-19,DailySales_20241903_1004.csv
-TC6148,6x11 Product B Dhaka,PA1776,6,11.4,CHmobile app,Ronald,Fox,Ronald.Fox@example.com,Dhaka,2024-03-19,DailySales_20241903_1004.csv
-TC6149,4x6 Product B Perth,PA89,1,3.9,CHweb,Barbara,Flatley,Barbara.Flatley@example.com,Perth,2024-03-19,DailySales_20241903_1004.csv
-TC6150,4x6 Product D Chongqing,PA234,2,7.8,CHweb,Denita,Massey,Denita.Massey@example.com,Chongqing,2024-03-19,DailySales_20241903_1004.csv
-TC6151,4.25x6 Product A Seoul,PA355,1,4.3,CHmobile app,Rita,Doss,Rita.Doss@example.com,Seoul,2024-03-19,DailySales_20241903_1004.csv
-TC6152,4.25x6 Product B Wuhan,PA431,5,21.5,CHmobile app,Blanca,Barnes,Blanca.Barnes@example.com,Wuhan,2024-03-19,DailySales_20241903_1004.csv
-TC6153,4x6 Product C Adelaide,PA149,1,2.6,CHmobile app,Robert,Martin,Robert.Martin@example.com,Adelaide,2024-03-19,DailySales_20241903_1004.csv
-TC6154,4x6 Product C Incheon,PA159,4,8.8,CHin-store,Lynn,Stockwell,Lynn.Stockwell@example.com,Incheon,2024-03-19,DailySales_20241903_1004.csv
-TC6155,5x7 Product A Phnom Penh,PA724,3,13.2,CHweb,Peter,Gregory,Peter.Gregory@example.com,Phnom Penh,2024-03-19,DailySales_20241903_1004.csv
-TC6156,4x6 Product B Chongqing,PA102,1,4.0,CHweb,Susan,Bryant,Susan.Bryant@example.com,Chongqing,2024-03-19,DailySales_20241903_1004.csv
-TC6157,6x9 Product A Fukuoka,PA1325,3,10.5,CHmobile app,Mary,Woods,Mary.Woods@example.com,Fukuoka,2024-03-19,DailySales_20241903_1004.csv
-TC6158,6x11 Product C Surat,PA1838,5,13.5,CHmobile app,Jennifer,Emery,Jennifer.Emery@example.com,Surat,2024-03-19,DailySales_20241903_1004.csv
-TC6159,5x7 Product C Okayama,PA807,3,13.2,CHweb,Robert,Brannon,Robert.Brannon@example.com,Okayama,2024-03-19,DailySales_20241903_1004.csv
-TC6160,5x7 Product C Chengdu,PA826,4,8.8,CHweb,Scott,Lopez,Scott.Lopez@example.com,Chengdu,2024-03-19,DailySales_20241903_1004.csv
-TC6161,5x7 Product B Chennai,PA779,6,25.8,CHmobile app,Donald,Johnson,Donald.Johnson@example.com,Chennai,2024-03-19,DailySales_20241903_1004.csv
-TC6162,5x7 Product D Kawasaki,PA871,1,2.7,CHweb,Edwina,Quinn,Edwina.Quinn@example.com,Kawasaki,2024-03-19,DailySales_20241903_1004.csv
-TC6163,6x9 Product B Perth,PA1409,3,4.5,CHin-store,Maria,Guy,Maria.Guy@example.com,Perth,2024-03-19,DailySales_20241903_1004.csv
-TC6164,5.5x8.5 Product A Dalian,PA1019,3,10.5,CHweb,Barbara,Mayer,Barbara.Mayer@example.com,Dalian,2024-03-19,DailySales_20241903_1004.csv
-TC6165,4.25x6 Product D Okayama,PA543,5,16.0,CHweb,Kevin,Tidwell,Kevin.Tidwell@example.com,Okayama,2024-03-19,DailySales_20241903_1004.csv
-TC6166,4x6 Product E Incheon,PA291,1,1.6,CHmobile app,Marc,Karp,Marc.Karp@example.com,Incheon,2024-03-19,DailySales_20241903_1004.csv
-TC6167,6x9 Product A Phnom Penh,PA1384,2,6.2,CHweb,Elizabeth,Bennett,Elizabeth.Bennett@example.com,Phnom Penh,2024-03-19,DailySales_20241903_1004.csv
-TC6168,5x7 Product E Kathmandu,PA986,3,9.9,CHweb,Shellie,Michels,Shellie.Michels@example.com,Kathmandu,2024-03-19,DailySales_20241903_1004.csv
-TC6169,4.25x6 Product C Manila,PA506,1,3.1,CHmobile app,Mathew,Oakes,Mathew.Oakes@example.com,Manila,2024-03-19,DailySales_20241903_1004.csv
-TC6170,4x6 Product C Dalian,PA161,2,8.0,CHweb,Nicole,Caster,Nicole.Caster@example.com,Dalian,2024-03-19,DailySales_20241903_1004.csv
-TC6171,6x11 Product D Canberra,PA1867,4,8.0,CHweb,Ralph,Anderson,Ralph.Anderson@example.com,Canberra,2024-03-19,DailySales_20241903_1004.csv
-TC6172,6x9 Product A Tianjin,PA1357,4,10.0,CHmobile app,Christopher,Glory,Christopher.Glory@example.com,Tianjin,2024-03-19,DailySales_20241903_1004.csv
-TC6173,4.25x6 Product E Nagoya,PA597,6,22.8,CHweb,Thomas,Cochran,Thomas.Cochran@example.com,Nagoya,2024-03-19,DailySales_20241903_1004.csv
-TC6174,6x9 Product B Tokyo,PA1387,3,6.6000000000000005,CHmobile app,Errol,Garcia,Errol.Garcia@example.com,Tokyo,2024-03-19,DailySales_20241903_1004.csv
-TC6175,5x7 Product B Kyoto,PA733,5,8.0,CHweb,Louis,Jaramillo,Louis.Jaramillo@example.com,Kyoto,2024-03-19,DailySales_20241903_1004.csv
-TC6176,4x6 Product B Chennai,PA119,5,19.5,CHweb,Tammy,Cook,Tammy.Cook@example.com,Chennai,2024-03-19,DailySales_20241903_1004.csv
-TC6177,6x11 Product D Sendai,PA1856,3,12.6,CHweb,Harry,Lally,Harry.Lally@example.com,Sendai,2024-03-19,DailySales_20241903_1004.csv
-TC6178,6x9 Product D Kobe,PA1524,5,12.5,CHin-store,Carolyn,Jemison,Carolyn.Jemison@example.com,Kobe,2024-03-19,DailySales_20241903_1004.csv
-TC6179,4x6 Product A Tianjin,PA37,4,6.4,CHmobile app,Victoria,Alvarez,Victoria.Alvarez@example.com,Tianjin,2024-03-19,DailySales_20241903_1004.csv
-TC6180,4.25x6 Product E Ho Chi Minh City,PA640,2,7.0,CHmobile app,John,Welter,John.Welter@example.com,Ho Chi Minh City,2024-03-19,DailySales_20241903_1004.csv
+TC5834,6x11 Product D Shanghai,PA1879,1,1.7,CHweb,Autumn,Mcgowan,Autumn.Mcgowan@example.com,Shanghai,2024-03-19,DailySales_20241903_1004.csv
+TC5835,5x7 Product D Ho Chi Minh City,PA904,2,8.6,CHmobile app,Eric,Waite,Eric.Waite@example.com,Ho Chi Minh City,2024-03-19,DailySales_20241903_1004.csv
+TC5836,5.5x8.5 Product A Seoul,PA1015,4,13.6,CHweb,Jeannette,Walker,Jeannette.Walker@example.com,Seoul,2024-03-19,DailySales_20241903_1004.csv
+TC5837,6x11 Product B Fukuoka,PA1721,3,13.2,CHmobile app,Gary,Cantu,Gary.Cantu@example.com,Fukuoka,2024-03-19,DailySales_20241903_1004.csv
+TC5838,6x11 Product E Shenzhen,PA1946,5,16.0,CHin-store,Judy,Oates,Judy.Oates@example.com,Shenzhen,2024-03-19,DailySales_20241903_1004.csv
+TC5839,4.25x6 Product C Hiroshima,PA471,5,9.5,CHweb,Sandra,Lindeland,Sandra.Lindeland@example.com,Hiroshima,2024-03-19,DailySales_20241903_1004.csv
+TC5840,5.5x8.5 Product E Daegu,PA1282,5,11.5,CHweb,David,Wallace,David.Wallace@example.com,Daegu,2024-03-19,DailySales_20241903_1004.csv
+TC5841,4.25x6 Product B Sagamihara,PA410,1,1.8,CHweb,Mary,Bordley,Mary.Bordley@example.com,Sagamihara,2024-03-19,DailySales_20241903_1004.csv
+TC5842,4x6 Product B Chengdu,PA100,6,23.4,CHin-store,James,Mclellan,James.Mclellan@example.com,Chengdu,2024-03-19,DailySales_20241903_1004.csv
+TC5843,6x9 Product A Lahore,PA1378,4,10.8,CHmobile app,Luke,Barnes,Luke.Barnes@example.com,Lahore,2024-03-19,DailySales_20241903_1004.csv
+TC5844,6x11 Product B Melbourne,PA1738,5,15.0,CHweb,Delsie,Cole,Delsie.Cole@example.com,Melbourne,2024-03-19,DailySales_20241903_1004.csv
+TC5845,4x6 Product A Perth,PA23,4,6.4,CHweb,Richard,Ogle,Richard.Ogle@example.com,Perth,2024-03-19,DailySales_20241903_1004.csv
+TC5846,4.25x6 Product A Sapporo,PA334,5,12.5,CHin-store,Harold,Vescio,Harold.Vescio@example.com,Sapporo,2024-03-19,DailySales_20241903_1004.csv
+TC5847,5x7 Product E Brisbane,PA942,4,11.6,CHmobile app,Ashley,Lane,Ashley.Lane@example.com,Brisbane,2024-03-19,DailySales_20241903_1004.csv
+TC5848,5x7 Product C Brisbane,PA810,3,5.4,CHweb,Lashunda,Stonis,Lashunda.Stonis@example.com,Brisbane,2024-03-19,DailySales_20241903_1004.csv
+TC5849,4.25x6 Product D Guangzhou,PA561,6,11.4,CHweb,Carlos,Reid,Carlos.Reid@example.com,Guangzhou,2024-03-19,DailySales_20241903_1004.csv
+TC5850,4x6 Product E Hiroshima,PA273,4,10.4,CHmobile app,Caitlin,Allen,Caitlin.Allen@example.com,Hiroshima,2024-03-19,DailySales_20241903_1004.csv
+TC5851,5.5x8.5 Product D Seoul,PA1213,5,7.5,CHweb,Betsey,Purcell,Betsey.Purcell@example.com,Seoul,2024-03-19,DailySales_20241903_1004.csv
+TC5852,5.5x8.5 Product B Daegu,PA1084,1,4.3,CHweb,Joyce,Roberts,Joyce.Roberts@example.com,Daegu,2024-03-19,DailySales_20241903_1004.csv
+TC5853,5.5x8.5 Product A Darwin,PA1010,6,22.8,CHmobile app,Everette,Larson,Everette.Larson@example.com,Darwin,2024-03-19,DailySales_20241903_1004.csv
+TC5854,6x11 Product A Karachi,PA1707,6,10.8,CHmobile app,Luke,Buller,Luke.Buller@example.com,Karachi,2024-03-19,DailySales_20241903_1004.csv
+TC5855,6x11 Product E Okayama,PA1929,6,26.4,CHweb,Catherine,Mccombs,Catherine.Mccombs@example.com,Okayama,2024-03-19,DailySales_20241903_1004.csv
+TC5856,4x6 Product B Tianjin,PA103,3,9.3,CHin-store,Joseph,Wenz,Joseph.Wenz@example.com,Tianjin,2024-03-19,DailySales_20241903_1004.csv
+TC5857,5.5x8.5 Product D Jakarta,PA1230,2,8.8,CHmobile app,Diane,Lukens,Diane.Lukens@example.com,Jakarta,2024-03-19,DailySales_20241903_1004.csv
+TC5858,5.5x8.5 Product D Tokyo,PA1189,5,11.0,CHmobile app,Doris,Santana,Doris.Santana@example.com,Tokyo,2024-03-19,DailySales_20241903_1004.csv
+TC5859,6x11 Product E Lahore,PA1972,1,4.2,CHin-store,Harold,Shaw,Harold.Shaw@example.com,Lahore,2024-03-19,DailySales_20241903_1004.csv
+TC5860,5x7 Product E Osaka,PA926,4,7.2,CHin-store,Michelle,Perez,Michelle.Perez@example.com,Osaka,2024-03-19,DailySales_20241903_1004.csv
+TC5861,6x11 Product A Karachi,PA1707,2,3.6,CHin-store,Erik,Perez,Erik.Perez@example.com,Karachi,2024-03-19,DailySales_20241903_1004.csv
+TC5862,4x6 Product C Hyderabad,PA183,6,20.4,CHin-store,Mary,Sprague,Mary.Sprague@example.com,Hyderabad,2024-03-19,DailySales_20241903_1004.csv
+TC5863,4.25x6 Product C Surat,PA518,3,7.800000000000001,CHweb,Janet,Nicholas,Janet.Nicholas@example.com,Surat,2024-03-19,DailySales_20241903_1004.csv
+TC5864,5x7 Product B Hong Kong,PA764,5,7.5,CHweb,William,Lindquist,William.Lindquist@example.com,Hong Kong,2024-03-19,DailySales_20241903_1004.csv
+TC5865,6x11 Product D Saitama,PA1858,3,9.0,CHmobile app,Rosalie,Murdock,Rosalie.Murdock@example.com,Saitama,2024-03-19,DailySales_20241903_1004.csv
+TC5866,4x6 Product A Adelaide,PA17,4,6.8,CHmobile app,Sophia,James,Sophia.James@example.com,Adelaide,2024-03-19,DailySales_20241903_1004.csv
+TC5867,6x9 Product D Taipei,PA1557,3,12.0,CHweb,Dan,Peay,Dan.Peay@example.com,Taipei,2024-03-19,DailySales_20241903_1004.csv
+TC5868,4.25x6 Product D Islamabad,PA587,2,8.6,CHmobile app,Margaret,Pugmire,Margaret.Pugmire@example.com,Islamabad,2024-03-19,DailySales_20241903_1004.csv
+TC5869,5.5x8.5 Product B Singapore,PA1103,2,6.4,CHin-store,Matthew,Crooks,Matthew.Crooks@example.com,Singapore,2024-03-19,DailySales_20241903_1004.csv
+TC5870,6x9 Product A Bangalore,PA1370,3,9.3,CHmobile app,Kara,Haman,Kara.Haman@example.com,Bangalore,2024-03-19,DailySales_20241903_1004.csv
+TC5871,6x9 Product C Karachi,PA1509,2,8.0,CHmobile app,Tracy,Ahner,Tracy.Ahner@example.com,Karachi,2024-03-19,DailySales_20241903_1004.csv
+TC5872,4.25x6 Product A Islamabad,PA389,2,7.6,CHmobile app,Marie,Jenkins,Marie.Jenkins@example.com,Islamabad,2024-03-19,DailySales_20241903_1004.csv
+TC5873,5x7 Product B Dhaka,PA786,2,7.0,CHmobile app,Jewell,Logan,Jewell.Logan@example.com,Dhaka,2024-03-19,DailySales_20241903_1004.csv
+TC5874,4.25x6 Product B Naha,PA412,5,18.5,CHweb,Millicent,Williams,Millicent.Williams@example.com,Naha,2024-03-19,DailySales_20241903_1004.csv
+TC5875,5.5x8.5 Product D Tianjin,PA1225,4,14.4,CHin-store,Mary,Jackson,Mary.Jackson@example.com,Tianjin,2024-03-19,DailySales_20241903_1004.csv
+TC5876,4x6 Product A Daegu,PA28,1,1.9,CHweb,Jeremiah,Reece,Jeremiah.Reece@example.com,Daegu,2024-03-19,DailySales_20241903_1004.csv
+TC5877,6x9 Product C Hong Kong,PA1490,5,9.5,CHmobile app,Lisa,Correa,Lisa.Correa@example.com,Hong Kong,2024-03-19,DailySales_20241903_1004.csv
+TC5878,5.5x8.5 Product A Adelaide,PA1007,3,10.5,CHweb,Mary,Briggs,Mary.Briggs@example.com,Adelaide,2024-03-19,DailySales_20241903_1004.csv
+TC5879,4x6 Product E Wuhan,PA299,1,1.7,CHmobile app,Bradley,Palmer,Bradley.Palmer@example.com,Wuhan,2024-03-19,DailySales_20241903_1004.csv
+TC5880,4.25x6 Product B Hyderabad,PA447,6,21.6,CHweb,Mark,Omalley,Mark.Omalley@example.com,Hyderabad,2024-03-19,DailySales_20241903_1004.csv
+TC5881,5x7 Product D Melbourne,PA880,1,4.2,CHweb,Jimmie,Patock,Jimmie.Patock@example.com,Melbourne,2024-03-19,DailySales_20241903_1004.csv
+TC5882,4.25x6 Product B Nagoya,PA399,4,6.4,CHweb,Ed,Correa,Ed.Correa@example.com,Nagoya,2024-03-19,DailySales_20241903_1004.csv
+TC5883,5.5x8.5 Product C Ulaanbaatar,PA1188,6,19.200000000000003,CHin-store,Lore,Boocks,Lore.Boocks@example.com,Ulaanbaatar,2024-03-19,DailySales_20241903_1004.csv
+TC5884,6x11 Product C Jakarta,PA1824,6,10.2,CHweb,Lynda,Shannon,Lynda.Shannon@example.com,Jakarta,2024-03-19,DailySales_20241903_1004.csv
+TC5885,4.25x6 Product B Dalian,PA425,2,8.2,CHweb,Cynthia,Connor,Cynthia.Connor@example.com,Dalian,2024-03-19,DailySales_20241903_1004.csv
+TC5886,6x11 Product C Naha,PA1798,2,7.0,CHin-store,Elia,Mclavrin,Elia.Mclavrin@example.com,Naha,2024-03-19,DailySales_20241903_1004.csv
+TC5887,5x7 Product E Beijing,PA954,4,9.2,CHweb,Barry,Perkins,Barry.Perkins@example.com,Beijing,2024-03-19,DailySales_20241903_1004.csv
+TC5888,4.25x6 Product D Darwin,PA548,6,9.6,CHweb,Joe,Rhudy,Joe.Rhudy@example.com,Darwin,2024-03-19,DailySales_20241903_1004.csv
+TC5889,4.25x6 Product B Tianjin,PA433,3,10.8,CHmobile app,Tony,Halm,Tony.Halm@example.com,Tianjin,2024-03-19,DailySales_20241903_1004.csv
+TC5890,5.5x8.5 Product A Hyderabad,PA1041,2,4.8,CHweb,Charles,Davis,Charles.Davis@example.com,Hyderabad,2024-03-19,DailySales_20241903_1004.csv
+TC5891,4x6 Product B Incheon,PA93,4,14.4,CHin-store,Philip,Linker,Philip.Linker@example.com,Incheon,2024-03-19,DailySales_20241903_1004.csv
+TC5892,6x9 Product E Karachi,PA1641,2,7.0,CHin-store,Kenneth,Aguirre,Kenneth.Aguirre@example.com,Karachi,2024-03-19,DailySales_20241903_1004.csv
+TC5893,5.5x8.5 Product A Lahore,PA1048,3,12.0,CHmobile app,Juanita,Noble,Juanita.Noble@example.com,Lahore,2024-03-19,DailySales_20241903_1004.csv
+TC5894,5.5x8.5 Product B Chiba,PA1067,6,12.6,CHmobile app,Corrinne,Simon,Corrinne.Simon@example.com,Chiba,2024-03-19,DailySales_20241903_1004.csv
+TC5895,4.25x6 Product B Hobart,PA417,1,3.0,CHweb,Thelma,Porterfield,Thelma.Porterfield@example.com,Hobart,2024-03-19,DailySales_20241903_1004.csv
+TC5896,5x7 Product B Osaka,PA728,2,4.8,CHweb,Faith,Murray,Faith.Murray@example.com,Osaka,2024-03-19,DailySales_20241903_1004.csv
+TC5897,6x11 Product B Delhi,PA1765,1,3.5,CHmobile app,Dale,Perkins,Dale.Perkins@example.com,Delhi,2024-03-19,DailySales_20241903_1004.csv
+TC5898,4.25x6 Product D Kawasaki,PA541,3,5.4,CHmobile app,Jennifer,Mcfadden,Jennifer.Mcfadden@example.com,Kawasaki,2024-03-19,DailySales_20241903_1004.csv
+TC5899,4x6 Product A Hanoi,PA45,5,15.5,CHweb,Dennis,Romney,Dennis.Romney@example.com,Hanoi,2024-03-19,DailySales_20241903_1004.csv
+TC5900,5.5x8.5 Product B Yangon,PA1117,6,12.6,CHmobile app,Danny,Solomon,Danny.Solomon@example.com,Yangon,2024-03-19,DailySales_20241903_1004.csv
+TC5901,5.5x8.5 Product A Manila,PA1034,5,17.5,CHmobile app,Billy,Jefferson,Billy.Jefferson@example.com,Manila,2024-03-19,DailySales_20241903_1004.csv
+TC5902,5x7 Product B Manila,PA770,5,18.5,CHin-store,Gary,Givens,Gary.Givens@example.com,Manila,2024-03-19,DailySales_20241903_1004.csv
+TC5903,6x11 Product B Brisbane,PA1734,1,2.0,CHmobile app,Leo,Shipley,Leo.Shipley@example.com,Brisbane,2024-03-19,DailySales_20241903_1004.csv
+TC5904,6x11 Product C Tianjin,PA1819,1,4.4,CHmobile app,Sophia,Dhondt,Sophia.Dhondt@example.com,Tianjin,2024-03-19,DailySales_20241903_1004.csv
+TC5905,4x6 Product C Busan,PA158,4,9.6,CHmobile app,Susan,Caputo,Susan.Caputo@example.com,Busan,2024-03-19,DailySales_20241903_1004.csv
+TC5906,4.25x6 Product A Nagoya,PA333,1,3.4,CHin-store,Rosetta,Simpson,Rosetta.Simpson@example.com,Nagoya,2024-03-19,DailySales_20241903_1004.csv
+TC5907,4x6 Product A Brisbane,PA18,3,5.699999999999999,CHweb,Leo,York,Leo.York@example.com,Brisbane,2024-03-19,DailySales_20241903_1004.csv
+TC5908,6x9 Product D Kolkata,PA1570,2,5.6,CHweb,Joseph,Sloan,Joseph.Sloan@example.com,Kolkata,2024-03-19,DailySales_20241903_1004.csv
+TC5909,4x6 Product A Darwin,PA20,2,4.4,CHweb,Cynthia,Ouzts,Cynthia.Ouzts@example.com,Darwin,2024-03-19,DailySales_20241903_1004.csv
+TC5910,6x11 Product C Brisbane,PA1800,4,7.2,CHmobile app,Albert,Ordonez,Albert.Ordonez@example.com,Brisbane,2024-03-19,DailySales_20241903_1004.csv
+TC5911,4x6 Product A Brisbane,PA18,4,7.6,CHmobile app,Bethany,Mclellan,Bethany.Mclellan@example.com,Brisbane,2024-03-19,DailySales_20241903_1004.csv
+TC5912,4x6 Product C Osaka,PA134,2,5.4,CHweb,Walter,Floyd,Walter.Floyd@example.com,Osaka,2024-03-19,DailySales_20241903_1004.csv
+TC5913,5.5x8.5 Product B Adelaide,PA1073,2,8.4,CHmobile app,Elmo,Breen,Elmo.Breen@example.com,Adelaide,2024-03-19,DailySales_20241903_1004.csv
+TC5914,6x11 Product A Pune,PA1705,5,20.0,CHmobile app,Mark,Washington,Mark.Washington@example.com,Pune,2024-03-19,DailySales_20241903_1004.csv
+TC5915,5.5x8.5 Product D Adelaide,PA1205,3,12.0,CHmobile app,Manuel,Guinn,Manuel.Guinn@example.com,Adelaide,2024-03-19,DailySales_20241903_1004.csv
+TC5916,6x9 Product D Shenzhen,PA1550,2,4.8,CHin-store,Peter,Ramos,Peter.Ramos@example.com,Shenzhen,2024-03-19,DailySales_20241903_1004.csv
+TC5917,6x9 Product D Tokyo,PA1519,1,4.4,CHin-store,Gina,Stanley,Gina.Stanley@example.com,Tokyo,2024-03-19,DailySales_20241903_1004.csv
+TC5918,6x9 Product C Ulaanbaatar,PA1518,2,5.2,CHweb,Craig,Salyards,Craig.Salyards@example.com,Ulaanbaatar,2024-03-19,DailySales_20241903_1004.csv
+TC5919,5x7 Product D Saitama,PA868,3,8.399999999999999,CHweb,Dora,England,Dora.England@example.com,Saitama,2024-03-19,DailySales_20241903_1004.csv
+TC5920,5.5x8.5 Product B Sapporo,PA1060,5,12.5,CHweb,Rebecca,Smith,Rebecca.Smith@example.com,Sapporo,2024-03-19,DailySales_20241903_1004.csv
+TC5921,5.5x8.5 Product C Kitakyushu,PA1134,4,14.8,CHweb,Harold,Seward,Harold.Seward@example.com,Kitakyushu,2024-03-19,DailySales_20241903_1004.csv
+TC5922,6x9 Product B Sendai,PA1394,4,14.8,CHweb,Roger,Ferguson,Roger.Ferguson@example.com,Sendai,2024-03-19,DailySales_20241903_1004.csv
+TC5923,5x7 Product D Incheon,PA885,6,10.8,CHmobile app,Patricia,Sires,Patricia.Sires@example.com,Incheon,2024-03-19,DailySales_20241903_1004.csv
+TC5924,6x9 Product C Sendai,PA1460,3,6.300000000000001,CHweb,Bryan,Reichmann,Bryan.Reichmann@example.com,Sendai,2024-03-19,DailySales_20241903_1004.csv
+TC5925,6x9 Product C Kyoto,PA1459,6,21.0,CHmobile app,Cesar,Abramson,Cesar.Abramson@example.com,Kyoto,2024-03-19,DailySales_20241903_1004.csv
+TC5926,5x7 Product B Ulaanbaatar,PA792,2,7.4,CHin-store,Robert,Echols,Robert.Echols@example.com,Ulaanbaatar,2024-03-19,DailySales_20241903_1004.csv
+TC5927,6x11 Product D Hobart,PA1869,4,14.4,CHweb,Douglas,Wagoner,Douglas.Wagoner@example.com,Hobart,2024-03-19,DailySales_20241903_1004.csv
+TC5928,6x9 Product A Hobart,PA1341,5,11.5,CHmobile app,Tina,Ramos,Tina.Ramos@example.com,Hobart,2024-03-19,DailySales_20241903_1004.csv
+TC5929,6x11 Product E Bangkok,PA1955,6,19.200000000000003,CHweb,Lauren,Goldberg,Lauren.Goldberg@example.com,Bangkok,2024-03-19,DailySales_20241903_1004.csv
+TC5930,5.5x8.5 Product A Ulaanbaatar,PA1056,2,4.6,CHmobile app,Marilyn,Perza,Marilyn.Perza@example.com,Ulaanbaatar,2024-03-19,DailySales_20241903_1004.csv
+TC5931,4x6 Product E Singapore,PA311,5,22.0,CHmobile app,Michelle,Starling,Michelle.Starling@example.com,Singapore,2024-03-19,DailySales_20241903_1004.csv
+TC5932,4.25x6 Product B Hobart,PA417,5,15.0,CHweb,Larry,Beal,Larry.Beal@example.com,Hobart,2024-03-19,DailySales_20241903_1004.csv
+TC5933,5x7 Product C Incheon,PA819,6,16.200000000000003,CHweb,Derrick,Hardy,Derrick.Hardy@example.com,Incheon,2024-03-19,DailySales_20241903_1004.csv
+TC5934,4.25x6 Product D Vientiane,PA593,2,3.0,CHweb,Sandra,Flinn,Sandra.Flinn@example.com,Vientiane,2024-03-19,DailySales_20241903_1004.csv
+TC5935,5.5x8.5 Product A Kitakyushu,PA1002,6,22.200000000000003,CHweb,Raymond,Raman,Raymond.Raman@example.com,Kitakyushu,2024-03-19,DailySales_20241903_1004.csv
+TC5936,5.5x8.5 Product A Mumbai,PA1038,1,3.4,CHweb,Judith,Arya,Judith.Arya@example.com,Mumbai,2024-03-19,DailySales_20241903_1004.csv
+TC5937,5x7 Product A Perth,PA683,4,16.0,CHmobile app,Scott,Garrett,Scott.Garrett@example.com,Perth,2024-03-19,DailySales_20241903_1004.csv
+TC5938,4x6 Product E Bangalore,PA314,3,9.9,CHmobile app,Ashley,Pearson,Ashley.Pearson@example.com,Bangalore,2024-03-19,DailySales_20241903_1004.csv
+TC5939,6x9 Product C Kawasaki,PA1465,5,8.5,CHweb,Minerva,Cloud,Minerva.Cloud@example.com,Kawasaki,2024-03-19,DailySales_20241903_1004.csv
+TC5940,5x7 Product B Daegu,PA754,5,13.5,CHweb,Manuel,Jones,Manuel.Jones@example.com,Daegu,2024-03-19,DailySales_20241903_1004.csv
+TC5941,4x6 Product E Okayama,PA279,6,17.4,CHmobile app,James,Williams,James.Williams@example.com,Okayama,2024-03-19,DailySales_20241903_1004.csv
+TC5942,6x11 Product E Tokyo,PA1915,6,11.4,CHmobile app,John,Jones,John.Jones@example.com,Tokyo,2024-03-19,DailySales_20241903_1004.csv
+TC5943,5x7 Product D Singapore,PA905,2,4.4,CHmobile app,Christy,Manuel,Christy.Manuel@example.com,Singapore,2024-03-19,DailySales_20241903_1004.csv
+TC5944,4x6 Product B Phnom Penh,PA130,4,16.4,CHweb,Linda,Schram,Linda.Schram@example.com,Phnom Penh,2024-03-19,DailySales_20241903_1004.csv
+TC5945,6x11 Product D Phnom Penh,PA1912,6,16.799999999999997,CHweb,Rhonda,Konieczny,Rhonda.Konieczny@example.com,Phnom Penh,2024-03-19,DailySales_20241903_1004.csv
+TC5946,4.25x6 Product B Chiba,PA407,3,11.4,CHin-store,Randall,Sanches,Randall.Sanches@example.com,Chiba,2024-03-19,DailySales_20241903_1004.csv
+TC5947,4x6 Product D Chongqing,PA234,6,19.200000000000003,CHmobile app,Raymond,Perkins,Raymond.Perkins@example.com,Chongqing,2024-03-19,DailySales_20241903_1004.csv
+TC5948,6x9 Product C Shenzhen,PA1484,5,10.0,CHweb,Andrea,Finnie,Andrea.Finnie@example.com,Shenzhen,2024-03-19,DailySales_20241903_1004.csv
+TC5949,5x7 Product A Taipei,PA699,4,14.4,CHweb,Kelvin,Johnson,Kelvin.Johnson@example.com,Taipei,2024-03-19,DailySales_20241903_1004.csv
+TC5950,6x9 Product C Perth,PA1475,4,12.8,CHweb,Damon,Nash,Damon.Nash@example.com,Perth,2024-03-19,DailySales_20241903_1004.csv
+TC5951,6x9 Product A Chiba,PA1331,3,12.3,CHmobile app,Myron,Stott,Myron.Stott@example.com,Chiba,2024-03-19,DailySales_20241903_1004.csv
+TC5952,4.25x6 Product D Canberra,PA547,6,26.4,CHweb,Johanna,Lampe,Johanna.Lampe@example.com,Canberra,2024-03-19,DailySales_20241903_1004.csv
+TC5953,6x11 Product D Taipei,PA1887,6,16.200000000000003,CHmobile app,Kanisha,Williams,Kanisha.Williams@example.com,Taipei,2024-03-19,DailySales_20241903_1004.csv
+TC5954,4.25x6 Product D Wuhan,PA563,6,15.0,CHin-store,Barry,Saxman,Barry.Saxman@example.com,Wuhan,2024-03-19,DailySales_20241903_1004.csv
+TC5955,5.5x8.5 Product A Singapore,PA1037,5,17.5,CHmobile app,Michael,Graham,Michael.Graham@example.com,Singapore,2024-03-19,DailySales_20241903_1004.csv
+TC5956,5x7 Product B Kyoto,PA733,2,4.2,CHin-store,Ellen,Keith,Ellen.Keith@example.com,Kyoto,2024-03-19,DailySales_20241903_1004.csv
+TC5957,5x7 Product E Chennai,PA977,2,7.0,CHmobile app,Curtis,Kinsey,Curtis.Kinsey@example.com,Chennai,2024-03-19,DailySales_20241903_1004.csv
+TC5958,4.25x6 Product E Bangkok,PA635,3,11.7,CHmobile app,Steven,Burnside,Steven.Burnside@example.com,Bangkok,2024-03-19,DailySales_20241903_1004.csv
+TC5959,5.5x8.5 Product E Canberra,PA1273,4,7.2,CHweb,Nathan,Dykstra,Nathan.Dykstra@example.com,Canberra,2024-03-19,DailySales_20241903_1004.csv
+TC5960,5x7 Product A Surat,PA716,1,3.4,CHmobile app,Marilyn,Perkins,Marilyn.Perkins@example.com,Surat,2024-03-19,DailySales_20241903_1004.csv
+TC5961,6x11 Product E Kitakyushu,PA1926,6,12.6,CHmobile app,Jessie,Swoager,Jessie.Swoager@example.com,Kitakyushu,2024-03-19,DailySales_20241903_1004.csv
+TC5962,4x6 Product C Manila,PA176,1,2.3,CHweb,Myron,Stone,Myron.Stone@example.com,Manila,2024-03-19,DailySales_20241903_1004.csv
+TC5963,5x7 Product C Pune,PA847,6,12.0,CHmobile app,Marcie,Long,Marcie.Long@example.com,Pune,2024-03-19,DailySales_20241903_1004.csv
+TC5964,4.25x6 Product D Kuala Lumpur,PA571,5,18.5,CHin-store,Richard,Wilson,Richard.Wilson@example.com,Kuala Lumpur,2024-03-19,DailySales_20241903_1004.csv
+TC5965,5x7 Product D Lahore,PA916,4,12.0,CHweb,Jerilyn,Rather,Jerilyn.Rather@example.com,Lahore,2024-03-19,DailySales_20241903_1004.csv
+TC5966,5x7 Product C Tianjin,PA829,3,11.1,CHweb,Jewell,Black,Jewell.Black@example.com,Tianjin,2024-03-19,DailySales_20241903_1004.csv
+TC5967,6x11 Product E Mumbai,PA1962,2,3.8,CHmobile app,Aaron,Metzger,Aaron.Metzger@example.com,Mumbai,2024-03-19,DailySales_20241903_1004.csv
+TC5968,5.5x8.5 Product D Shenzhen,PA1220,3,11.4,CHmobile app,Armando,Simpson,Armando.Simpson@example.com,Shenzhen,2024-03-19,DailySales_20241903_1004.csv
+TC5969,4x6 Product A Taipei,PA39,6,17.4,CHmobile app,Jordan,Moore,Jordan.Moore@example.com,Taipei,2024-03-19,DailySales_20241903_1004.csv
+TC5970,6x11 Product E Chennai,PA1967,1,3.8,CHweb,Barbara,Roule,Barbara.Roule@example.com,Chennai,2024-03-19,DailySales_20241903_1004.csv
+TC5971,5x7 Product C Sendai,PA800,1,2.0,CHin-store,Kendra,Moore,Kendra.Moore@example.com,Sendai,2024-03-19,DailySales_20241903_1004.csv
+TC5972,5x7 Product E Kuala Lumpur,PA967,3,4.5,CHweb,Autumn,Granado,Autumn.Granado@example.com,Kuala Lumpur,2024-03-19,DailySales_20241903_1004.csv
+TC5973,4x6 Product C Kawasaki,PA145,2,6.2,CHmobile app,Sally,Porterfield,Sally.Porterfield@example.com,Kawasaki,2024-03-19,DailySales_20241903_1004.csv
+TC5974,5.5x8.5 Product E Karachi,PA1311,6,18.6,CHweb,Kathryn,Lejeune,Kathryn.Lejeune@example.com,Karachi,2024-03-19,DailySales_20241903_1004.csv
+TC5975,4x6 Product B Incheon,PA93,6,21.6,CHmobile app,David,Logan,David.Logan@example.com,Incheon,2024-03-19,DailySales_20241903_1004.csv
+TC5976,5.5x8.5 Product A Sendai,PA998,5,10.5,CHmobile app,Ashley,Nichols,Ashley.Nichols@example.com,Sendai,2024-03-19,DailySales_20241903_1004.csv
+TC5977,6x9 Product C Karachi,PA1509,1,4.0,CHweb,Michael,Baker,Michael.Baker@example.com,Karachi,2024-03-19,DailySales_20241903_1004.csv
+TC5978,6x11 Product E Chennai,PA1967,4,15.2,CHweb,Jerry,Hayes,Jerry.Hayes@example.com,Chennai,2024-03-19,DailySales_20241903_1004.csv
+TC5979,6x9 Product E Bangkok,PA1625,1,4.0,CHweb,Kenneth,Carpenter,Kenneth.Carpenter@example.com,Bangkok,2024-03-19,DailySales_20241903_1004.csv
+TC5980,4.25x6 Product C Kolkata,PA514,2,8.0,CHmobile app,Susan,Boutin,Susan.Boutin@example.com,Kolkata,2024-03-19,DailySales_20241903_1004.csv
+TC5981,6x9 Product C Brisbane,PA1470,1,4.2,CHmobile app,Ricky,Moss,Ricky.Moss@example.com,Brisbane,2024-03-19,DailySales_20241903_1004.csv
+TC5982,6x9 Product C Kaohsiung,PA1492,4,7.2,CHweb,John,Mull,John.Mull@example.com,Kaohsiung,2024-03-19,DailySales_20241903_1004.csv
+TC5983,6x11 Product D Tokyo,PA1849,4,9.6,CHmobile app,Maurice,Green,Maurice.Green@example.com,Tokyo,2024-03-19,DailySales_20241903_1004.csv
+TC5984,5.5x8.5 Product B Delhi,PA1105,5,20.0,CHweb,James,Gomez,James.Gomez@example.com,Delhi,2024-03-19,DailySales_20241903_1004.csv
+TC5985,6x11 Product D Sydney,PA1872,6,19.8,CHin-store,Latoyia,King,Latoyia.King@example.com,Sydney,2024-03-19,DailySales_20241903_1004.csv
+TC5986,5.5x8.5 Product E Dhaka,PA1314,1,2.5,CHweb,Kathryn,Metzger,Kathryn.Metzger@example.com,Dhaka,2024-03-19,DailySales_20241903_1004.csv
+TC5987,6x11 Product D Dhaka,PA1908,2,4.4,CHweb,Richard,Dye,Richard.Dye@example.com,Dhaka,2024-03-19,DailySales_20241903_1004.csv
+TC5988,5x7 Product A Adelaide,PA677,6,16.200000000000003,CHweb,Ella,Lampe,Ella.Lampe@example.com,Adelaide,2024-03-19,DailySales_20241903_1004.csv
+TC5989,5x7 Product A Kyoto,PA667,5,17.5,CHmobile app,Ada,James,Ada.James@example.com,Kyoto,2024-03-19,DailySales_20241903_1004.csv
+TC5990,6x11 Product C Kathmandu,PA1844,5,12.0,CHmobile app,Sarah,Phillips,Sarah.Phillips@example.com,Kathmandu,2024-03-19,DailySales_20241903_1004.csv
+TC5991,6x11 Product D Adelaide,PA1865,3,8.100000000000001,CHmobile app,John,Stallworth,John.Stallworth@example.com,Adelaide,2024-03-19,DailySales_20241903_1004.csv
+TC5992,6x9 Product C Hyderabad,PA1503,6,15.0,CHmobile app,Yvonne,Reichmann,Yvonne.Reichmann@example.com,Hyderabad,2024-03-19,DailySales_20241903_1004.csv
+TC5993,4.25x6 Product C Delhi,PA511,5,9.0,CHweb,Jenna,Miller,Jenna.Miller@example.com,Delhi,2024-03-19,DailySales_20241903_1004.csv
+TC5994,6x9 Product A Okayama,PA1335,2,4.2,CHmobile app,Tyrone,Oates,Tyrone.Oates@example.com,Okayama,2024-03-19,DailySales_20241903_1004.csv
+TC5995,5.5x8.5 Product C Hiroshima,PA1131,6,23.4,CHweb,Marie,Lejeune,Marie.Lejeune@example.com,Hiroshima,2024-03-19,DailySales_20241903_1004.csv
+TC5996,4x6 Product E Kolkata,PA316,3,9.6,CHin-store,Mary,Konieczny,Mary.Konieczny@example.com,Kolkata,2024-03-19,DailySales_20241903_1004.csv
+TC5997,4.25x6 Product C Bangalore,PA512,5,13.5,CHweb,Wade,Stone,Wade.Stone@example.com,Bangalore,2024-03-19,DailySales_20241903_1004.csv
+TC5998,4.25x6 Product E Hanoi,PA639,2,3.6,CHweb,Michael,Hayes,Michael.Hayes@example.com,Hanoi,2024-03-19,DailySales_20241903_1004.csv
+TC5999,4.25x6 Product C Bangkok,PA503,2,3.4,CHweb,Anthony,Muhlbauer,Anthony.Muhlbauer@example.com,Bangkok,2024-03-19,DailySales_20241903_1004.csv
+TC6000,6x9 Product D Kuala Lumpur,PA1561,3,9.3,CHin-store,Nora,Smith,Nora.Smith@example.com,Kuala Lumpur,2024-03-19,DailySales_20241903_1004.csv
+TC6001,4.25x6 Product C Seoul,PA487,2,4.8,CHmobile app,Sally,Severance,Sally.Severance@example.com,Seoul,2024-03-19,DailySales_20241903_1004.csv
+TC6002,6x11 Product B Guangzhou,PA1749,6,21.0,CHin-store,Dionne,Koziel,Dionne.Koziel@example.com,Guangzhou,2024-03-19,DailySales_20241903_1004.csv
+TC6003,5x7 Product D Saitama,PA868,3,8.399999999999999,CHweb,Gracia,Dove,Gracia.Dove@example.com,Saitama,2024-03-19,DailySales_20241903_1004.csv
+TC6004,6x9 Product E Kaohsiung,PA1624,3,10.8,CHin-store,Roger,Barber,Roger.Barber@example.com,Kaohsiung,2024-03-19,DailySales_20241903_1004.csv
+TC6005,6x9 Product D Okayama,PA1533,4,15.6,CHmobile app,Dewayne,White,Dewayne.White@example.com,Okayama,2024-03-19,DailySales_20241903_1004.csv
+TC6006,4.25x6 Product A Colombo,PA393,3,11.1,CHweb,William,Heller,William.Heller@example.com,Colombo,2024-03-19,DailySales_20241903_1004.csv
+TC6007,6x11 Product C Bangkok,PA1823,6,18.0,CHmobile app,Nathan,Manera,Nathan.Manera@example.com,Bangkok,2024-03-19,DailySales_20241903_1004.csv
+TC6008,4.25x6 Product D Nagoya,PA531,6,16.799999999999997,CHmobile app,Francisco,Barber,Francisco.Barber@example.com,Nagoya,2024-03-19,DailySales_20241903_1004.csv
+TC6009,5.5x8.5 Product A Saitama,PA1000,3,11.7,CHmobile app,Antonette,Rosas,Antonette.Rosas@example.com,Saitama,2024-03-19,DailySales_20241903_1004.csv
+TC6010,5x7 Product D Guangzhou,PA891,1,4.0,CHmobile app,Chong,Salyards,Chong.Salyards@example.com,Guangzhou,2024-03-19,DailySales_20241903_1004.csv
+TC6011,5.5x8.5 Product D Hobart,PA1209,1,3.3,CHmobile app,Joseph,Mann,Joseph.Mann@example.com,Hobart,2024-03-19,DailySales_20241903_1004.csv
+TC6012,6x11 Product D Seoul,PA1873,1,2.7,CHweb,Ted,Grigg,Ted.Grigg@example.com,Seoul,2024-03-19,DailySales_20241903_1004.csv
+TC6013,6x9 Product E Melbourne,PA1606,4,11.6,CHmobile app,Danielle,Coffey,Danielle.Coffey@example.com,Melbourne,2024-03-19,DailySales_20241903_1004.csv
+TC6014,4x6 Product E Jakarta,PA306,4,16.8,CHin-store,Christopher,Hansberry,Christopher.Hansberry@example.com,Jakarta,2024-03-19,DailySales_20241903_1004.csv
+TC6015,6x11 Product B Kobe,PA1722,4,13.6,CHmobile app,Craig,Knox,Craig.Knox@example.com,Kobe,2024-03-19,DailySales_20241903_1004.csv
+TC6016,4.25x6 Product A Darwin,PA350,6,14.4,CHweb,Daniel,Iser,Daniel.Iser@example.com,Darwin,2024-03-19,DailySales_20241903_1004.csv
+TC6017,4x6 Product A Bangalore,PA50,4,10.8,CHweb,Thomas,Passe,Thomas.Passe@example.com,Bangalore,2024-03-19,DailySales_20241903_1004.csv
+TC6018,5.5x8.5 Product E Mumbai,PA1302,1,1.9,CHin-store,Jackeline,Skaggs,Jackeline.Skaggs@example.com,Mumbai,2024-03-19,DailySales_20241903_1004.csv
+TC6019,5.5x8.5 Product A Kawasaki,PA1003,6,9.0,CHweb,Rene,Stott,Rene.Stott@example.com,Kawasaki,2024-03-19,DailySales_20241903_1004.csv
+TC6020,6x11 Product E Hiroshima,PA1923,5,8.5,CHmobile app,Danielle,Slone,Danielle.Slone@example.com,Hiroshima,2024-03-19,DailySales_20241903_1004.csv
+TC6021,4.25x6 Product A Shanghai,PA361,3,7.199999999999999,CHweb,Benjamin,Wright,Benjamin.Wright@example.com,Shanghai,2024-03-19,DailySales_20241903_1004.csv
+TC6022,6x9 Product E Fukuoka,PA1589,4,8.8,CHmobile app,Rodney,Coleman,Rodney.Coleman@example.com,Fukuoka,2024-03-19,DailySales_20241903_1004.csv
+TC6023,5.5x8.5 Product D Seoul,PA1213,1,1.5,CHin-store,Marcie,Mcdaniel,Marcie.Mcdaniel@example.com,Seoul,2024-03-19,DailySales_20241903_1004.csv
+TC6024,5.5x8.5 Product B Daegu,PA1084,3,12.9,CHin-store,George,Ford,George.Ford@example.com,Daegu,2024-03-19,DailySales_20241903_1004.csv
+TC6025,5x7 Product B Sapporo,PA730,3,6.0,CHweb,Thomas,Fujihara,Thomas.Fujihara@example.com,Sapporo,2024-03-19,DailySales_20241903_1004.csv
+TC6026,4x6 Product E Dalian,PA293,2,6.4,CHmobile app,Nancy,Floyd,Nancy.Floyd@example.com,Dalian,2024-03-19,DailySales_20241903_1004.csv
+TC6027,5.5x8.5 Product C Islamabad,PA1181,2,8.2,CHweb,Kara,Barnette,Kara.Barnette@example.com,Islamabad,2024-03-19,DailySales_20241903_1004.csv
+TC6028,4x6 Product E Pune,PA319,2,4.2,CHweb,Martha,Edwards,Martha.Edwards@example.com,Pune,2024-03-19,DailySales_20241903_1004.csv
+TC6029,4x6 Product A Ahmedabad,PA54,4,13.6,CHmobile app,Juanita,Widen,Juanita.Widen@example.com,Ahmedabad,2024-03-19,DailySales_20241903_1004.csv
+TC6030,6x11 Product A Lahore,PA1708,1,2.4,CHweb,Joel,Felix,Joel.Felix@example.com,Lahore,2024-03-19,DailySales_20241903_1004.csv
+TC6031,6x9 Product D Tokyo,PA1519,4,17.6,CHweb,Peter,Palomo,Peter.Palomo@example.com,Tokyo,2024-03-19,DailySales_20241903_1004.csv
+TC6032,4.25x6 Product D Beijing,PA558,5,10.5,CHmobile app,Patricia,Groves,Patricia.Groves@example.com,Beijing,2024-03-19,DailySales_20241903_1004.csv
+TC6033,5x7 Product C Sapporo,PA796,3,10.8,CHmobile app,Marilyn,Jeffers,Marilyn.Jeffers@example.com,Sapporo,2024-03-19,DailySales_20241903_1004.csv
+TC6034,5.5x8.5 Product A Dhaka,PA1050,4,9.2,CHweb,Nancy,Mazza,Nancy.Mazza@example.com,Dhaka,2024-03-19,DailySales_20241903_1004.csv
+TC6035,6x9 Product A Naha,PA1336,1,3.1,CHweb,Tony,Bicknell,Tony.Bicknell@example.com,Naha,2024-03-19,DailySales_20241903_1004.csv
+TC6036,4.25x6 Product E Pune,PA649,3,6.9,CHweb,Carolyn,Ziech,Carolyn.Ziech@example.com,Pune,2024-03-19,DailySales_20241903_1004.csv
+TC6037,4.25x6 Product E Wuhan,PA629,1,2.1,CHweb,Elizabeth,Picken,Elizabeth.Picken@example.com,Wuhan,2024-03-19,DailySales_20241903_1004.csv
+TC6038,4.25x6 Product D Islamabad,PA587,3,12.9,CHweb,Dionne,Carbone,Dionne.Carbone@example.com,Islamabad,2024-03-19,DailySales_20241903_1004.csv
+TC6039,5x7 Product B Islamabad,PA785,1,3.1,CHmobile app,Robert,Malcom,Robert.Malcom@example.com,Islamabad,2024-03-19,DailySales_20241903_1004.csv
+TC6040,5.5x8.5 Product A Wuhan,PA1025,5,9.0,CHin-store,Ed,Hannah,Ed.Hannah@example.com,Wuhan,2024-03-19,DailySales_20241903_1004.csv
+TC6041,6x9 Product D Hiroshima,PA1527,4,6.4,CHweb,Mark,Quintero,Mark.Quintero@example.com,Hiroshima,2024-03-19,DailySales_20241903_1004.csv
+TC6042,4.25x6 Product C Saitama,PA472,5,21.5,CHweb,Sarah,Reid,Sarah.Reid@example.com,Saitama,2024-03-19,DailySales_20241903_1004.csv
+TC6043,5.5x8.5 Product E Chennai,PA1307,2,6.8,CHweb,Marilyn,Hafer,Marilyn.Hafer@example.com,Chennai,2024-03-19,DailySales_20241903_1004.csv
+TC6044,5x7 Product D Ho Chi Minh City,PA904,3,12.9,CHmobile app,Latoyia,Bustos,Latoyia.Bustos@example.com,Ho Chi Minh City,2024-03-19,DailySales_20241903_1004.csv
+TC6045,5x7 Product A Naha,PA676,1,1.5,CHmobile app,Brian,Kimbrough,Brian.Kimbrough@example.com,Naha,2024-03-19,DailySales_20241903_1004.csv
+TC6046,6x11 Product B Hyderabad,PA1767,5,21.5,CHweb,Dennis,Townsend,Dennis.Townsend@example.com,Hyderabad,2024-03-19,DailySales_20241903_1004.csv
+TC6047,5x7 Product A Ulaanbaatar,PA726,5,17.0,CHmobile app,Joseph,Irvine,Joseph.Irvine@example.com,Ulaanbaatar,2024-03-19,DailySales_20241903_1004.csv
+TC6048,4.25x6 Product B Naha,PA412,4,14.8,CHmobile app,Toni,Miller,Toni.Miller@example.com,Naha,2024-03-19,DailySales_20241903_1004.csv
+TC6049,6x11 Product C Ho Chi Minh City,PA1828,4,10.8,CHmobile app,Emily,Williams,Emily.Williams@example.com,Ho Chi Minh City,2024-03-19,DailySales_20241903_1004.csv
+TC6050,5.5x8.5 Product B Jakarta,PA1098,5,16.0,CHweb,Dolores,Goldberg,Dolores.Goldberg@example.com,Jakarta,2024-03-19,DailySales_20241903_1004.csv
+TC6051,5x7 Product B Guangzhou,PA759,4,16.0,CHmobile app,Justin,Ramsey,Justin.Ramsey@example.com,Guangzhou,2024-03-19,DailySales_20241903_1004.csv
+TC6052,6x11 Product D Fukuoka,PA1853,3,10.5,CHmobile app,James,Stonis,James.Stonis@example.com,Fukuoka,2024-03-19,DailySales_20241903_1004.csv
+TC6053,5.5x8.5 Product A Dalian,PA1019,2,5.8,CHmobile app,Mary,Coffin,Mary.Coffin@example.com,Dalian,2024-03-19,DailySales_20241903_1004.csv
+TC6054,6x9 Product B Tokyo,PA1387,1,3.2,CHmobile app,Bryan,Phillips,Bryan.Phillips@example.com,Tokyo,2024-03-19,DailySales_20241903_1004.csv
+TC6055,6x9 Product B Guangzhou,PA1419,4,7.2,CHmobile app,Carmen,Rothman,Carmen.Rothman@example.com,Guangzhou,2024-03-19,DailySales_20241903_1004.csv
+TC6056,5.5x8.5 Product E Sendai,PA1262,1,2.0,CHweb,Kristy,Godfrey,Kristy.Godfrey@example.com,Sendai,2024-03-19,DailySales_20241903_1004.csv
+TC6057,6x9 Product B Chennai,PA1439,6,25.8,CHmobile app,Wesley,Edwards,Wesley.Edwards@example.com,Chennai,2024-03-19,DailySales_20241903_1004.csv
+TC6058,5.5x8.5 Product A Okayama,PA1005,1,3.5,CHmobile app,Jennifer,Manera,Jennifer.Manera@example.com,Okayama,2024-03-19,DailySales_20241903_1004.csv
+TC6059,4x6 Product E Busan,PA290,4,10.4,CHmobile app,Daniel,Groves,Daniel.Groves@example.com,Busan,2024-03-19,DailySales_20241903_1004.csv
+TC6060,4x6 Product C Sydney,PA156,4,14.4,CHweb,Freeda,Velez,Freeda.Velez@example.com,Sydney,2024-03-19,DailySales_20241903_1004.csv
+TC6061,5.5x8.5 Product B Shanghai,PA1087,3,6.9,CHweb,Marvin,Souders,Marvin.Souders@example.com,Shanghai,2024-03-19,DailySales_20241903_1004.csv
+TC6062,4.25x6 Product B Ahmedabad,PA450,4,16.8,CHweb,Margaret,Cole,Margaret.Cole@example.com,Ahmedabad,2024-03-19,DailySales_20241903_1004.csv
+TC6063,6x11 Product E Bangkok,PA1955,5,16.0,CHweb,Laurel,Emrich,Laurel.Emrich@example.com,Bangkok,2024-03-19,DailySales_20241903_1004.csv
+TC6064,5.5x8.5 Product B Hiroshima,PA1065,5,16.0,CHmobile app,Bobby,Saxman,Bobby.Saxman@example.com,Hiroshima,2024-03-19,DailySales_20241903_1004.csv
+TC6065,5x7 Product A Okayama,PA675,1,1.9,CHmobile app,Gina,Hernandez,Gina.Hernandez@example.com,Okayama,2024-03-19,DailySales_20241903_1004.csv
+TC6066,6x9 Product B Taipei,PA1425,3,6.0,CHmobile app,Robert,Heller,Robert.Heller@example.com,Taipei,2024-03-19,DailySales_20241903_1004.csv
+TC6067,6x9 Product E Seoul,PA1609,3,9.9,CHmobile app,Raul,Manuel,Raul.Manuel@example.com,Seoul,2024-03-19,DailySales_20241903_1004.csv
+TC6068,6x9 Product B Naha,PA1402,3,9.6,CHmobile app,Anthony,Purcell,Anthony.Purcell@example.com,Naha,2024-03-19,DailySales_20241903_1004.csv
+TC6069,5x7 Product E Osaka,PA926,4,7.2,CHmobile app,Lorraine,Brooks,Lorraine.Brooks@example.com,Osaka,2024-03-19,DailySales_20241903_1004.csv
+TC6070,4x6 Product B Okayama,PA81,1,2.9,CHweb,Bobby,Goldberg,Bobby.Goldberg@example.com,Okayama,2024-03-19,DailySales_20241903_1004.csv
+TC6071,4.25x6 Product D Colombo,PA591,6,15.0,CHmobile app,Maria,Rogers,Maria.Rogers@example.com,Colombo,2024-03-19,DailySales_20241903_1004.csv
+TC6072,4x6 Product B Bangalore,PA116,6,9.6,CHweb,Roger,Martell,Roger.Martell@example.com,Bangalore,2024-03-19,DailySales_20241903_1004.csv
+TC6073,4.25x6 Product B Mumbai,PA444,4,6.4,CHweb,Melissa,Santana,Melissa.Santana@example.com,Mumbai,2024-03-19,DailySales_20241903_1004.csv
+TC6074,6x11 Product B Jakarta,PA1758,6,9.6,CHin-store,Jeffery,Mirza,Jeffery.Mirza@example.com,Jakarta,2024-03-19,DailySales_20241903_1004.csv
+TC6075,6x9 Product A Sagamihara,PA1334,1,3.7,CHin-store,Mark,Rubel,Mark.Rubel@example.com,Sagamihara,2024-03-19,DailySales_20241903_1004.csv
+TC6076,5.5x8.5 Product B Vientiane,PA1121,1,1.6,CHweb,Maria,Durand,Maria.Durand@example.com,Vientiane,2024-03-19,DailySales_20241903_1004.csv
+TC6077,5x7 Product E Beijing,PA954,6,13.8,CHweb,Jeffrey,Gibbs,Jeffrey.Gibbs@example.com,Beijing,2024-03-19,DailySales_20241903_1004.csv
+TC6078,6x11 Product E Perth,PA1937,6,10.8,CHmobile app,Floyd,Dillard,Floyd.Dillard@example.com,Perth,2024-03-19,DailySales_20241903_1004.csv
+TC6079,6x9 Product A Vientiane,PA1385,1,1.5,CHweb,Donna,Atkins,Donna.Atkins@example.com,Vientiane,2024-03-19,DailySales_20241903_1004.csv
+TC6080,5.5x8.5 Product A Kitakyushu,PA1002,1,3.7,CHin-store,Shaun,Smith,Shaun.Smith@example.com,Kitakyushu,2024-03-19,DailySales_20241903_1004.csv
+TC6081,5x7 Product A Adelaide,PA677,5,13.5,CHmobile app,Johanna,Biltz,Johanna.Biltz@example.com,Adelaide,2024-03-19,DailySales_20241903_1004.csv
+TC6082,6x9 Product D Darwin,PA1538,3,5.699999999999999,CHmobile app,Cleveland,Claunch,Cleveland.Claunch@example.com,Darwin,2024-03-19,DailySales_20241903_1004.csv
+TC6083,6x11 Product C Ho Chi Minh City,PA1828,3,8.100000000000001,CHweb,Mary,Rhudy,Mary.Rhudy@example.com,Ho Chi Minh City,2024-03-19,DailySales_20241903_1004.csv
+TC6084,5.5x8.5 Product C Perth,PA1145,4,7.2,CHweb,Bertha,Stallworth,Bertha.Stallworth@example.com,Perth,2024-03-19,DailySales_20241903_1004.csv
+TC6085,5.5x8.5 Product E Perth,PA1277,4,16.0,CHweb,Leo,Fisher,Leo.Fisher@example.com,Perth,2024-03-19,DailySales_20241903_1004.csv
+TC6086,4.25x6 Product C Dalian,PA491,6,24.6,CHin-store,Richard,England,Richard.England@example.com,Dalian,2024-03-19,DailySales_20241903_1004.csv
+TC6087,6x11 Product B Hanoi,PA1761,5,21.5,CHweb,Larry,Stringer,Larry.Stringer@example.com,Hanoi,2024-03-19,DailySales_20241903_1004.csv
+TC6088,6x9 Product D Canberra,PA1537,5,15.5,CHweb,Phillip,Henry,Phillip.Henry@example.com,Canberra,2024-03-19,DailySales_20241903_1004.csv
+TC6089,5x7 Product D Kuala Lumpur,PA901,3,10.8,CHweb,Dale,Thurston,Dale.Thurston@example.com,Kuala Lumpur,2024-03-19,DailySales_20241903_1004.csv
+TC6090,4.25x6 Product E Kitakyushu,PA606,6,26.4,CHweb,Scott,Lindeland,Scott.Lindeland@example.com,Kitakyushu,2024-03-19,DailySales_20241903_1004.csv
+TC6091,4x6 Product A Adelaide,PA17,2,3.4,CHweb,Thomas,Velazquez,Thomas.Velazquez@example.com,Adelaide,2024-03-19,DailySales_20241903_1004.csv
+TC6092,4x6 Product C Sagamihara,PA146,1,3.6,CHweb,Tina,Ramey,Tina.Ramey@example.com,Sagamihara,2024-03-19,DailySales_20241903_1004.csv
+TC6093,6x11 Product D Seoul,PA1873,3,8.100000000000001,CHmobile app,June,Miller,June.Miller@example.com,Seoul,2024-03-19,DailySales_20241903_1004.csv
+TC6094,5.5x8.5 Product D Melbourne,PA1210,3,13.2,CHmobile app,Michael,Barrett,Michael.Barrett@example.com,Melbourne,2024-03-19,DailySales_20241903_1004.csv
+TC6095,6x9 Product B Kuala Lumpur,PA1429,2,6.8,CHin-store,Walter,Wynn,Walter.Wynn@example.com,Kuala Lumpur,2024-03-19,DailySales_20241903_1004.csv
+TC6096,6x11 Product D Sendai,PA1856,1,1.5,CHmobile app,Marsha,Robinson,Marsha.Robinson@example.com,Sendai,2024-03-19,DailySales_20241903_1004.csv
+TC6097,5.5x8.5 Product A Kawasaki,PA1003,5,7.5,CHin-store,Lorraine,Townsend,Lorraine.Townsend@example.com,Kawasaki,2024-03-19,DailySales_20241903_1004.csv
+TC6098,6x9 Product D Jakarta,PA1560,1,2.7,CHweb,Craig,Brown,Craig.Brown@example.com,Jakarta,2024-03-19,DailySales_20241903_1004.csv
+TC6099,6x11 Product A Guangzhou,PA1683,3,12.9,CHweb,Justin,Camps,Justin.Camps@example.com,Guangzhou,2024-03-19,DailySales_20241903_1004.csv
+TC6100,5.5x8.5 Product D Canberra,PA1207,4,7.2,CHmobile app,Marie,Neuman,Marie.Neuman@example.com,Canberra,2024-03-19,DailySales_20241903_1004.csv
+TC6101,5.5x8.5 Product D Delhi,PA1237,2,5.2,CHmobile app,Vanesa,Castellano,Vanesa.Castellano@example.com,Delhi,2024-03-19,DailySales_20241903_1004.csv
+TC6102,4x6 Product A Hobart,PA21,6,12.0,CHmobile app,Latoyia,Mirza,Latoyia.Mirza@example.com,Hobart,2024-03-19,DailySales_20241903_1004.csv
+TC6103,5.5x8.5 Product B Tianjin,PA1093,6,11.4,CHweb,Mary,Harmon,Mary.Harmon@example.com,Tianjin,2024-03-19,DailySales_20241903_1004.csv
+TC6104,6x9 Product E Adelaide,PA1601,6,9.0,CHweb,Crystal,Breen,Crystal.Breen@example.com,Adelaide,2024-03-19,DailySales_20241903_1004.csv
+TC6105,4.25x6 Product D Hobart,PA549,1,3.3,CHweb,April,Kieffer,April.Kieffer@example.com,Hobart,2024-03-19,DailySales_20241903_1004.csv
+TC6106,4.25x6 Product C Dhaka,PA522,3,4.800000000000001,CHmobile app,Elia,Givens,Elia.Givens@example.com,Dhaka,2024-03-19,DailySales_20241903_1004.csv
+TC6107,4x6 Product C Incheon,PA159,3,12.9,CHmobile app,James,Saxman,James.Saxman@example.com,Incheon,2024-03-19,DailySales_20241903_1004.csv
+TC6108,4.25x6 Product A Kitakyushu,PA342,5,18.0,CHin-store,Cory,Benson,Cory.Benson@example.com,Kitakyushu,2024-03-19,DailySales_20241903_1004.csv
+TC6109,5.5x8.5 Product C Ho Chi Minh City,PA1168,3,5.1,CHweb,Benjamin,Schroeder,Benjamin.Schroeder@example.com,Ho Chi Minh City,2024-03-19,DailySales_20241903_1004.csv
+TC6110,4.25x6 Product B Shenzhen,PA428,1,2.8,CHweb,Wanda,Musick,Wanda.Musick@example.com,Shenzhen,2024-03-19,DailySales_20241903_1004.csv
+TC6111,4x6 Product B Lahore,PA124,1,2.5,CHweb,Zackary,Wynn,Zackary.Wynn@example.com,Lahore,2024-03-19,DailySales_20241903_1004.csv
+TC6112,6x11 Product A Naha,PA1666,4,13.6,CHin-store,Joshua,Wenz,Joshua.Wenz@example.com,Naha,2024-03-19,DailySales_20241903_1004.csv
+TC6113,5.5x8.5 Product B Busan,PA1082,5,13.0,CHin-store,Timothy,Newman,Timothy.Newman@example.com,Busan,2024-03-19,DailySales_20241903_1004.csv
+TC6114,6x11 Product E Mumbai,PA1962,2,3.8,CHweb,Chad,Stuckey,Chad.Stuckey@example.com,Mumbai,2024-03-19,DailySales_20241903_1004.csv
+TC6115,6x11 Product E Kitakyushu,PA1926,5,10.5,CHmobile app,William,Shani,William.Shani@example.com,Kitakyushu,2024-03-19,DailySales_20241903_1004.csv
+TC6116,5.5x8.5 Product B Chiba,PA1067,1,2.1,CHin-store,Rene,Hansel,Rene.Hansel@example.com,Chiba,2024-03-19,DailySales_20241903_1004.csv
+TC6117,5.5x8.5 Product B Wuhan,PA1091,2,8.4,CHmobile app,Valerie,Ferguson,Valerie.Ferguson@example.com,Wuhan,2024-03-19,DailySales_20241903_1004.csv
+TC6118,6x9 Product B Taipei,PA1425,2,4.0,CHweb,Marquis,Stefanatos,Marquis.Stefanatos@example.com,Taipei,2024-03-19,DailySales_20241903_1004.csv
+TC6119,6x11 Product A Wuhan,PA1685,1,4.2,CHmobile app,Wade,Lindquist,Wade.Lindquist@example.com,Wuhan,2024-03-19,DailySales_20241903_1004.csv
+TC6120,5.5x8.5 Product B Chongqing,PA1092,6,12.0,CHweb,Candy,Cornejo,Candy.Cornejo@example.com,Chongqing,2024-03-19,DailySales_20241903_1004.csv
+TC6121,6x9 Product B Daegu,PA1414,4,14.8,CHmobile app,Bertha,Davis,Bertha.Davis@example.com,Daegu,2024-03-19,DailySales_20241903_1004.csv
+TC6122,6x9 Product E Kuala Lumpur,PA1627,2,5.2,CHmobile app,Maurice,Loggins,Maurice.Loggins@example.com,Kuala Lumpur,2024-03-19,DailySales_20241903_1004.csv
+TC6123,5.5x8.5 Product B Ho Chi Minh City,PA1102,4,13.2,CHin-store,Nancy,Harrison,Nancy.Harrison@example.com,Ho Chi Minh City,2024-03-19,DailySales_20241903_1004.csv
+TC6124,6x9 Product E Tianjin,PA1621,2,6.6,CHweb,Sheryl,Simon,Sheryl.Simon@example.com,Tianjin,2024-03-19,DailySales_20241903_1004.csv
+TC6125,4.25x6 Product D Shanghai,PA559,2,3.4,CHweb,Erik,Rivera,Erik.Rivera@example.com,Shanghai,2024-03-19,DailySales_20241903_1004.csv
+TC6126,5x7 Product B Hanoi,PA771,2,7.6,CHweb,Freida,Alleman,Freida.Alleman@example.com,Hanoi,2024-03-19,DailySales_20241903_1004.csv
+TC6127,4.25x6 Product E Karachi,PA651,2,3.6,CHweb,Raul,Metheney,Raul.Metheney@example.com,Karachi,2024-03-19,DailySales_20241903_1004.csv
+TC6128,5x7 Product D Dhaka,PA918,5,9.5,CHweb,Marilyn,Gillispie,Marilyn.Gillispie@example.com,Dhaka,2024-03-19,DailySales_20241903_1004.csv
+TC6129,6x9 Product E Bangalore,PA1634,3,9.9,CHin-store,Donald,James,Donald.James@example.com,Bangalore,2024-03-19,DailySales_20241903_1004.csv
+TC6130,4.25x6 Product C Darwin,PA482,1,4.2,CHin-store,Kristine,Sanchez,Kristine.Sanchez@example.com,Darwin,2024-03-19,DailySales_20241903_1004.csv
+TC6131,6x11 Product C Sagamihara,PA1796,2,8.0,CHweb,Cynthia,Hurt,Cynthia.Hurt@example.com,Sagamihara,2024-03-19,DailySales_20241903_1004.csv
+TC6132,5x7 Product C Colombo,PA855,5,22.0,CHweb,Elizabeth,Caldwell,Elizabeth.Caldwell@example.com,Colombo,2024-03-19,DailySales_20241903_1004.csv
+TC6133,4.25x6 Product B Bangalore,PA446,1,3.4,CHmobile app,Bryan,Johnson,Bryan.Johnson@example.com,Bangalore,2024-03-19,DailySales_20241903_1004.csv
+TC6134,6x11 Product C Sagamihara,PA1796,2,8.0,CHweb,Eric,Small,Eric.Small@example.com,Sagamihara,2024-03-19,DailySales_20241903_1004.csv
+TC6135,4x6 Product A Kawasaki,PA13,4,14.0,CHweb,Jody,Bennett,Jody.Bennett@example.com,Kawasaki,2024-03-19,DailySales_20241903_1004.csv
+TC6136,5x7 Product A Lahore,PA718,1,1.9,CHmobile app,Vern,Cole,Vern.Cole@example.com,Lahore,2024-03-19,DailySales_20241903_1004.csv
+TC6137,5x7 Product E Chennai,PA977,6,21.0,CHweb,Michael,Benavides,Michael.Benavides@example.com,Chennai,2024-03-19,DailySales_20241903_1004.csv
+TC6138,6x9 Product C Naha,PA1468,4,8.0,CHmobile app,Dionne,Jefferson,Dionne.Jefferson@example.com,Naha,2024-03-19,DailySales_20241903_1004.csv
+TC6139,5x7 Product B Sapporo,PA730,2,4.0,CHweb,Darlene,Smith,Darlene.Smith@example.com,Sapporo,2024-03-19,DailySales_20241903_1004.csv
+TC6140,5x7 Product E Singapore,PA971,5,15.5,CHweb,Micah,Guinn,Micah.Guinn@example.com,Singapore,2024-03-19,DailySales_20241903_1004.csv
+TC6141,5x7 Product B Ulaanbaatar,PA792,3,11.1,CHweb,Marvin,Vescio,Marvin.Vescio@example.com,Ulaanbaatar,2024-03-19,DailySales_20241903_1004.csv
+TC6142,6x11 Product C Chiba,PA1793,2,3.6,CHmobile app,Mary,Ahner,Mary.Ahner@example.com,Chiba,2024-03-19,DailySales_20241903_1004.csv
+TC6143,6x9 Product C Naha,PA1468,1,2.0,CHmobile app,Jerry,Medina,Jerry.Medina@example.com,Naha,2024-03-19,DailySales_20241903_1004.csv
+TC6144,5x7 Product B Canberra,PA745,6,21.6,CHweb,Brittany,Vizcaino,Brittany.Vizcaino@example.com,Canberra,2024-03-19,DailySales_20241903_1004.csv
+TC6145,6x11 Product B Kuala Lumpur,PA1759,1,2.8,CHweb,Jennifer,Lopez,Jennifer.Lopez@example.com,Kuala Lumpur,2024-03-19,DailySales_20241903_1004.csv
+TC6146,6x11 Product D Lahore,PA1906,3,7.800000000000001,CHweb,Faith,Gonzalez,Faith.Gonzalez@example.com,Lahore,2024-03-19,DailySales_20241903_1004.csv

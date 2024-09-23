@@ -57,22 +57,20 @@ create_registry_table = PostgresOperator(
 create_csv_destination = PostgresOperator(
     task_id='create_csv_destination',
     sql = """
-CREATE TABLE IF NOT EXISTS import.ResellerCSV (
-   
-   Transaction_ID varchar(255) , 
-   Product_name varchar(255),
-   Number_of_purchased_postcards int,
-   Total_amount money,
-   Sales_Channel varchar(255),
-   Customer_First_Name varchar(255),
-   Customer_Last_Name varchar(255),
-   Customer_Email varchar(255),
-   Office_Location varchar(255),
-   Created_Date date,
-   Imported_File varchar(255),
-   Loaded_Timestamp timestamp not null default now()
-   
-   );
+    CREATE TABLE IF NOT EXISTS import.ResellerCSV (
+       Transaction_ID varchar(255), 
+       Product_name varchar(255),
+       number_of_purchased_postcards int,
+       Total_amount money,
+       Sales_Channel varchar(255),
+       Customer_First_Name varchar(255),
+       Customer_Last_Name varchar(255),
+       Customer_Email varchar(255),
+       Office_Location varchar(255),
+       Created_Date date,
+       Imported_File varchar(255),
+       Loaded_Timestamp timestamp not null default now()
+    );
     """,
     dag=dag,
     postgres_conn_id = 'sales_dw',

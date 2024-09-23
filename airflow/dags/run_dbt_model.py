@@ -18,7 +18,7 @@ DBT_BIN = '/usr/local/bin/dbt'
 wait_for_dbt_init = ExternalTaskSensor(
     task_id='wait_for_dbt_init',
     external_dag_id='run_dbt_init_tasks',
-    execution_date_fn=lambda x: x,
+    execution_date_fn=lambda x: days_ago(0),  # Execution date function
     timeout=300,
     dag=dag
 )

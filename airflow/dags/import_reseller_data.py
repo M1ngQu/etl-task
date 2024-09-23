@@ -1,4 +1,3 @@
-
 from datetime import timedelta, datetime
 import pytz
 from airflow import DAG
@@ -12,7 +11,6 @@ import os
 import pandas as pd
 import json
 import xmltodict
-
 
 default_args = {
     'owner': 'airflow',
@@ -29,7 +27,7 @@ dag = DAG(
     description='Import Resellers Transactions Files',
     schedule_interval='@daily',
     start_date=days_ago(1),
-    tags=['csv','reseller'],
+    tags=['csv', 'reseller'],
     is_paused_upon_creation=False
 )
 
@@ -39,31 +37,29 @@ ENGINE = POSTGRES_HOOK.get_sqlalchemy_engine()
 wait_for_init = ExternalTaskSensor(
     task_id='wait_for_init',
     external_dag_id='initialize_etl_environment',
-    execution_date_fn = lambda x: datetime(2024, 1, 1, 0, 0, 0, 0, pytz.UTC),
+    execution_date_fn=lambda x: datetime(2024, 1, 1, 0, 0, 0, 0, pytz.UTC),
     timeout=1,
     dag=dag
 )
 
+
 def get_validated(filetype):
-
     with ENGINE.connect() as con:
-
-        result = con.execute(f"""SELECT Filename FROM ops.FlatFileLoadRegistry where validated=True and extension='{filetype}' """)
+        result = con.execute(
+            f"""SELECT Filename FROM ops.FlatFileLoadRegistry where validated=True and extension='{filetype}' """)
 
         return set(row.values()[0] for row in result)
 
 
 def get_processed(filetype):
-
     with ENGINE.connect() as con:
-
-        result = con.execute(f"""SELECT Filename FROM ops.FlatFileLoadRegistry where processed=True and extension='{filetype}' """)
+        result = con.execute(
+            f"""SELECT Filename FROM ops.FlatFileLoadRegistry where processed=True and extension='{filetype}' """)
 
         return set(row.values()[0] for row in result)
 
 
 def update_flatfile_registry(file_data):
-
     command = f"""
     INSERT INTO ops.FlatFileLoadRegistry(Filename, Extension, LoadDate, Processed, Validated)
     VALUES('{file_data['filename']}','{file_data['extension']}','{file_data['loaddate']}',{file_data['processed']}, {file_data['validated']} ) 
@@ -72,33 +68,69 @@ def update_flatfile_registry(file_data):
     """
 
     with ENGINE.connect() as con:
-
         con.execute(command)
 
-def preprocess_csv():
 
+def preprocess_csv():
     IMPORT_PATH = '/import/csv/raw/'
     EXPORT_PATH = '/import/csv/processed/'
     PROCESSED = get_processed('csv')
     IGNORED = '.keep'
-    
-    for file in sorted(os.listdir(IMPORT_PATH)):
 
+    for file in sorted(os.listdir(IMPORT_PATH)):
         if file not in PROCESSED and file != IGNORED:
             extension = file.split('.')[-1]
 
-            df = pd.read_csv(IMPORT_PATH+file, encoding='utf-8')
+            # 读取CSV文件
+            df = pd.read_csv(IMPORT_PATH + file, encoding='utf-8')
 
+            # 重命名列以匹配目标表结构
+            df = df.rename(columns={
+                'Transaction ID': 'Transaction_ID',
+                'Product name': 'Product_name',
+                'Quantity': 'number_of_purchased_postcards',
+                'Total amount': 'Total_amount',
+                'Sales Channel': 'Sales_Channel',
+                'Customer First Name': 'Customer_First_Name',
+                'Customer Last Name': 'Customer_Last_Name',
+                'Customer Email': 'Customer_Email',
+                'Series City': 'Office_Location',
+                'Created Date': 'Created_Date'
+            })
+
+            # 添加 Imported_File 列
             df['Imported_File'] = file
 
-            df.to_csv(EXPORT_PATH+file,index=False)
+            # 确保所有必要的列都存在
+            required_columns = [
+                'Transaction_ID', 'Product_name', 'number_of_purchased_postcards',
+                'Total_amount', 'Sales_Channel', 'Customer_First_Name',
+                'Customer_Last_Name', 'Customer_Email', 'Office_Location',
+                'Created_Date', 'Imported_File'
+            ]
 
-            file_data = {'filename': file, 'extension': extension, 'loaddate': datetime.now() ,'processed':True, 'validated': False}
-            
+            for col in required_columns:
+                if col not in df.columns:
+                    df[col] = None  # 如果列不存在，添加一个空列
+
+            # 只保留需要的列
+            df = df[required_columns]
+
+            # 保存处理后的CSV文件
+            df.to_csv(EXPORT_PATH + file, index=False)
+
+            # 更新文件注册信息
+            file_data = {
+                'filename': file,
+                'extension': extension,
+                'loaddate': datetime.now(),
+                'processed': True,
+                'validated': False
+            }
+
             update_flatfile_registry(file_data)
-            
-            print(f'Processed {file}')
 
+            print(f'Processed {file}')
 
 
 def import_csv():
@@ -110,7 +142,19 @@ def import_csv():
         if file not in VALIDATED and file != IGNORED:
             extension = file.split('.')[-1]
             SQL_STATEMENT = """
-            COPY import.ResellerCSV(Transaction_ID, Product_name, Number_of_purchased_postcards, Total_amount, Sales_Channel, Customer_First_Name, Customer_Last_Name, Customer_Email, Office_Location, Created_Date, Imported_File) FROM STDIN DELIMITER ',' CSV HEADER;
+            COPY import.ResellerCSV(
+                Transaction_ID, 
+                Product_name,
+                number_of_purchased_postcards,
+                Total_amount,
+                Sales_Channel,
+                Customer_First_Name,
+                Customer_Last_Name,
+                Customer_Email,
+                Office_Location,
+                Created_Date,
+                Imported_File
+            )  FROM STDIN DELIMITER ',' CSV HEADER;
             """
             conn = POSTGRES_HOOK.get_conn()
             cur = conn.cursor()
@@ -138,32 +182,32 @@ def import_csv():
                 conn.close()
 
 
-
 def preprocess_xml():
-
     IMPORT_PATH = '/import/xml/raw/'
     EXPORT_PATH = '/import/xml/processed/'
     IGNORED = '.keep'
-    
+
     PROCESSED = get_processed('xml')
-    
+
     for file in sorted(os.listdir(IMPORT_PATH)):
 
         if file not in PROCESSED and file != IGNORED:
 
             with open(IMPORT_PATH + file, 'r') as myfile:
                 obj = xmltodict.parse(myfile.read())
-            
+
             if obj['transactions']:
 
-                with open(EXPORT_PATH + file[:-4] +'.json', 'w', encoding='utf-8') as f:
+                with open(EXPORT_PATH + file[:-4] + '.json', 'w', encoding='utf-8') as f:
                     for e in dict(obj['transactions'])['transaction']:
                         json.dump(e, f, ensure_ascii=False)
                         f.write('\n')
 
-                file_data = {'filename': file, 'extension': 'xml', 'loaddate': datetime.now() ,'processed':True, 'validated': False}
+                file_data = {'filename': file, 'extension': 'xml', 'loaddate': datetime.now(), 'processed': True,
+                             'validated': False}
             else:
-                file_data = {'filename': file, 'extension': 'xml', 'loaddate': datetime.now() ,'processed':False, 'validated': False}
+                file_data = {'filename': file, 'extension': 'xml', 'loaddate': datetime.now(), 'processed': False,
+                             'validated': False}
 
             update_flatfile_registry(file_data)
 
@@ -208,6 +252,7 @@ def import_xml():
                 cur.close()
                 conn.close()
 
+
 preprocess_csv = PythonOperator(
     task_id='preprocess_csv',
     python_callable=preprocess_csv,
@@ -234,7 +279,7 @@ import_xml = PythonOperator(
 
 create_transform_reseller_destination = PostgresOperator(
     task_id='create_transform_reseller_destination',
-    sql = """
+    sql="""
         CREATE TABLE IF NOT EXISTS staging.ResellerXmlExtracted (
         reseller_id int,
         customer_first_name varchar(255),
@@ -252,13 +297,13 @@ create_transform_reseller_destination = PostgresOperator(
         )
     """,
     dag=dag,
-    postgres_conn_id = 'sales_dw',
-    autocommit = True
+    postgres_conn_id='sales_dw',
+    autocommit=True
 )
 
 insert_transform_reseller = PostgresOperator(
     task_id='insert_transform_reseller',
-    sql = """
+    sql="""
         INSERT INTO staging.ResellerXmlExtracted (
         reseller_id,
         customer_first_name,
@@ -292,8 +337,8 @@ insert_transform_reseller = PostgresOperator(
 
     """,
     dag=dag,
-    postgres_conn_id = 'sales_dw',
-    autocommit = True
+    postgres_conn_id='sales_dw',
+    autocommit=True
 )
 
 create_transform_reseller_destination >> insert_transform_reseller
